@@ -12,9 +12,12 @@
 		AC80D7612149D943001B00EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D75F2149D943001B00EF /* Main.storyboard */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
+		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B52DEB84ED5423CAAD694DE /* Pods-CodandoJuntasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.release.xcconfig"; sourceTree = "<group>"; };
+		A779A47C6A170D47AC8692B5 /* Pods-CodandoJuntasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D75D2149D943001B00EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC80D7652149D944001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA34926218AF70EC79B5744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A7C371A725B7ACAFCB0A76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A779A47C6A170D47AC8692B5 /* Pods-CodandoJuntasApp.debug.xcconfig */,
+				0B52DEB84ED5423CAAD694DE /* Pods-CodandoJuntasApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC80D74F2149D943001B00EF = {
 			isa = PBXGroup;
 			children = (
 				AC80D75A2149D943001B00EF /* CodandoJuntasApp */,
 				AC80D7592149D943001B00EF /* Products */,
+				92A7C371A725B7ACAFCB0A76 /* Pods */,
+				0FA34926218AF70EC79B5744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC80D76A2149D944001B00EF /* Build configuration list for PBXNativeTarget "CodandoJuntasApp" */;
 			buildPhases = (
+				07802F8F97D53D7E440A08E8 /* [CP] Check Pods Manifest.lock */,
 				AC80D7542149D943001B00EF /* Sources */,
 				AC80D7552149D943001B00EF /* Frameworks */,
 				AC80D7562149D943001B00EF /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07802F8F97D53D7E440A08E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodandoJuntasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC80D7542149D943001B00EF /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		AC80D76B2149D944001B00EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A779A47C6A170D47AC8692B5 /* Pods-CodandoJuntasApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +343,7 @@
 		};
 		AC80D76C2149D944001B00EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B52DEB84ED5423CAAD694DE /* Pods-CodandoJuntasApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
