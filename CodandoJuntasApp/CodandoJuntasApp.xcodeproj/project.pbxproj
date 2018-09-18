@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC475F3721507312003B2BC3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* MainView.swift */; };
+		AC475F3821507312003B2BC3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* MainViewModel.swift */; };
+		AC475F3921507312003B2BC3 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* MainView.xib */; };
+		AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3B2150736A003B2BC3 /* Feed.swift */; };
+		AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */; };
+		AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3F215073A7003B2BC3 /* FeedRepository.swift */; };
+		AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F44215079F9003B2BC3 /* Coordinator.swift */; };
+		AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F4621507A0C003B2BC3 /* AppCoordinator.swift */; };
+		AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F4821507A80003B2BC3 /* LocalStorage.swift */; };
+		AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F4B21507AE3003B2BC3 /* LocalStorageImpl.swift */; };
+		AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F4D21507BC9003B2BC3 /* DefaultContainer.swift */; };
+		AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F4F21507C53003B2BC3 /* FeedService.swift */; };
+		AC475F5221507C6D003B2BC3 /* FeedServicempl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5121507C6D003B2BC3 /* FeedServicempl.swift */; };
+		AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5321507D5B003B2BC3 /* FeedRouter.swift */; };
+		AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5521509EA4003B2BC3 /* Rx+Utils.swift */; };
+		AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */; };
+		AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5A21509FDD003B2BC3 /* Constants.swift */; };
+		AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
-		AC80D75E2149D943001B00EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75D2149D943001B00EF /* ViewController.swift */; };
-		AC80D7612149D943001B00EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D75F2149D943001B00EF /* Main.storyboard */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
@@ -18,10 +34,26 @@
 /* Begin PBXFileReference section */
 		0B52DEB84ED5423CAAD694DE /* Pods-CodandoJuntasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.release.xcconfig"; sourceTree = "<group>"; };
 		A779A47C6A170D47AC8692B5 /* Pods-CodandoJuntasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AC475F3421507312003B2BC3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AC475F3521507312003B2BC3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AC475F3621507312003B2BC3 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		AC475F3B2150736A003B2BC3 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepositoryImpl.swift; sourceTree = "<group>"; };
+		AC475F3F215073A7003B2BC3 /* FeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
+		AC475F44215079F9003B2BC3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AC475F4621507A0C003B2BC3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AC475F4821507A80003B2BC3 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		AC475F4B21507AE3003B2BC3 /* LocalStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageImpl.swift; sourceTree = "<group>"; };
+		AC475F4D21507BC9003B2BC3 /* DefaultContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContainer.swift; sourceTree = "<group>"; };
+		AC475F4F21507C53003B2BC3 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		AC475F5121507C6D003B2BC3 /* FeedServicempl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedServicempl.swift; sourceTree = "<group>"; };
+		AC475F5321507D5B003B2BC3 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		AC475F5521509EA4003B2BC3 /* Rx+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rx+Utils.swift"; sourceTree = "<group>"; };
+		AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		AC475F5A21509FDD003B2BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Networking+Utils.swift"; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC80D75D2149D943001B00EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC80D7602149D943001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC80D7652149D944001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +89,95 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC475F31215072D7003B2BC3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F3421507312003B2BC3 /* MainView.swift */,
+				AC475F3521507312003B2BC3 /* MainViewModel.swift */,
+				AC475F3621507312003B2BC3 /* MainView.xib */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AC475F32215072DE003B2BC3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F5321507D5B003B2BC3 /* FeedRouter.swift */,
+				AC475F4F21507C53003B2BC3 /* FeedService.swift */,
+				AC475F5121507C6D003B2BC3 /* FeedServicempl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AC475F33215072EA003B2BC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC80D7622149D944001B00EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC475F3A2150731A003B2BC3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F3F215073A7003B2BC3 /* FeedRepository.swift */,
+				AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AC475F3D21507383003B2BC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F3B2150736A003B2BC3 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC475F42215073F7003B2BC3 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F44215079F9003B2BC3 /* Coordinator.swift */,
+				AC475F4621507A0C003B2BC3 /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		AC475F4321507410003B2BC3 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F4D21507BC9003B2BC3 /* DefaultContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		AC475F4A21507A84003B2BC3 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F4821507A80003B2BC3 /* LocalStorage.swift */,
+				AC475F4B21507AE3003B2BC3 /* LocalStorageImpl.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		AC475F5921509EAC003B2BC3 /* Rx Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */,
+				AC475F5521509EA4003B2BC3 /* Rx+Utils.swift */,
+			);
+			path = "Rx Utilities";
+			sourceTree = "<group>";
+		};
+		AC475F5C21509FE3003B2BC3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */,
+				AC475F5A21509FDD003B2BC3 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AC80D74F2149D943001B00EF = {
 			isa = PBXGroup;
 			children = (
@@ -78,12 +199,19 @@
 		AC80D75A2149D943001B00EF /* CodandoJuntasApp */ = {
 			isa = PBXGroup;
 			children = (
-				AC80D75B2149D943001B00EF /* AppDelegate.swift */,
-				AC80D75D2149D943001B00EF /* ViewController.swift */,
-				AC80D75F2149D943001B00EF /* Main.storyboard */,
-				AC80D7622149D944001B00EF /* Assets.xcassets */,
-				AC80D7642149D944001B00EF /* LaunchScreen.storyboard */,
+				AC475F42215073F7003B2BC3 /* AppCoordinator */,
+				AC475F4A21507A84003B2BC3 /* Storage */,
+				AC475F3D21507383003B2BC3 /* Model */,
+				AC475F32215072DE003B2BC3 /* Services */,
+				AC475F31215072D7003B2BC3 /* Modules */,
+				AC475F33215072EA003B2BC3 /* Resources */,
+				AC475F3A2150731A003B2BC3 /* Repository */,
+				AC475F4321507410003B2BC3 /* Container */,
+				AC475F5921509EAC003B2BC3 /* Rx Utilities */,
+				AC475F5C21509FE3003B2BC3 /* Utils */,
 				AC80D7672149D944001B00EF /* Info.plist */,
+				AC80D7642149D944001B00EF /* LaunchScreen.storyboard */,
+				AC80D75B2149D943001B00EF /* AppDelegate.swift */,
 			);
 			path = CodandoJuntasApp;
 			sourceTree = "<group>";
@@ -99,6 +227,7 @@
 				AC80D7542149D943001B00EF /* Sources */,
 				AC80D7552149D943001B00EF /* Frameworks */,
 				AC80D7562149D943001B00EF /* Resources */,
+				17E2AB58D0DC7901B672CD97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC475F3921507312003B2BC3 /* MainView.xib in Resources */,
 				AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
-				AC80D7612149D943001B00EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +303,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		17E2AB58D0DC7901B672CD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,22 +344,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC80D75E2149D943001B00EF /* ViewController.swift in Sources */,
+				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
+				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
+				AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */,
+				AC475F3721507312003B2BC3 /* MainView.swift in Sources */,
+				AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */,
+				AC475F5221507C6D003B2BC3 /* FeedServicempl.swift in Sources */,
 				AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */,
+				AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */,
+				AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */,
+				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
+				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
+				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
+				AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */,
+				AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */,
+				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
+				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
+				AC475F3821507312003B2BC3 /* MainViewModel.swift in Sources */,
+				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC80D75F2149D943001B00EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC80D7602149D943001B00EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC80D7642149D944001B00EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
