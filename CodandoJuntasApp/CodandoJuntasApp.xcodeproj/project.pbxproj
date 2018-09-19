@@ -92,9 +92,7 @@
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				AC475F3421507312003B2BC3 /* MainView.swift */,
-				AC475F3521507312003B2BC3 /* MainViewModel.swift */,
-				AC475F3621507312003B2BC3 /* MainView.xib */,
+				AC475F5F2151D8CE003B2BC3 /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -176,6 +174,16 @@
 				AC475F5A21509FDD003B2BC3 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AC475F5F2151D8CE003B2BC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F3421507312003B2BC3 /* MainView.swift */,
+				AC475F3521507312003B2BC3 /* MainViewModel.swift */,
+				AC475F3621507312003B2BC3 /* MainView.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		AC80D74F2149D943001B00EF = {

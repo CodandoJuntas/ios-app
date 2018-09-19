@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 enum FeedRouter {
-    case categories
+    case feed
 }
 
 extension FeedRouter: TargetType {
@@ -20,7 +20,7 @@ extension FeedRouter: TargetType {
     
     var path: String {
         switch self {
-        case .categories:
+        case .feed:
             return "/contents.json"
         }
     }
@@ -31,7 +31,7 @@ extension FeedRouter: TargetType {
     
     var sampleData: Data {
         switch self {
-        case .categories:
+        case .feed:
             let data = ["category_test1", "category_test2", "category_test3"]
             return arrayJsonSerializedUTF8(json: data)
             
@@ -40,7 +40,7 @@ extension FeedRouter: TargetType {
     
     var parameters: [String: Any]? {
         switch self {
-        case .categories:
+        case .feed:
             return nil
         }
     }

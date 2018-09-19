@@ -11,12 +11,16 @@ import Moya
 import RxSwift
 
 class FeedRepositoryImpl: FeedRepository {
-    
+
     let service: FeedService
     
     init(service: FeedService) {
         self.service = service
     }
     
+    func getFeed() -> Single<Feed> {
+        return self.service.feed()
+        .map(Feed.self)
+    }
     
 }

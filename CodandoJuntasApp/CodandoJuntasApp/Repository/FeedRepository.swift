@@ -16,5 +16,5 @@ import Moya
 //}
 
 protocol FeedRepository: class {
-    
+    func getFeed() -> Single<Feed>
 }

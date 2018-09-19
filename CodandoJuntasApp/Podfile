@@ -21,7 +21,6 @@ target 'CodandoJuntasApp' do
   #Clean Code
   pod 'SwiftLint'
   pod 'R.swift'
-  
  
 
 end
