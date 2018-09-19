@@ -36,11 +36,12 @@ class AppCoordinator: Coordinator {
     
     func start() {
         
-        if storage.firstAccess {
-            //Show Onboarding
-        } else {
-            showMainView()
-        }
+        showMainView()
+//        if storage.firstAccess {
+//            //Show Onboarding
+//        } else {
+//            showMainView()
+//        }
     }
     
     fileprivate func showMainView() {

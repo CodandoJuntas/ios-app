@@ -19,8 +19,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMN-Pm-Tyf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bMN-Pm-Tyf" secondAttribute="bottom" id="4j3-UT-kFM"/>
+                <constraint firstItem="bMN-Pm-Tyf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D90-ij-PNf"/>
+                <constraint firstItem="bMN-Pm-Tyf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DPH-FY-Jen"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bMN-Pm-Tyf" secondAttribute="trailing" id="YwM-gh-Tfo"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
 </document>
