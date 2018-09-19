@@ -30,7 +30,10 @@ extension DefaultContainer {
         
   
         self.container.register(MainView.self) { resolver in
-            MainView()
+            MainView(
+                repository: resolver.resolve(FeedRepository.self)!,
+                storage: resolver.resolve(LocalStorage.self)!
+            )
         }
         
 //        self.container.register(OnboardingView.self) { _ in

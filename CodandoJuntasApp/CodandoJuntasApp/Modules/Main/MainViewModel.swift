@@ -12,8 +12,18 @@ import RxCocoa
 class MainViewModel {
     
     //let input: Driver<Void>
+    let repository: FeedRepository
+    let storage: LocalStorage
     
-    init() {
+    let feed: Driver<Feed>
+    
+    init(feedRepository: FeedRepository, storage: LocalStorage) {
+        self.repository = feedRepository
+        self.storage = storage
+        
+        self.feed = repository.getFeed()
+        .asDriver(onErrorJustReturn: Feed())
+        
         
     }
 }

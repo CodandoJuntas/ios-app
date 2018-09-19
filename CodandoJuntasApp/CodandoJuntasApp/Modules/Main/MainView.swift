@@ -26,8 +26,12 @@ class MainView: UIViewController {
     var viewModel: MainViewModel!
     
     weak var delegate: MainDelegate?
-
-    init() {
+    let localStorage: LocalStorage
+    let repository: FeedRepository
+    
+    init(repository: FeedRepository, storage: LocalStorage) {
+        self.repository = repository
+        self.localStorage = storage
         super.init(nibName: String(describing: MainView.self), bundle: nil)
     }
     
@@ -47,7 +51,7 @@ class MainView: UIViewController {
 extension MainView {
     
     func setupViewModel() {
-        self.viewModel = MainViewModel( )
+        self.viewModel = MainViewModel(feedRepository: self.repository, storage: self.localStorage)
     }
     
     func configureViews() {
@@ -55,6 +59,8 @@ extension MainView {
     }
     
     func setupBindings() {
-
+        viewModel.feed.drive(onNext: { (feed) in
+            print("DONE!!!!")
+        }).disposed(by: rx.disposeBag)
     }
 }

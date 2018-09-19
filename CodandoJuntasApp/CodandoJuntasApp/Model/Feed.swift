@@ -26,6 +26,15 @@ struct Feed: Codable {
         case categories, projects
     }
     
+    init() {
+        self.title = ""
+        self.header = ""
+        self.headerContributing = ""
+        self.iosAppLink = ""
+        self.categories = []
+        self.projects = []
+    }
+    
     init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
