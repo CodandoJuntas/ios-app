@@ -37,15 +37,33 @@ class AppCoordinator: Coordinator {
     func start() {
         
         showMainView()
-//        if storage.firstAccess {
-//            //Show Onboarding
-//        } else {
-//            showMainView()
-//        }
+        if storage.firstAccess {
+            showOnBoarding()
+        } else {
+            showMainView()
+        }
     }
     
     fileprivate func showMainView() {
         let view = container.resolve(MainView.self)!
+        view.delegate = self
+        self.currentView = view
+    }
+    
+    fileprivate func showOnBoarding() {
+        let view = container.resolve(OnboardingView.self)!
+        view.delegate = self
+        self.currentView = view
+    }
+    
+    fileprivate func showProfileView() {
+        let view = container.resolve(ProfileView.self)!
+        view.delegate = self
+        self.currentView = view
+    }
+    
+    fileprivate func showLoginView() {
+        let view = container.resolve(LoginView.self)!
         view.delegate = self
         self.currentView = view
     }
@@ -55,6 +73,26 @@ class AppCoordinator: Coordinator {
 
 
 extension AppCoordinator: MainDelegate {
+    
+}
+
+extension AppCoordinator: OnboardingViewDelegate {
+    
+}
+
+extension AppCoordinator: LoginViewDelegate {
+    func openSignUp() {
+        
+    }
+    
+    func skipLogin() {
+        
+    }
+    
+    
+}
+
+extension AppCoordinator: ProfileViewDelegate {
     
 }
 
