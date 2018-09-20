@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="CodandoJuntasApp" customModuleProvider="target">
+            <connections>
+                <outlet property="facebookLoginButton" destination="Wdy-Ln-C3g" id="0mP-cd-6nn"/>
+                <outlet property="githubLoginButton" destination="E87-hy-fa5" id="nMA-w7-qoF"/>
+                <outlet property="signUpButton" destination="Ql1-ng-7Lb" id="kj2-Ke-nnf"/>
+                <outlet property="skipLoginButton" destination="Gc2-oA-wYx" id="TaB-76-vP2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6k-Ue-dNP" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-Ln-C3g">
+                            <rect key="frame" x="57.5" y="313.5" width="260" height="40"/>
+                            <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Hlp-f6-qfa"/>
+                                <constraint firstAttribute="width" constant="260" id="K21-cP-E9Y"/>
+                            </constraints>
+                            <state key="normal" title="Entrar com o Facebook">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-oA-wYx">
+                            <rect key="frame" x="57.5" y="619" width="260" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="FR3-oq-6UM"/>
+                                <constraint firstAttribute="width" constant="260" id="T9C-gT-m10"/>
+                            </constraints>
+                            <state key="normal" title="Pular esta etapa">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E87-hy-fa5">
+                            <rect key="frame" x="57.5" y="363.5" width="260" height="40"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="VMZ-dJ-W1V"/>
+                                <constraint firstAttribute="height" constant="40" id="lPh-Q3-jqR"/>
+                            </constraints>
+                            <state key="normal" title="Entrar com o Github">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ql1-ng-7Lb">
+                            <rect key="frame" x="57.5" y="413.5" width="260" height="40"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="ZND-aB-NGx"/>
+                                <constraint firstAttribute="height" constant="40" id="clR-fe-uoN"/>
+                            </constraints>
+                            <state key="normal" title="Criar uma conta">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Wdy-Ln-C3g" firstAttribute="centerY" secondItem="j6k-Ue-dNP" secondAttribute="centerY" id="0H2-ua-8Xc"/>
+                        <constraint firstItem="E87-hy-fa5" firstAttribute="centerX" secondItem="Wdy-Ln-C3g" secondAttribute="centerX" id="5Cj-2B-w3E"/>
+                        <constraint firstAttribute="bottom" secondItem="Gc2-oA-wYx" secondAttribute="bottom" constant="8" id="Loz-CV-3ZW"/>
+                        <constraint firstItem="Wdy-Ln-C3g" firstAttribute="centerX" secondItem="j6k-Ue-dNP" secondAttribute="centerX" id="Oyt-dy-MrU"/>
+                        <constraint firstItem="E87-hy-fa5" firstAttribute="top" secondItem="Wdy-Ln-C3g" secondAttribute="bottom" constant="10" id="TSS-3Q-x9E"/>
+                        <constraint firstItem="Gc2-oA-wYx" firstAttribute="centerX" secondItem="Wdy-Ln-C3g" secondAttribute="centerX" id="UlO-Z2-m41"/>
+                        <constraint firstItem="Ql1-ng-7Lb" firstAttribute="top" secondItem="E87-hy-fa5" secondAttribute="bottom" constant="10" id="bXh-07-QsR"/>
+                        <constraint firstItem="Ql1-ng-7Lb" firstAttribute="centerX" secondItem="Wdy-Ln-C3g" secondAttribute="centerX" id="d5e-aU-56T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j6k-Ue-dNP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R55-wm-49L"/>
+                <constraint firstItem="j6k-Ue-dNP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XKE-1q-wuJ"/>
+                <constraint firstItem="j6k-Ue-dNP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Ymu-aD-EA1"/>
+                <constraint firstItem="j6k-Ue-dNP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kE9-d1-ahd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133.59999999999999" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

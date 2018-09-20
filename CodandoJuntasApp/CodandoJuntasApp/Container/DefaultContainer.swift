@@ -36,13 +36,22 @@ extension DefaultContainer {
             )
         }
         
-//        self.container.register(OnboardingView.self) { _ in
-//            OnboardingView()
-//        }
-//
-//        self.container.register(AboutView.self) { _ in
-//            AboutView()
-//        }
+        self.container.register(OnboardingView.self) { _ in
+            OnboardingView()
+        }
+
+        self.container.register(LoginView.self) { resolver in
+            LoginView(
+                repository: resolver.resolve(SignInRepository.self)!,
+                storage: resolver.resolve(LocalStorage.self)!
+            )
+        }
+        
+        self.container.register(ProfileView.self) { resolver in
+            ProfileView(
+                storage: resolver.resolve(LocalStorage.self)!
+            )
+        }
     }
     
 }
@@ -56,9 +65,19 @@ extension DefaultContainer {
             return FeedServiceImpl(provider: provider)
         }
         
+        self.container.register(SignInService.self) { _ in
+            return SignInServiceImpl()
+        }
+        
         self.container.register(FeedRepository.self) { resolver in
             FeedRepositoryImpl(
                 service: resolver.resolve(FeedService.self)!
+            )
+        }
+        
+        self.container.register(SignInRepository.self) { resolver in
+            SignInRepositoryImpl(
+                service: resolver.resolve(SignInService.self)!
             )
         }
     }
@@ -81,6 +100,8 @@ extension DefaultContainer {
         self.container.register(LocalStorage.self) { _ in
             return LocalStorageImpl()
         }
+        
+        
     }
     
 }
