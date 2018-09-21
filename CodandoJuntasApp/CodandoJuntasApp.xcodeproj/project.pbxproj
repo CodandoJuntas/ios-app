@@ -40,6 +40,14 @@
 		AC475F822153168C003B2BC3 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F812153168C003B2BC3 /* SignInService.swift */; };
 		AC475F8421531699003B2BC3 /* SignInServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8321531699003B2BC3 /* SignInServiceImpl.swift */; };
 		AC475F86215318E0003B2BC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F85215318E0003B2BC3 /* User.swift */; };
+		AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8721547AC9003B2BC3 /* CloudTagView + rx.swift */; };
+		AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8A21547B4A003B2BC3 /* CloudTagView.swift */; };
+		AC475F9221547C72003B2BC3 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8C21547C71003B2BC3 /* UIColor+Utils.swift */; };
+		AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8D21547C71003B2BC3 /* URL+Utils.swift */; };
+		AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8E21547C71003B2BC3 /* UIView+Constraints.swift */; };
+		AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F8F21547C72003B2BC3 /* String+Utils.swift */; };
+		AC475F9621547C72003B2BC3 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F9021547C72003B2BC3 /* UIView+Utils.swift */; };
+		AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F9121547C72003B2BC3 /* UITextFIeld+Utils.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
@@ -82,6 +90,14 @@
 		AC475F812153168C003B2BC3 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		AC475F8321531699003B2BC3 /* SignInServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServiceImpl.swift; sourceTree = "<group>"; };
 		AC475F85215318E0003B2BC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC475F8721547AC9003B2BC3 /* CloudTagView + rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudTagView + rx.swift"; sourceTree = "<group>"; };
+		AC475F8A21547B4A003B2BC3 /* CloudTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTagView.swift; sourceTree = "<group>"; };
+		AC475F8C21547C71003B2BC3 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		AC475F8D21547C71003B2BC3 /* URL+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
+		AC475F8E21547C71003B2BC3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		AC475F8F21547C72003B2BC3 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		AC475F9021547C72003B2BC3 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		AC475F9121547C72003B2BC3 /* UITextFIeld+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFIeld+Utils.swift"; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +138,7 @@
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC475F8921547B22003B2BC3 /* Components */,
 				AC475F66215305A9003B2BC3 /* Feed */,
 				AC475F652153059C003B2BC3 /* Profile */,
 				AC475F6421530589003B2BC3 /* Login */,
@@ -197,6 +214,7 @@
 			children = (
 				AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */,
 				AC475F5521509EA4003B2BC3 /* Rx+Utils.swift */,
+				AC475F8721547AC9003B2BC3 /* CloudTagView + rx.swift */,
 			);
 			path = "Rx Utilities";
 			sourceTree = "<group>";
@@ -204,6 +222,12 @@
 		AC475F5C21509FE3003B2BC3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AC475F8F21547C72003B2BC3 /* String+Utils.swift */,
+				AC475F8C21547C71003B2BC3 /* UIColor+Utils.swift */,
+				AC475F9121547C72003B2BC3 /* UITextFIeld+Utils.swift */,
+				AC475F8E21547C71003B2BC3 /* UIView+Constraints.swift */,
+				AC475F9021547C72003B2BC3 /* UIView+Utils.swift */,
+				AC475F8D21547C71003B2BC3 /* URL+Utils.swift */,
 				AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */,
 				AC475F5A21509FDD003B2BC3 /* Constants.swift */,
 			);
@@ -292,6 +316,14 @@
 				AC475F8321531699003B2BC3 /* SignInServiceImpl.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		AC475F8921547B22003B2BC3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC475F8A21547B4A003B2BC3 /* CloudTagView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AC80D74F2149D943001B00EF = {
@@ -435,6 +467,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
@@ -447,6 +480,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
@@ -463,13 +497,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = R.Swift;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,11 +515,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC475F7121530D0E003B2BC3 /* LoginViewModel.swift in Sources */,
+				AC475F9621547C72003B2BC3 /* UIView+Utils.swift in Sources */,
 				AC475F8421531699003B2BC3 /* SignInServiceImpl.swift in Sources */,
 				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
 				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
 				AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */,
 				AC475F3721507312003B2BC3 /* MainView.swift in Sources */,
+				AC475F9221547C72003B2BC3 /* UIColor+Utils.swift in Sources */,
 				AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */,
 				AC475F5221507C6D003B2BC3 /* FeedServicempl.swift in Sources */,
 				AC475F86215318E0003B2BC3 /* User.swift in Sources */,
@@ -500,9 +532,11 @@
 				AC475F7E2153144F003B2BC3 /* SignInRepository.swift in Sources */,
 				AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */,
 				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
+				AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */,
 				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
+				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,
 				AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */,
@@ -510,8 +544,12 @@
 				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
 				AC475F3821507312003B2BC3 /* MainViewModel.swift in Sources */,
+				AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */,
+				AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */,
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
+				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
 				AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */,
+				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 				AC475F822153168C003B2BC3 /* SignInService.swift in Sources */,
 			);

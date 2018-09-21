@@ -17,6 +17,7 @@ target 'CodandoJuntasApp' do
   pod 'RxSwiftUtilities', '~> 2.0.1'
   pod 'Moya/RxSwift'
   pod 'RxSwiftExt'
+  pod 'Reusable'
   
   #Clean Code
   pod 'SwiftLint'

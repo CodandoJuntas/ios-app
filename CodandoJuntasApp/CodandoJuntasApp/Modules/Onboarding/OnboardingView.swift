@@ -18,10 +18,15 @@ import RxCocoa
  */
 
 protocol OnboardingViewDelegate: class {
-    
+    func nextPage()
 }
 
 class OnboardingView: UIViewController {
+    @IBOutlet weak var clouldTagView: CloudTagView!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    let tagList = ["Swift", "Java", "C", "C++", "Python", "Javascript", "Processing", "Git", "HTML", "CSS", "Objective C", "Ruby", "Kotlin"]
+    
     
     var viewModel: OnboardingViewModel!
     
@@ -51,10 +56,14 @@ extension OnboardingView {
     }
     
     func configureViews() {
-        
+        self.clouldTagView.items = tagList
     }
     
     func setupBindings() {
+        
+        self.nextButton.rx.tap.bind { [weak self] _ in
+            self?.delegate?.nextPage()
+            }.disposed(by: rx.disposeBag)
 
     }
 }

@@ -77,6 +77,10 @@ extension AppCoordinator: MainDelegate {
 }
 
 extension AppCoordinator: OnboardingViewDelegate {
+    func nextPage() {
+        
+    }
+    
     
 }
 

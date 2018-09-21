@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModule="CodandoJuntasApp" customModuleProvider="target">
             <connections>
+                <outlet property="clouldTagView" destination="Wcq-Jd-OZB" id="bAq-Vj-mF1"/>
+                <outlet property="nextButton" destination="7fu-Lo-C2O" id="qwy-Gl-4jh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +21,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-Jd-OZB" customClass="CloudTagView" customModule="CodandoJuntasApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="177" width="343" height="299"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="IyE-I9-AGa"/>
+                        <constraint firstAttribute="height" constant="299" id="PI1-Hd-Ekv"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fu-Lo-C2O">
+                    <rect key="frame" x="57.5" y="607" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9mP-iV-blm"/>
+                        <constraint firstAttribute="width" constant="260" id="zhV-9e-h4H"/>
+                    </constraints>
+                    <state key="normal" title="Próximo">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que você Conhece?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM1-h2-Z79">
+                    <rect key="frame" x="34" y="144" width="210" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7fu-Lo-C2O" secondAttribute="bottom" constant="20" id="33i-Q4-WgQ"/>
+                <constraint firstItem="Wcq-Jd-OZB" firstAttribute="top" secondItem="GM1-h2-Z79" secondAttribute="bottom" constant="6" id="BON-23-lGq"/>
+                <constraint firstItem="Wcq-Jd-OZB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZHY-JE-ecE"/>
+                <constraint firstItem="7fu-Lo-C2O" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="izq-r4-ddg"/>
+                <constraint firstItem="Wcq-Jd-OZB" firstAttribute="leading" secondItem="GM1-h2-Z79" secondAttribute="trailing" constant="-228" id="rag-3q-jAL"/>
+                <constraint firstItem="Wcq-Jd-OZB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="157" id="rn9-jC-szQ"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
 </document>
