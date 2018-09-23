@@ -20,6 +20,7 @@ import RxCocoa
 protocol LoginViewDelegate: class {
     func openSignUp()
     func skipLogin()
+    func loginSuccess()
 }
 
 class LoginView: UIViewController {

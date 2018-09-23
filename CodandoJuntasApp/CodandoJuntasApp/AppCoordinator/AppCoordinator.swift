@@ -78,7 +78,9 @@ extension AppCoordinator: MainDelegate {
 
 extension AppCoordinator: OnboardingViewDelegate {
     func nextPage() {
-        
+        //check user Login
+        self.showLoginView()
+        //self.showMainView()
     }
     
     
@@ -90,9 +92,12 @@ extension AppCoordinator: LoginViewDelegate {
     }
     
     func skipLogin() {
-        
+        self.showMainView()
     }
     
+    func loginSuccess(){
+        
+    }
     
 }
 
