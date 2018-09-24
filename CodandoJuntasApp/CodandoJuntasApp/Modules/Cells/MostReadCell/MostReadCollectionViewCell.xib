@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRoundedMedium_21022.ttf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MostReadCollectionViewCell" id="gTV-IL-0wX" customClass="MostReadCollectionViewCell" customModule="CodandoJuntasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-oX-si4">
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="87"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx4-vo-1hS" userLabel="Tag">
+                                <rect key="frame" x="5" y="5" width="51" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opinião" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-l9-t8M">
+                                        <rect key="frame" x="6" y="1" width="39" height="10"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ivY-l9-t8M" firstAttribute="leading" secondItem="Mx4-vo-1hS" secondAttribute="leading" constant="6" id="9ki-BT-HWK"/>
+                                    <constraint firstAttribute="bottom" secondItem="ivY-l9-t8M" secondAttribute="bottom" constant="1" id="Cqs-2V-bnu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ivY-l9-t8M" secondAttribute="trailing" constant="6" id="ll2-19-IoB"/>
+                                    <constraint firstItem="ivY-l9-t8M" firstAttribute="top" secondItem="Mx4-vo-1hS" secondAttribute="top" constant="1" id="pbw-He-vVW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekh-OL-qKT">
+                                <rect key="frame" x="12" y="44" width="110" height="33"/>
+                                <string key="text">Qual a melhor 
+linguagem para 
+iniciantes?</string>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="11"/>
+                                <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ekh-OL-qKT" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" constant="12" id="5uY-3q-eR2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ekh-OL-qKT" secondAttribute="trailing" constant="12" id="7PA-0C-d9h"/>
+                            <constraint firstAttribute="bottom" secondItem="Ekh-OL-qKT" secondAttribute="bottom" constant="10" id="84x-wv-Dzu"/>
+                            <constraint firstItem="Mx4-vo-1hS" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" constant="5" id="Ckv-7p-ZST"/>
+                            <constraint firstItem="Mx4-vo-1hS" firstAttribute="top" secondItem="c5F-oX-si4" secondAttribute="top" constant="5" id="IlG-DZ-nGc"/>
+                            <constraint firstAttribute="width" constant="134" id="eYB-pW-rzN"/>
+                            <constraint firstAttribute="height" constant="87" id="nwQ-7b-ahI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="c5F-oX-si4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7IL-mL-It1"/>
+                <constraint firstItem="c5F-oX-si4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7PC-Tt-mBA"/>
+                <constraint firstAttribute="bottom" secondItem="c5F-oX-si4" secondAttribute="bottom" id="K2i-EM-dg2"/>
+                <constraint firstAttribute="trailing" secondItem="c5F-oX-si4" secondAttribute="trailing" id="LNK-OZ-WDa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="180" height="144"/>
+            <point key="canvasLocation" x="241.59999999999999" y="181.70914542728636"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -9,9 +9,14 @@
 import UIKit
 
 class MostReadTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectionView.register(R.nib.mostReadCollectionViewCell)
+        collectionView.delegate = self
+        collectionView.dataSource = self
         // Initialization code
     }
 
@@ -20,5 +25,20 @@ class MostReadTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+}
+
+extension MostReadTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.mostReadCollectionViewCell, for: indexPath) as! MostReadCollectionViewCell
+        return cell
+    }
+    
+    
     
 }

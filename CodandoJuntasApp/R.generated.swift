@@ -246,7 +246,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 8 nibs.
   struct nib {
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
@@ -256,6 +256,8 @@ struct R: Rswift.Validatable {
     static let highlightedTableViewCell = _R.nib._HighlightedTableViewCell()
     /// Nib `LoginView`.
     static let loginView = _R.nib._LoginView()
+    /// Nib `MostReadCollectionViewCell`.
+    static let mostReadCollectionViewCell = _R.nib._MostReadCollectionViewCell()
     /// Nib `MostReadTableViewCell`.
     static let mostReadTableViewCell = _R.nib._MostReadTableViewCell()
     /// Nib `OnboardingView`.
@@ -283,6 +285,11 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.loginView)
     }
     
+    /// `UINib(name: "MostReadCollectionViewCell", in: bundle)`
+    static func mostReadCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mostReadCollectionViewCell)
+    }
+    
     /// `UINib(name: "MostReadTableViewCell", in: bundle)`
     static func mostReadTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.mostReadTableViewCell)
@@ -301,12 +308,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `FeedTableViewCell`.
     static let feedTableViewCell: Rswift.ReuseIdentifier<FeedTableViewCell> = Rswift.ReuseIdentifier(identifier: "FeedTableViewCell")
     /// Reuse identifier `HighlightedTableViewCell`.
     static let highlightedTableViewCell: Rswift.ReuseIdentifier<HighlightedTableViewCell> = Rswift.ReuseIdentifier(identifier: "HighlightedTableViewCell")
+    /// Reuse identifier `MostReadCollectionViewCell`.
+    static let mostReadCollectionViewCell: Rswift.ReuseIdentifier<MostReadCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadCollectionViewCell")
     /// Reuse identifier `MostReadTableViewCell`.
     static let mostReadTableViewCell: Rswift.ReuseIdentifier<MostReadTableViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadTableViewCell")
     
@@ -418,6 +427,20 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _MostReadCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = MostReadCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "MostReadCollectionViewCell"
+      let name = "MostReadCollectionViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> MostReadCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostReadCollectionViewCell
       }
       
       fileprivate init() {}
