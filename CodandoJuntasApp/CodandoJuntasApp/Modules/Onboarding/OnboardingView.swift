@@ -25,7 +25,7 @@ class OnboardingView: UIViewController {
     @IBOutlet weak var clouldTagView: CloudTagView!
     @IBOutlet weak var nextButton: UIButton!
     
-    let tagList = ["Swift", "Java", "C", "C++", "Python", "Javascript", "Processing", "Git", "HTML", "CSS", "Objective C", "Ruby", "Kotlin"]
+    let tagList = ["Swift", "Java", "Cobol", "C++", "Python", "Javascript", "Processing", "Git", "HTML", "CSS", "Objective C", "Ruby", "Kotlin", "TypeScript", "Go", "Scala"]
     
     
     var viewModel: OnboardingViewModel!

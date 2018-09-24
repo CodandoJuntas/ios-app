@@ -17,6 +17,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedView" customModule="CodandoJuntasApp" customModuleProvider="target">
             <connections>
+                <outlet property="headerButton" destination="CT5-2Q-XOF" id="A2E-uy-opB"/>
+                <outlet property="headerView" destination="6LK-sC-Wp2" id="ZCw-lN-tRq"/>
                 <outlet property="tableView" destination="aYE-vn-Ucu" id="bed-qg-stS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -51,15 +53,22 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT5-2Q-XOF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="CT5-2Q-XOF" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="top" id="DGh-eB-EpT"/>
                         <constraint firstAttribute="trailing" secondItem="VtB-Cl-GZh" secondAttribute="trailing" constant="20" id="EPZ-Lg-PeK"/>
+                        <constraint firstAttribute="trailing" secondItem="CT5-2Q-XOF" secondAttribute="trailing" id="VY2-cZ-ZPg"/>
                         <constraint firstItem="VtB-Cl-GZh" firstAttribute="centerY" secondItem="6LK-sC-Wp2" secondAttribute="centerY" id="YPL-TU-iq6"/>
                         <constraint firstAttribute="height" constant="48" id="aVh-vk-Piu"/>
                         <constraint firstItem="VtB-Cl-GZh" firstAttribute="leading" secondItem="AOC-dy-yh8" secondAttribute="trailing" constant="27" id="cbb-ew-sil"/>
+                        <constraint firstItem="CT5-2Q-XOF" firstAttribute="leading" secondItem="6LK-sC-Wp2" secondAttribute="leading" id="hP0-iQ-5yd"/>
                         <constraint firstItem="AOC-dy-yh8" firstAttribute="centerY" secondItem="6LK-sC-Wp2" secondAttribute="centerY" id="q9B-ad-D2p"/>
                         <constraint firstItem="AOC-dy-yh8" firstAttribute="leading" secondItem="6LK-sC-Wp2" secondAttribute="leading" constant="27" id="tyd-K1-sqC"/>
+                        <constraint firstAttribute="bottom" secondItem="CT5-2Q-XOF" secondAttribute="bottom" id="xFT-Kd-c1V"/>
                     </constraints>
                 </view>
             </subviews>

@@ -73,14 +73,18 @@ class AppCoordinator: Coordinator {
 
 
 extension AppCoordinator: FeedDelegate {
+    func openProfile() {
+        self.showProfileView()
+    }
+    
     
 }
 
 extension AppCoordinator: OnboardingViewDelegate {
     func nextPage() {
         //check user Login
-        self.showLoginView()
-        //self.showMainView()
+       // self.showLoginView()
+        self.showMainView()
     }
     
     
@@ -96,12 +100,16 @@ extension AppCoordinator: LoginViewDelegate {
     }
     
     func loginSuccess(){
-        
+        self.showMainView()
     }
     
 }
 
 extension AppCoordinator: ProfileViewDelegate {
+    func closeProfile() {
+        self.showMainView()
+    }
+    
     
 }
 

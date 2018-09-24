@@ -18,7 +18,7 @@ import RxCocoa
  */
 
 protocol FeedDelegate: class {
-    
+    func openProfile()
 }
 
 class FeedView: UIViewController {
@@ -28,8 +28,11 @@ class FeedView: UIViewController {
     var feedTableViewDataSource: FeedTableViewDataSource!
     weak var delegate: FeedDelegate?
     
+    
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var headerButton: UIButton!
     
     let localStorage: LocalStorage
     let repository: FeedRepository
@@ -64,6 +67,7 @@ extension FeedView {
     }
     
     func configureViews() {
+        headerView.addShadow(offSetX: 0, offSetY: 3, radius: 3, opacity: 0.3)
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableViewAutomaticDimension
         registerCells()
@@ -76,6 +80,10 @@ extension FeedView {
             
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
+        
+        self.headerButton.rx.tap.bind { [weak self] _ in
+            self?.delegate?.openProfile()
+            }.disposed(by: rx.disposeBag)
     }
     
 }

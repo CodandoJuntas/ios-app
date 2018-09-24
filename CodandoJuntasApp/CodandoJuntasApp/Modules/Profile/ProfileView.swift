@@ -18,14 +18,20 @@ import RxCocoa
  */
 
 protocol ProfileViewDelegate: class {
+    func closeProfile()
     
 }
 
 class ProfileView: UIViewController {
+    @IBOutlet weak var headerView: UIView!
     
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var cloudTagView: CloudTagView!
     var viewModel: ProfileViewModel!
     
     weak var delegate: ProfileViewDelegate?
+    
+    let tagList = ["Swift", "Processing", "Git", "Objective C", "PHP"]
     
     let localStorage: LocalStorage
 
@@ -54,10 +60,14 @@ extension ProfileView {
     }
     
     func configureViews() {
-        
+        headerView.addShadow(offSetX: 0, offSetY: 3, radius: 3, opacity: 0.3)
+        cloudTagView.items = self.tagList
     }
     
     func setupBindings() {
-
+        
+        self.closeButton.rx.tap.bind { [weak self] _ in
+            self?.delegate?.closeProfile()
+            }.disposed(by: rx.disposeBag)
     }
 }

@@ -75,6 +75,7 @@
 		AC475FD021589D66003B2BC3 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCF21589D66003B2BC3 /* dog.jpg */; };
 		AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */; };
 		AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */; };
+		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
@@ -152,6 +153,7 @@
 		AC475FCF21589D66003B2BC3 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				AC475F8D21547C71003B2BC3 /* URL+Utils.swift */,
 				AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */,
 				AC475F5A21509FDD003B2BC3 /* Constants.swift */,
+				AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
 				AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */,
 				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
+				AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,

@@ -368,6 +368,7 @@ struct _R: Rswift.Validatable {
       try _HighlightedTableViewCell.validate()
       try _FeedTableViewCell.validate()
       try _FeedView.validate()
+      try _ProfileView.validate()
     }
     
     struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
@@ -471,12 +472,16 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct _ProfileView: Rswift.NibResourceType {
+    struct _ProfileView: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ProfileView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'ProfileView', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
