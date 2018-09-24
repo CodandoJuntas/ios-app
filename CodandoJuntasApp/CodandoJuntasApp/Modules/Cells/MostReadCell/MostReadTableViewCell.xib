@@ -20,12 +20,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MostReadTableViewCell" rowHeight="267" id="KGk-i7-Jjw" customClass="MostReadTableViewCell" customModule="CodandoJuntasApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="384" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="384" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="787-NU-ZWy">
-                        <rect key="frame" x="20" y="10" width="364" height="104.5"/>
+                        <rect key="frame" x="20" y="10.5" width="364" height="105"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tópicos Sugeridos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98s-Wl-UZd">
                                 <rect key="frame" x="0.0" y="0.0" width="111" height="12"/>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lrH-sR-sFB">
-                                <rect key="frame" x="0.0" y="18" width="364" height="86.5"/>
+                                <rect key="frame" x="0.0" y="18" width="364" height="87"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xnz-D8-Pui">
                                     <size key="itemSize" width="50" height="50"/>
@@ -51,6 +51,7 @@
                             <constraint firstAttribute="trailing" secondItem="lrH-sR-sFB" secondAttribute="trailing" id="dZV-YW-lhh"/>
                             <constraint firstItem="lrH-sR-sFB" firstAttribute="top" secondItem="787-NU-ZWy" secondAttribute="top" constant="18" id="jA3-sN-m6l"/>
                             <constraint firstItem="98s-Wl-UZd" firstAttribute="leading" secondItem="787-NU-ZWy" secondAttribute="leading" id="kEo-Zj-vaT"/>
+                            <constraint firstAttribute="height" constant="105" id="nAB-9v-Xlo"/>
                             <constraint firstAttribute="bottom" secondItem="lrH-sR-sFB" secondAttribute="bottom" id="vaS-wn-6Fd"/>
                             <constraint firstItem="lrH-sR-sFB" firstAttribute="top" secondItem="98s-Wl-UZd" secondAttribute="bottom" constant="6" id="xms-XM-00X"/>
                         </constraints>

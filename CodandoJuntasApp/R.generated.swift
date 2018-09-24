@@ -22,7 +22,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 12 files.
+  /// This `R.file` struct is generated, and contains static references to 17 files.
   struct file {
     /// Resource file `GothamRounded-Bold.otf`.
     static let gothamRoundedBoldOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Bold", pathExtension: "otf")
@@ -48,6 +48,16 @@ struct R: Rswift.Validatable {
     static let gothamRoundedLight_21020Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedLight_21020", pathExtension: "ttf")
     /// Resource file `GothamRoundedMedium_21022.ttf`.
     static let gothamRoundedMedium_21022Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedMedium_21022", pathExtension: "ttf")
+    /// Resource file `ada-lovelace.jpg`.
+    static let adaLovelaceJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "ada-lovelace", pathExtension: "jpg")
+    /// Resource file `dog.jpg`.
+    static let dogJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "dog", pathExtension: "jpg")
+    /// Resource file `gitHubLogo.jpg`.
+    static let gitHubLogoJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "gitHubLogo", pathExtension: "jpg")
+    /// Resource file `github-mark.png`.
+    static let githubMarkPng = Rswift.FileResource(bundle: R.hostingBundle, name: "github-mark", pathExtension: "png")
+    /// Resource file `swift-og.png`.
+    static let swiftOgPng = Rswift.FileResource(bundle: R.hostingBundle, name: "swift-og", pathExtension: "png")
     
     /// `bundle.url(forResource: "GothamRounded-Bold", withExtension: "otf")`
     static func gothamRoundedBoldOtf(_: Void = ()) -> Foundation.URL? {
@@ -121,6 +131,36 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
+    /// `bundle.url(forResource: "ada-lovelace", withExtension: "jpg")`
+    static func adaLovelaceJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adaLovelaceJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "dog", withExtension: "jpg")`
+    static func dogJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dogJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "gitHubLogo", withExtension: "jpg")`
+    static func gitHubLogoJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gitHubLogoJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "github-mark", withExtension: "png")`
+    static func githubMarkPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.githubMarkPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "swift-og", withExtension: "png")`
+    static func swiftOgPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.swiftOgPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
@@ -165,8 +205,44 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 5 images.
   struct image {
+    /// Image `ada-lovelace.jpg`.
+    static let adaLovelaceJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "ada-lovelace.jpg")
+    /// Image `dog.jpg`.
+    static let dogJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "dog.jpg")
+    /// Image `gitHubLogo.jpg`.
+    static let gitHubLogoJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "gitHubLogo.jpg")
+    /// Image `github-mark`.
+    static let githubMark = Rswift.ImageResource(bundle: R.hostingBundle, name: "github-mark")
+    /// Image `swift-og`.
+    static let swiftOg = Rswift.ImageResource(bundle: R.hostingBundle, name: "swift-og")
+    
+    /// `UIImage(named: "ada-lovelace.jpg", bundle: ..., traitCollection: ...)`
+    static func adaLovelaceJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.adaLovelaceJpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "dog.jpg", bundle: ..., traitCollection: ...)`
+    static func dogJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dogJpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "gitHubLogo.jpg", bundle: ..., traitCollection: ...)`
+    static func gitHubLogoJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.gitHubLogoJpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "github-mark", bundle: ..., traitCollection: ...)`
+    static func githubMark(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.githubMark, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "swift-og", bundle: ..., traitCollection: ...)`
+    static func swiftOg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.swiftOg, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -262,7 +338,7 @@ struct R: Rswift.Validatable {
   
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      // There are no resources to validate
+      try _R.validate()
     }
     
     fileprivate init() {}
@@ -273,9 +349,19 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
-  struct nib {
-    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+struct _R: Rswift.Validatable {
+  static func validate() throws {
+    try nib.validate()
+  }
+  
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _HighlightedTableViewCell.validate()
+      try _FeedTableViewCell.validate()
+      try _FeedView.validate()
+    }
+    
+    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
       typealias ReusableType = FeedTableViewCell
       
       let bundle = R.hostingBundle
@@ -286,10 +372,14 @@ struct _R {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTableViewCell
       }
       
+      static func validate() throws {
+        if UIKit.UIImage(named: "gitHubLogo.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'gitHubLogo.jpg' is used in nib 'FeedTableViewCell', but couldn't be loaded.") }
+      }
+      
       fileprivate init() {}
     }
     
-    struct _FeedView: Rswift.NibResourceType {
+    struct _FeedView: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "FeedView"
       
@@ -297,10 +387,14 @@ struct _R {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
+      static func validate() throws {
+        if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
+      }
+      
       fileprivate init() {}
     }
     
-    struct _HighlightedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+    struct _HighlightedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
       typealias ReusableType = HighlightedTableViewCell
       
       let bundle = R.hostingBundle
@@ -309,6 +403,10 @@ struct _R {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HighlightedTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HighlightedTableViewCell
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "dog.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'dog.jpg' is used in nib 'HighlightedTableViewCell', but couldn't be loaded.") }
       }
       
       fileprivate init() {}

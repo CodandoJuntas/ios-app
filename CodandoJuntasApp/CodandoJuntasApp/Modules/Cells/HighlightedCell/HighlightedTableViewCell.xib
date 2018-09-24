@@ -30,7 +30,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPV-GH-d6S">
                         <rect key="frame" x="20" y="20" width="281" height="217.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-ee-fKn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-ee-fKn">
                                 <rect key="frame" x="0.0" y="0.0" width="281" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Qbs-zC-ubl"/>
@@ -60,6 +60,7 @@ e exercitar o conhecimento.</string>
                                     <constraint firstAttribute="trailing" secondItem="hY4-qJ-Rt0" secondAttribute="trailing" constant="14" id="EzV-fn-DV5"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hY4-qJ-Rt0" secondAttribute="bottom" constant="8" id="FsC-6R-f3A"/>
                                     <constraint firstItem="0zu-Xu-cPl" firstAttribute="top" secondItem="f7u-zA-36k" secondAttribute="top" constant="8" id="Koh-Hk-WMv"/>
+                                    <constraint firstAttribute="height" constant="87.5" id="Kuw-KA-5E0"/>
                                     <constraint firstItem="hY4-qJ-Rt0" firstAttribute="leading" secondItem="f7u-zA-36k" secondAttribute="leading" constant="14" id="WFk-ve-nZq"/>
                                     <constraint firstItem="0zu-Xu-cPl" firstAttribute="leading" secondItem="f7u-zA-36k" secondAttribute="leading" constant="15" id="n8M-w6-C8n"/>
                                     <constraint firstItem="hY4-qJ-Rt0" firstAttribute="top" secondItem="0zu-Xu-cPl" secondAttribute="bottom" constant="7.5" id="ynE-V1-Qf3"/>
@@ -89,4 +90,7 @@ e exercitar o conhecimento.</string>
             <point key="canvasLocation" x="120" y="104.34782608695653"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="dog.jpg" width="800" height="600"/>
+    </resources>
 </document>

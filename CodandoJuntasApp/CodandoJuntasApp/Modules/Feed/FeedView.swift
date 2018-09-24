@@ -28,6 +28,7 @@ class FeedView: UIViewController {
     var feedTableViewDataSource: FeedTableViewDataSource!
     weak var delegate: FeedDelegate?
     
+    @IBOutlet weak var tableView: UITableView!
     
     
     let localStorage: LocalStorage
@@ -56,19 +57,36 @@ extension FeedView {
     
     func setupViewModel() {
         self.viewModel = FeedViewModel(feedRepository: self.repository, storage: self.localStorage)
-        self.feedTableViewDelegate = FeedTableViewDelegate(viewModel: viewModel)
-        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: viewModel)
-    
+        self.feedTableViewDelegate = FeedTableViewDelegate(viewModel: self.viewModel)
+        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
+        self.tableView.dataSource = self.feedTableViewDataSource
+        self.tableView.delegate = self.feedTableViewDelegate
     }
     
     func configureViews() {
+        tableView.estimatedRowHeight = 500
+        tableView.rowHeight = UITableViewAutomaticDimension
+        registerCells()
+       
         
     }
     
     func setupBindings() {
         viewModel.feed.drive(onNext: { (feed) in
-            print("DONE!!!!")
+            
+            self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
+    }
+    
+}
+
+
+extension FeedView {
+    
+    func registerCells(){
+        tableView.register(R.nib.feedTableViewCell)
+        tableView.register(R.nib.highlightedTableViewCell)
+        tableView.register(R.nib.mostReadTableViewCell)
     }
 }
 

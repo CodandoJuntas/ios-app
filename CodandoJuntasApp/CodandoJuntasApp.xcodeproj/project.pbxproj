@@ -68,6 +68,11 @@
 		AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */; };
 		AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */; };
 		AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */; };
+		AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */; };
+		AC475FCA21589AE9003B2BC3 /* github-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC921589AE9003B2BC3 /* github-mark.png */; };
+		AC475FCC21589AF2003B2BC3 /* swift-og.png in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCB21589AF2003B2BC3 /* swift-og.png */; };
+		AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */; };
+		AC475FD021589D66003B2BC3 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCF21589D66003B2BC3 /* dog.jpg */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
@@ -138,6 +143,11 @@
 		AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadTableViewCell.xib; sourceTree = "<group>"; };
 		AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ada-lovelace.jpg"; sourceTree = "<group>"; };
+		AC475FC921589AE9003B2BC3 /* github-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "github-mark.png"; sourceTree = "<group>"; };
+		AC475FCB21589AF2003B2BC3 /* swift-og.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift-og.png"; sourceTree = "<group>"; };
+		AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gitHubLogo.jpg; sourceTree = "<group>"; };
+		AC475FCF21589D66003B2BC3 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +210,7 @@
 		AC475F33215072EA003B2BC3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC475FC621589964003B2BC3 /* PlaceholderImages */,
 				AC475F98215865FE003B2BC3 /* gotham-rounded */,
 				AC80D7622149D944001B00EF /* Assets.xcassets */,
 			);
@@ -418,6 +429,18 @@
 			path = FeedCell;
 			sourceTree = "<group>";
 		};
+		AC475FC621589964003B2BC3 /* PlaceholderImages */ = {
+			isa = PBXGroup;
+			children = (
+				AC475FCF21589D66003B2BC3 /* dog.jpg */,
+				AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */,
+				AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */,
+				AC475FCB21589AF2003B2BC3 /* swift-og.png */,
+				AC475FC921589AE9003B2BC3 /* github-mark.png */,
+			);
+			path = PlaceholderImages;
+			sourceTree = "<group>";
+		};
 		AC80D74F2149D943001B00EF = {
 			isa = PBXGroup;
 			children = (
@@ -519,8 +542,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */,
+				AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */,
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
+				AC475FD021589D66003B2BC3 /* dog.jpg in Resources */,
 				AC475F7821530D51003B2BC3 /* ProfileView.xib in Resources */,
 				AC475FA8215865FE003B2BC3 /* GothamRounded-BoldItalic.otf in Resources */,
 				AC475FB0215865FE003B2BC3 /* GothamRounded-Book.otf in Resources */,
@@ -528,8 +553,10 @@
 				AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */,
 				AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */,
 				AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */,
+				AC475FCA21589AE9003B2BC3 /* github-mark.png in Resources */,
 				AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */,
 				AC475FA6215865FE003B2BC3 /* GothamRounded-MediumItalic.otf in Resources */,
+				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
 				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
@@ -539,6 +566,7 @@
 				AC475F7221530D0E003B2BC3 /* LoginView.xib in Resources */,
 				AC475FA7215865FE003B2BC3 /* GothamRoundedBook_21018.ttf in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
+				AC475FCC21589AF2003B2BC3 /* swift-og.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

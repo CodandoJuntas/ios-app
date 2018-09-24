@@ -23,24 +23,27 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
+        case 0:
+            return 1
         case 1:
             return 1
-        case 2:
-            return 1
         default:
-            return 5 // viewlModel.sizeOfFeed
+            return 10 // viewlModel.sizeOfFeed
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
         switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.highlightedTableViewCell, for: indexPath) as! HighlightedTableViewCell
+            return cell
         case 1:
-            return UITableViewCell()
-        case 2:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mostReadTableViewCell, for: indexPath) as! MostReadTableViewCell
+            return cell
         default:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell
+            return cell
         }
         
     }

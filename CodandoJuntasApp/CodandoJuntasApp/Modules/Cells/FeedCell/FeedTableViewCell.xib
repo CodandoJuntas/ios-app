@@ -42,7 +42,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-oo-QrE">
                         <rect key="frame" x="26" y="11.5" width="66" height="52"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-FQ-ikX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitHubLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-FQ-ikX">
                                 <rect key="frame" x="0.0" y="0.0" width="66" height="52"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-4Y-5V1">
@@ -62,6 +62,11 @@
                                     <constraint firstItem="Qdu-fa-sbs" firstAttribute="top" secondItem="qtB-4Y-5V1" secondAttribute="top" constant="1" id="cmk-s1-qtD"/>
                                     <constraint firstItem="Qdu-fa-sbs" firstAttribute="leading" secondItem="qtB-4Y-5V1" secondAttribute="leading" constant="6" id="rYz-Ji-RRW"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,8 +93,8 @@
                             <constraint firstAttribute="height" constant="1" id="IYl-sz-u7D"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entenda de uma vez por toda o que é e como usar a ferramenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2C-Ws-Izv">
-                        <rect key="frame" x="98" y="41.5" width="193" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Entenda de uma vez por toda o que é e como usar a ferramenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2C-Ws-Izv">
+                        <rect key="frame" x="100" y="38.5" width="191" height="25"/>
                         <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
                         <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -106,8 +111,9 @@
                     <constraint firstItem="teK-C7-Iu9" firstAttribute="top" secondItem="oOb-oo-QrE" secondAttribute="bottom" constant="17" id="au4-1K-yjW"/>
                     <constraint firstItem="3fP-SR-38n" firstAttribute="top" secondItem="cdW-FQ-ikX" secondAttribute="top" id="cJs-bq-eoH"/>
                     <constraint firstAttribute="trailing" secondItem="2km-td-RmM" secondAttribute="trailing" constant="29" id="gzu-El-wLi"/>
+                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="top" secondItem="2km-td-RmM" secondAttribute="bottom" constant="2" id="kHP-wD-boq"/>
                     <constraint firstItem="2km-td-RmM" firstAttribute="top" secondItem="3fP-SR-38n" secondAttribute="bottom" constant="2" id="lMe-0t-esB"/>
-                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="cdW-FQ-ikX" secondAttribute="trailing" constant="6" id="oK5-lc-KgC"/>
+                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="cdW-FQ-ikX" secondAttribute="trailing" constant="8" id="oK5-lc-KgC"/>
                     <constraint firstItem="oOb-oo-QrE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="q9Q-WV-dPm"/>
                     <constraint firstItem="oOb-oo-QrE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="rDC-6W-RGp"/>
                     <constraint firstItem="teK-C7-Iu9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="wxD-kI-XIC"/>
@@ -117,4 +123,7 @@
             <point key="canvasLocation" x="137.59999999999999" y="139.43028485757122"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="gitHubLogo.jpg" width="400" height="400"/>
+    </resources>
 </document>
