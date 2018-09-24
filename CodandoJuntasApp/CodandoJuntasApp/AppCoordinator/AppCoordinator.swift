@@ -45,7 +45,7 @@ class AppCoordinator: Coordinator {
     }
     
     fileprivate func showMainView() {
-        let view = container.resolve(MainView.self)!
+        let view = container.resolve(FeedView.self)!
         view.delegate = self
         self.currentView = view
     }
@@ -72,7 +72,7 @@ class AppCoordinator: Coordinator {
 
 
 
-extension AppCoordinator: MainDelegate {
+extension AppCoordinator: FeedDelegate {
     
 }
 

@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-class MainViewModel {
+class FeedViewModel {
     
     //let input: Driver<Void>
     let repository: FeedRepository

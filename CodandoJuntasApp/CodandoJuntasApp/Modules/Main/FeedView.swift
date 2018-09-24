@@ -17,22 +17,26 @@ import RxCocoa
     }
  */
 
-protocol MainDelegate: class {
+protocol FeedDelegate: class {
     
 }
 
-class MainView: UIViewController {
+class FeedView: UIViewController {
     
-    var viewModel: MainViewModel!
+    var viewModel: FeedViewModel!
+    var feedTableViewDelegate: FeedTableViewDelegate!
+    var feedTableViewDataSource: FeedTableViewDataSource!
+    weak var delegate: FeedDelegate?
     
-    weak var delegate: MainDelegate?
+    
+    
     let localStorage: LocalStorage
     let repository: FeedRepository
     
     init(repository: FeedRepository, storage: LocalStorage) {
         self.repository = repository
         self.localStorage = storage
-        super.init(nibName: String(describing: MainView.self), bundle: nil)
+        super.init(nibName: String(describing: FeedView.self), bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -48,10 +52,10 @@ class MainView: UIViewController {
     
 }
 
-extension MainView {
+extension FeedView {
     
     func setupViewModel() {
-        self.viewModel = MainViewModel(feedRepository: self.repository, storage: self.localStorage)
+        self.viewModel = FeedViewModel(feedRepository: self.repository, storage: self.localStorage)
     }
     
     func configureViews() {
@@ -64,3 +68,4 @@ extension MainView {
         }).disposed(by: rx.disposeBag)
     }
 }
+

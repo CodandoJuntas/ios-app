@@ -29,8 +29,8 @@ extension DefaultContainer {
     func registerViews() {
         
   
-        self.container.register(MainView.self) { resolver in
-            MainView(
+        self.container.register(FeedView.self) { resolver in
+            FeedView(
                 repository: resolver.resolve(FeedRepository.self)!,
                 storage: resolver.resolve(LocalStorage.self)!
             )

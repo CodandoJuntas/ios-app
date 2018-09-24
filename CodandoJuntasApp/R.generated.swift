@@ -13,6 +13,7 @@ struct R: Rswift.Validatable {
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
   
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
   
@@ -21,13 +22,146 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 12 files.
   struct file {
+    /// Resource file `GothamRounded-Bold.otf`.
+    static let gothamRoundedBoldOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Bold", pathExtension: "otf")
+    /// Resource file `GothamRounded-BoldItalic.otf`.
+    static let gothamRoundedBoldItalicOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-BoldItalic", pathExtension: "otf")
+    /// Resource file `GothamRounded-Book.otf`.
+    static let gothamRoundedBookOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Book", pathExtension: "otf")
+    /// Resource file `GothamRounded-BookItalic.otf`.
+    static let gothamRoundedBookItalicOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-BookItalic", pathExtension: "otf")
+    /// Resource file `GothamRounded-Light.otf`.
+    static let gothamRoundedLightOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Light", pathExtension: "otf")
+    /// Resource file `GothamRounded-LightItalic.otf`.
+    static let gothamRoundedLightItalicOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-LightItalic", pathExtension: "otf")
+    /// Resource file `GothamRounded-Medium.otf`.
+    static let gothamRoundedMediumOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Medium", pathExtension: "otf")
+    /// Resource file `GothamRounded-MediumItalic.otf`.
+    static let gothamRoundedMediumItalicOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-MediumItalic", pathExtension: "otf")
+    /// Resource file `GothamRoundedBold_21016.ttf`.
+    static let gothamRoundedBold_21016Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedBold_21016", pathExtension: "ttf")
+    /// Resource file `GothamRoundedBook_21018.ttf`.
+    static let gothamRoundedBook_21018Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedBook_21018", pathExtension: "ttf")
+    /// Resource file `GothamRoundedLight_21020.ttf`.
+    static let gothamRoundedLight_21020Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedLight_21020", pathExtension: "ttf")
+    /// Resource file `GothamRoundedMedium_21022.ttf`.
+    static let gothamRoundedMedium_21022Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedMedium_21022", pathExtension: "ttf")
+    
+    /// `bundle.url(forResource: "GothamRounded-Bold", withExtension: "otf")`
+    static func gothamRoundedBoldOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBoldOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-BoldItalic", withExtension: "otf")`
+    static func gothamRoundedBoldItalicOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBoldItalicOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-Book", withExtension: "otf")`
+    static func gothamRoundedBookOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBookOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-BookItalic", withExtension: "otf")`
+    static func gothamRoundedBookItalicOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBookItalicOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-Light", withExtension: "otf")`
+    static func gothamRoundedLightOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedLightOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-LightItalic", withExtension: "otf")`
+    static func gothamRoundedLightItalicOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedLightItalicOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-Medium", withExtension: "otf")`
+    static func gothamRoundedMediumOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedMediumOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRounded-MediumItalic", withExtension: "otf")`
+    static func gothamRoundedMediumItalicOtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedMediumItalicOtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRoundedBold_21016", withExtension: "ttf")`
+    static func gothamRoundedBold_21016Ttf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBold_21016Ttf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRoundedBook_21018", withExtension: "ttf")`
+    static func gothamRoundedBook_21018Ttf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedBook_21018Ttf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRoundedLight_21020", withExtension: "ttf")`
+    static func gothamRoundedLight_21020Ttf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedLight_21020Ttf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GothamRoundedMedium_21022", withExtension: "ttf")`
+    static func gothamRoundedMedium_21022Ttf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.gothamRoundedMedium_21022Ttf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.font` struct is generated, and contains static references to 0 fonts.
-  struct font {
+  /// This `R.font` struct is generated, and contains static references to 12 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `GothamRounded-BoldItalic`.
+    static let gothamRoundedBoldItalic = Rswift.FontResource(fontName: "GothamRounded-BoldItalic")
+    /// Font `GothamRounded-BookItalic`.
+    static let gothamRoundedBookItalic = Rswift.FontResource(fontName: "GothamRounded-BookItalic")
+    /// Font `GothamRounded-LightItalic`.
+    static let gothamRoundedLightItalic = Rswift.FontResource(fontName: "GothamRounded-LightItalic")
+    /// Font `GothamRounded-MediumItalic`.
+    static let gothamRoundedMediumItalic = Rswift.FontResource(fontName: "GothamRounded-MediumItalic")
+    
+    /// `UIFont(name: "GothamRounded-BoldItalic", size: ...)`
+    static func gothamRoundedBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: gothamRoundedBoldItalic, size: size)
+    }
+    
+    /// `UIFont(name: "GothamRounded-BookItalic", size: ...)`
+    static func gothamRoundedBookItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: gothamRoundedBookItalic, size: size)
+    }
+    
+    /// `UIFont(name: "GothamRounded-LightItalic", size: ...)`
+    static func gothamRoundedLightItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: gothamRoundedLightItalic, size: size)
+    }
+    
+    /// `UIFont(name: "GothamRounded-MediumItalic", size: ...)`
+    static func gothamRoundedMediumItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: gothamRoundedMediumItalic, size: size)
+    }
+    
+    static func validate() throws {
+      if R.font.gothamRoundedLightItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'GothamRounded-LightItalic' could not be loaded, is 'GothamRounded-LightItalic.otf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.gothamRoundedBookItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'GothamRounded-BookItalic' could not be loaded, is 'GothamRounded-BookItalic.otf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.gothamRoundedBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'GothamRounded-BoldItalic' could not be loaded, is 'GothamRounded-BoldItalic.otf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.gothamRoundedMediumItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'GothamRounded-MediumItalic' could not be loaded, is 'GothamRounded-MediumItalic.otf' added to the UIAppFonts array in this targets Info.plist?") }
+    }
+    
     fileprivate init() {}
   }
   
@@ -38,23 +172,23 @@ struct R: Rswift.Validatable {
   
   /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
+    /// Nib `FeedView`.
+    static let feedView = _R.nib._FeedView()
     /// Nib `LoginView`.
     static let loginView = _R.nib._LoginView()
-    /// Nib `MainView`.
-    static let mainView = _R.nib._MainView()
     /// Nib `OnboardingView`.
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
     
+    /// `UINib(name: "FeedView", in: bundle)`
+    static func feedView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedView)
+    }
+    
     /// `UINib(name: "LoginView", in: bundle)`
     static func loginView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.loginView)
-    }
-    
-    /// `UINib(name: "MainView", in: bundle)`
-    static func mainView(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.mainView)
     }
     
     /// `UINib(name: "OnboardingView", in: bundle)`
@@ -113,9 +247,9 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
-    struct _LoginView: Rswift.NibResourceType {
+    struct _FeedView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let name = "LoginView"
+      let name = "FeedView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -124,9 +258,9 @@ struct _R {
       fileprivate init() {}
     }
     
-    struct _MainView: Rswift.NibResourceType {
+    struct _LoginView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let name = "MainView"
+      let name = "LoginView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
