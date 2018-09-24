@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRoundedMedium_21022.ttf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighlightedTableViewCell" rowHeight="246" id="KGk-i7-Jjw" customClass="HighlightedTableViewCell" customModule="CodandoJuntasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="245.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPV-GH-d6S">
+                        <rect key="frame" x="20" y="20" width="281" height="217.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-ee-fKn">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Qbs-zC-ubl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-zA-36k">
+                                <rect key="frame" x="0.0" y="130" width="281" height="87.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY4-qJ-Rt0">
+                                        <rect key="frame" x="14" y="33.5" width="253" height="28.5"/>
+                                        <string key="text">5 dicas para aprender a programar
+e exercitar o conhecimento.</string>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por onde começar?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-Xu-cPl">
+                                        <rect key="frame" x="15" y="8" width="251" height="18"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                                        <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0zu-Xu-cPl" secondAttribute="trailing" constant="15" id="Ck2-2B-vtU"/>
+                                    <constraint firstAttribute="trailing" secondItem="hY4-qJ-Rt0" secondAttribute="trailing" constant="14" id="EzV-fn-DV5"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hY4-qJ-Rt0" secondAttribute="bottom" constant="8" id="FsC-6R-f3A"/>
+                                    <constraint firstItem="0zu-Xu-cPl" firstAttribute="top" secondItem="f7u-zA-36k" secondAttribute="top" constant="8" id="Koh-Hk-WMv"/>
+                                    <constraint firstItem="hY4-qJ-Rt0" firstAttribute="leading" secondItem="f7u-zA-36k" secondAttribute="leading" constant="14" id="WFk-ve-nZq"/>
+                                    <constraint firstItem="0zu-Xu-cPl" firstAttribute="leading" secondItem="f7u-zA-36k" secondAttribute="leading" constant="15" id="n8M-w6-C8n"/>
+                                    <constraint firstItem="hY4-qJ-Rt0" firstAttribute="top" secondItem="0zu-Xu-cPl" secondAttribute="bottom" constant="7.5" id="ynE-V1-Qf3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kyi-ee-fKn" firstAttribute="top" secondItem="XPV-GH-d6S" secondAttribute="top" id="5vZ-FO-r7L"/>
+                            <constraint firstItem="kyi-ee-fKn" firstAttribute="leading" secondItem="XPV-GH-d6S" secondAttribute="leading" id="EB6-Pr-eOB"/>
+                            <constraint firstAttribute="trailing" secondItem="kyi-ee-fKn" secondAttribute="trailing" id="Ppp-k1-c15"/>
+                            <constraint firstAttribute="bottom" secondItem="f7u-zA-36k" secondAttribute="bottom" id="YyK-8J-oto"/>
+                            <constraint firstItem="f7u-zA-36k" firstAttribute="leading" secondItem="XPV-GH-d6S" secondAttribute="leading" id="gad-b3-XJ8"/>
+                            <constraint firstItem="f7u-zA-36k" firstAttribute="top" secondItem="kyi-ee-fKn" secondAttribute="bottom" id="pc7-h6-jpe"/>
+                            <constraint firstAttribute="trailing" secondItem="f7u-zA-36k" secondAttribute="trailing" id="y70-nc-xtX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XPV-GH-d6S" secondAttribute="bottom" constant="8" id="78c-AQ-OzP"/>
+                    <constraint firstItem="XPV-GH-d6S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="9Is-tL-T7m"/>
+                    <constraint firstAttribute="trailing" secondItem="XPV-GH-d6S" secondAttribute="trailing" constant="19" id="YKq-st-3mO"/>
+                    <constraint firstItem="XPV-GH-d6S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qdR-F5-SeF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="120" y="104.34782608695653"/>
+        </tableViewCell>
+    </objects>
+</document>

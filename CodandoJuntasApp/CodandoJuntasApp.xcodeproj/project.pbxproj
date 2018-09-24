@@ -62,6 +62,12 @@
 		AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA5215865FE003B2BC3 /* GothamRounded-Light.otf */; };
 		AC475FB421586BE8003B2BC3 /* FeedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB321586BE7003B2BC3 /* FeedTableViewDelegate.swift */; };
 		AC475FB621586E77003B2BC3 /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */; };
+		AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */; };
+		AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */; };
+		AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */; };
+		AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */; };
+		AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */; };
+		AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
@@ -126,6 +132,12 @@
 		AC475FA5215865FE003B2BC3 /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
 		AC475FB321586BE7003B2BC3 /* FeedTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDelegate.swift; sourceTree = "<group>"; };
 		AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
+		AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedTableViewCell.swift; sourceTree = "<group>"; };
+		AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighlightedTableViewCell.xib; sourceTree = "<group>"; };
+		AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadTableViewCell.swift; sourceTree = "<group>"; };
+		AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadTableViewCell.xib; sourceTree = "<group>"; };
+		AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				AC475F8921547B22003B2BC3 /* Components */,
-				AC475F66215305A9003B2BC3 /* Feed */,
+				AC475F66215305A9003B2BC3 /* Cells */,
 				AC475F652153059C003B2BC3 /* Profile */,
 				AC475F6421530589003B2BC3 /* Login */,
 				AC475F6321530579003B2BC3 /* Onboarding */,
@@ -272,8 +284,7 @@
 				AC475FB321586BE7003B2BC3 /* FeedTableViewDelegate.swift */,
 				AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */,
 			);
-			name = Feed;
-			path = Main;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		AC475F6321530579003B2BC3 /* Onboarding */ = {
@@ -306,11 +317,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		AC475F66215305A9003B2BC3 /* Feed */ = {
+		AC475F66215305A9003B2BC3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AC475FC1215883F3003B2BC3 /* FeedCell */,
+				AC475FC0215883E1003B2BC3 /* MostReadCell */,
+				AC475FBF215883CA003B2BC3 /* HighlightedCell */,
 			);
-			path = Feed;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		AC475F79215313FC003B2BC3 /* FeedRepository */ = {
@@ -375,6 +389,33 @@
 				AC475FA5215865FE003B2BC3 /* GothamRounded-Light.otf */,
 			);
 			path = "gotham-rounded";
+			sourceTree = "<group>";
+		};
+		AC475FBF215883CA003B2BC3 /* HighlightedCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */,
+				AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */,
+			);
+			path = HighlightedCell;
+			sourceTree = "<group>";
+		};
+		AC475FC0215883E1003B2BC3 /* MostReadCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */,
+				AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */,
+			);
+			path = MostReadCell;
+			sourceTree = "<group>";
+		};
+		AC475FC1215883F3003B2BC3 /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */,
+				AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */,
+			);
+			path = FeedCell;
 			sourceTree = "<group>";
 		};
 		AC80D74F2149D943001B00EF = {
@@ -483,15 +524,18 @@
 				AC475F7821530D51003B2BC3 /* ProfileView.xib in Resources */,
 				AC475FA8215865FE003B2BC3 /* GothamRounded-BoldItalic.otf in Resources */,
 				AC475FB0215865FE003B2BC3 /* GothamRounded-Book.otf in Resources */,
+				AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */,
 				AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */,
 				AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */,
 				AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */,
 				AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */,
 				AC475FA6215865FE003B2BC3 /* GothamRounded-MediumItalic.otf in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
+				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
 				AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */,
 				AC475FAF215865FE003B2BC3 /* GothamRounded-Bold.otf in Resources */,
+				AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */,
 				AC475F7221530D0E003B2BC3 /* LoginView.xib in Resources */,
 				AC475FA7215865FE003B2BC3 /* GothamRoundedBook_21018.ttf in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
@@ -601,13 +645,16 @@
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
+				AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,
+				AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */,
 				AC475FB621586E77003B2BC3 /* FeedTableViewDataSource.swift in Sources */,
 				AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */,
 				AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */,
 				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
+				AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */,
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,
 				AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */,
 				AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */,

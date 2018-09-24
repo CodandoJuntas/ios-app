@@ -16,15 +16,33 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
         self.viewModel = viewModel
         super.init()
     }
-    
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+    return 3
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        switch section {
+        case 1:
+            return 1
+        case 2:
+            return 1
+        default:
+            return 5 // viewlModel.sizeOfFeed
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
-        return UITableViewCell()
+        switch indexPath.section {
+        case 1:
+            return UITableViewCell()
+        case 2:
+            return UITableViewCell()
+        default:
+            return UITableViewCell()
+        }
+        
     }
     
     

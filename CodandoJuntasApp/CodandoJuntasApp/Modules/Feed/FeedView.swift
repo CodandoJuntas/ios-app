@@ -56,6 +56,9 @@ extension FeedView {
     
     func setupViewModel() {
         self.viewModel = FeedViewModel(feedRepository: self.repository, storage: self.localStorage)
+        self.feedTableViewDelegate = FeedTableViewDelegate(viewModel: viewModel)
+        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: viewModel)
+    
     }
     
     func configureViews() {

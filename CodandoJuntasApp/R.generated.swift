@@ -170,25 +170,46 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
   struct nib {
+    /// Nib `FeedTableViewCell`.
+    static let feedTableViewCell = _R.nib._FeedTableViewCell()
     /// Nib `FeedView`.
     static let feedView = _R.nib._FeedView()
+    /// Nib `HighlightedTableViewCell`.
+    static let highlightedTableViewCell = _R.nib._HighlightedTableViewCell()
     /// Nib `LoginView`.
     static let loginView = _R.nib._LoginView()
+    /// Nib `MostReadTableViewCell`.
+    static let mostReadTableViewCell = _R.nib._MostReadTableViewCell()
     /// Nib `OnboardingView`.
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
+    
+    /// `UINib(name: "FeedTableViewCell", in: bundle)`
+    static func feedTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedTableViewCell)
+    }
     
     /// `UINib(name: "FeedView", in: bundle)`
     static func feedView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.feedView)
     }
     
+    /// `UINib(name: "HighlightedTableViewCell", in: bundle)`
+    static func highlightedTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.highlightedTableViewCell)
+    }
+    
     /// `UINib(name: "LoginView", in: bundle)`
     static func loginView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.loginView)
+    }
+    
+    /// `UINib(name: "MostReadTableViewCell", in: bundle)`
+    static func mostReadTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mostReadTableViewCell)
     }
     
     /// `UINib(name: "OnboardingView", in: bundle)`
@@ -204,8 +225,15 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `FeedTableViewCell`.
+    static let feedTableViewCell: Rswift.ReuseIdentifier<FeedTableViewCell> = Rswift.ReuseIdentifier(identifier: "FeedTableViewCell")
+    /// Reuse identifier `HighlightedTableViewCell`.
+    static let highlightedTableViewCell: Rswift.ReuseIdentifier<HighlightedTableViewCell> = Rswift.ReuseIdentifier(identifier: "HighlightedTableViewCell")
+    /// Reuse identifier `MostReadTableViewCell`.
+    static let mostReadTableViewCell: Rswift.ReuseIdentifier<MostReadTableViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadTableViewCell")
+    
     fileprivate init() {}
   }
   
@@ -247,6 +275,20 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = FeedTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "FeedTableViewCell"
+      let name = "FeedTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FeedTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _FeedView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "FeedView"
@@ -258,12 +300,40 @@ struct _R {
       fileprivate init() {}
     }
     
+    struct _HighlightedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = HighlightedTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "HighlightedTableViewCell"
+      let name = "HighlightedTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HighlightedTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HighlightedTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _LoginView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "LoginView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _MostReadTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = MostReadTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "MostReadTableViewCell"
+      let name = "MostReadTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> MostReadTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostReadTableViewCell
       }
       
       fileprivate init() {}
