@@ -95,6 +95,7 @@ extension FeedView {
         tableView.register(R.nib.feedTableViewCell)
         tableView.register(R.nib.highlightedTableViewCell)
         tableView.register(R.nib.mostReadTableViewCell)
+        
     }
 }
 

@@ -79,6 +79,8 @@
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
+		AC82E1FA2159942300244374 /* FeedSectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */; };
+		AC82E1FB2159942300244374 /* FeedSectionHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +161,8 @@
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC80D7652149D944001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionHeaderViewController.swift; sourceTree = "<group>"; };
+		AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedSectionHeaderViewController.xib; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -434,6 +438,8 @@
 			children = (
 				AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */,
 				AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */,
+				AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */,
+				AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */,
 			);
 			path = FeedCell;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 				AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */,
 				AC475FA6215865FE003B2BC3 /* GothamRounded-MediumItalic.otf in Resources */,
 				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
+				AC82E1FB2159942300244374 /* FeedSectionHeaderViewController.xib in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
 				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
@@ -684,6 +691,7 @@
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
+				AC82E1FA2159942300244374 /* FeedSectionHeaderViewController.swift in Sources */,
 				AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,

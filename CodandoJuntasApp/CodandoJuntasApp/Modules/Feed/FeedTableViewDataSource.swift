@@ -31,6 +31,22 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
             return 10 // viewlModel.sizeOfFeed
         }
     }
+
+     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+        switch section {
+        case 1:
+            return "Introdução"
+        case 2:
+            return "Fundamentos de Programação"
+        default:
+            return nil
+        }
+
+    }
+    
+   
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
