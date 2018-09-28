@@ -28,7 +28,7 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
         case 1:
             return 1
         default:
-            return 10 // viewlModel.sizeOfFeed
+            return viewModel.projectsFeed.count
         }
     }
 
@@ -45,8 +45,6 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
 
     }
     
-   
-
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
@@ -56,6 +54,7 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mostReadTableViewCell, for: indexPath) as! MostReadTableViewCell
+                cell.viewModel = self.viewModel
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell

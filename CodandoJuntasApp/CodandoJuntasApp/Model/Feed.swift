@@ -51,11 +51,12 @@ struct Feed: Codable {
 
 struct Category: Codable {
     let title, id: String
-    let description, parent: String?
+    let subTitle, parent: String?
     
     enum CodingKeys: String, CodingKey {
         case title, id
-        case description, parent
+        case subTitle = "description"
+        case parent
     }
     
     init(from decoder: Decoder) throws {
@@ -64,19 +65,20 @@ struct Category: Codable {
         
         self.title = try container.decode(String.self, forKey: .title)
         self.id = try container.decode(String.self, forKey: .id)
-        self.description = try container.decodeIfPresent(String.self, forKey: .description)
+        self.subTitle = try container.decodeIfPresent(String.self, forKey: .subTitle)
         self.parent = try container.decodeIfPresent(String.self, forKey: .parent)
     }
 }
 
 struct Project: Codable {
-    let title, category, description: String
+    let title, category, subTitle: String
     let homepage: String
     let tags: [String]?
     let swift: Int?
     
     enum CodingKeys: String, CodingKey {
-        case title, category, description
+        case title, category
+        case subTitle = "description"
         case homepage, tags, swift
     }
     
@@ -86,7 +88,7 @@ struct Project: Codable {
         
         self.title = try container.decode(String.self, forKey: .title)
         self.category = try container.decode(String.self, forKey: .category)
-        self.description = try container.decode(String.self, forKey: .description)
+        self.subTitle = try container.decode(String.self, forKey: .subTitle)
         self.homepage = try container.decode(String.self, forKey: .homepage)
         self.tags = try container.decodeIfPresent([String].self, forKey: .tags)
         self.swift = try container.decodeIfPresent(Int.self, forKey: .swift)
