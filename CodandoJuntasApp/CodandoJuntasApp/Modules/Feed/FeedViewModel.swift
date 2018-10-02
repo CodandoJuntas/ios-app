@@ -11,7 +11,6 @@ import RxCocoa
 
 class FeedViewModel {
     
-    //let input: Driver<Void>
     let repository: FeedRepository
     let storage: LocalStorage
     let projects: Driver<[Project]>

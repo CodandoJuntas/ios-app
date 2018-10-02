@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothamRounded-Book.otf">
-            <string>GothamRounded-Book</string>
-        </array>
-        <array key="GothamRoundedMedium_21022.ttf">
+        <array key="GothamRounded-Medium.otf">
             <string>GothamRounded-Medium</string>
+        </array>
+        <array key="GothamRoundedBook_21018.ttf">
+            <string>GothamRounded-Book</string>
         </array>
     </customFonts>
     <objects>
@@ -120,6 +120,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="2km-td-RmM" id="HYw-zZ-MP3"/>
+                <outlet property="tagLabel" destination="Qdu-fa-sbs" id="3Ot-nu-oSE"/>
+                <outlet property="titleLabel" destination="3fP-SR-38n" id="7MV-pn-jHP"/>
+            </connections>
             <point key="canvasLocation" x="137.59999999999999" y="139.43028485757122"/>
         </tableViewCell>
     </objects>

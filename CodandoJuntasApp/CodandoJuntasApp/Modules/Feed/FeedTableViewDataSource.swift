@@ -58,6 +58,7 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell
+            cell.setupCell( self.viewModel.projectsFeed[indexPath.row])
             return cell
         }
         

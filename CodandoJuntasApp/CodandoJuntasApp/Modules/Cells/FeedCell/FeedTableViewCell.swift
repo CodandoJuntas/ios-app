@@ -10,6 +10,13 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tagLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +26,14 @@ class FeedTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupCell(_ project: Project){
+        
+        titleLabel.text = project.title
+        subtitleLabel.text = project.subTitle
+        tagLabel.text = project.tags?.first ?? ""
+        
     }
     
 }
