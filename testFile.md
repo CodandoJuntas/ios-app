@@ -1178,7 +1178,7 @@ Most of these are paid services, some have free tiers.
 * [Pusher](https://pusher.com/beams) - Free and unlimited.
 * [Swrve](https://www.swrve.com)
 
-##Local Notifications
+## Local Notifications
 
 * [DLLocalNotifications](https://github.com/d7laungani/DLLocalNotifications) -  Easily create Local Notifications in swift - Wrapper of UserNotifications Framework.
 
