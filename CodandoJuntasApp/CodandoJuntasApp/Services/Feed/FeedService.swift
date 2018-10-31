@@ -12,5 +12,5 @@ import Moya
 
 protocol FeedService {
     func feed()-> Single<Response>
-    
+    func tutorials() -> Single<Response>
 }

@@ -11,17 +11,26 @@ import Moya
 
 enum FeedRouter {
     case feed
+    case tutorials
 }
 
 extension FeedRouter: TargetType {
     var baseURL: URL {
-        return URL(string: NetworkingConstants.baseURL)!
+        switch self {
+        case .feed:
+            return URL(string: NetworkingConstants.baseURL)!
+
+        case .tutorials:
+            return URL(string: "https://raw.githubusercontent.com/CodandoJuntas/ios-app")!
+        }
     }
     
     var path: String {
         switch self {
         case .feed:
             return "/contents.json"
+        case .tutorials:
+            return "/development/testFile.md" //"/master/testFile.md"
         }
     }
     
@@ -30,17 +39,16 @@ extension FeedRouter: TargetType {
     }
     
     var sampleData: Data {
-        switch self {
-        case .feed:
-            let data = ["category_test1", "category_test2", "category_test3"]
+            let data = [""]
             return arrayJsonSerializedUTF8(json: data)
-            
-        }
+        
     }
     
     var parameters: [String: Any]? {
         switch self {
         case .feed:
+            return nil
+        case .tutorials:
             return nil
         }
     }
