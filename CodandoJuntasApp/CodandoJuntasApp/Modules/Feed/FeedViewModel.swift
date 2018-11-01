@@ -28,6 +28,8 @@ class FeedViewModel {
         .asObservable()
         .share()
         
+        let result2 = repository.getTutorials()
+        
         self.categories = result.map{$0.categories}
             .map { $0.filter { $0.subTitle != nil }}
             .asDriver(onErrorJustReturn: [])
