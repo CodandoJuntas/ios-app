@@ -11,6 +11,6 @@ import RxSwift
 import Moya
 
 protocol FeedService {
-    func feed()-> Single<Response>
-    func tutorials() -> Single<Response>
+    func jsonFeed()-> Single<Response>
+    func mdFeed() -> Single<Response>
 }

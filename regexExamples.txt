@@ -1,0 +1,34 @@
+
+
+
+
+^###[^#]+ 		-> separa categorias 
+
+^##[^#]+  		-> separa subcategorias
+
+^##.* 			-> Separa Titulo
+
+^ \*.*\*		-> Separa Descrição
+
+^\*.* 			-> Separa linhas/links 
+
+\[.*\] 			-> Titulo do link
+
+\(.*\)			-> Link
+
+\-.*$			-> descriçao do link
+
+
+// Alternativa Polenta
+
+(?<=## ).+?(?=$)			-> Separa Titulo sem as hashtags
+
+(?<= \*).+?(?=\*)			-> Separa Descrição
+
+^\*.* 						-> Separa linhas/links 
+
+(?<=\[).+?(?=\])			-> Titulo do link
+
+(?<=\().+?(?=\))			-> Link
+
+(?<=\- ).+?(?=$)			-> Descriçao do link

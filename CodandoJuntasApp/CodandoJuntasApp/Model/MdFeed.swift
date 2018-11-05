@@ -6,6 +6,8 @@
 //  Copyright © 2018 Codando Juntas. All rights reserved.
 //
 
+// Parse data from .md file
+
 import Foundation
 
 struct Item {

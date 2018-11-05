@@ -10,7 +10,7 @@
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
-		AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3B2150736A003B2BC3 /* Feed.swift */; };
+		AC475F3C2150736A003B2BC3 /* JsonFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3B2150736A003B2BC3 /* JsonFeed.swift */; };
 		AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */; };
 		AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3F215073A7003B2BC3 /* FeedRepository.swift */; };
 		AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F44215079F9003B2BC3 /* Coordinator.swift */; };
@@ -76,7 +76,7 @@
 		AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */; };
 		AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */; };
 		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
-		AC77BFAB218A776400085ACA /* AwesomeFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77BFAA218A776400085ACA /* AwesomeFeed.swift */; };
+		AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77BFAA218A776400085ACA /* MdFeed.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
@@ -91,7 +91,7 @@
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
-		AC475F3B2150736A003B2BC3 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		AC475F3B2150736A003B2BC3 /* JsonFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFeed.swift; sourceTree = "<group>"; };
 		AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepositoryImpl.swift; sourceTree = "<group>"; };
 		AC475F3F215073A7003B2BC3 /* FeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
 		AC475F44215079F9003B2BC3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
-		AC77BFAA218A776400085ACA /* AwesomeFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeFeed.swift; sourceTree = "<group>"; };
+		AC77BFAA218A776400085ACA /* MdFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFeed.swift; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,9 +241,9 @@
 		AC475F3D21507383003B2BC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC475F3B2150736A003B2BC3 /* Feed.swift */,
+				AC475F3B2150736A003B2BC3 /* JsonFeed.swift */,
 				AC475F85215318E0003B2BC3 /* User.swift */,
-				AC77BFAA218A776400085ACA /* AwesomeFeed.swift */,
+				AC77BFAA218A776400085ACA /* MdFeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -675,7 +675,7 @@
 				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
 				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
 				AC475FB421586BE8003B2BC3 /* FeedTableViewDelegate.swift in Sources */,
-				AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */,
+				AC475F3C2150736A003B2BC3 /* JsonFeed.swift in Sources */,
 				AC475F3721507312003B2BC3 /* FeedView.swift in Sources */,
 				AC475F9221547C72003B2BC3 /* UIColor+Utils.swift in Sources */,
 				AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */,
@@ -689,7 +689,7 @@
 				AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */,
 				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
 				AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */,
-				AC77BFAB218A776400085ACA /* AwesomeFeed.swift in Sources */,
+				AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */,
 				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
 				AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,

@@ -77,15 +77,15 @@ extension FeedView {
     
     func setupBindings() {
         
-        viewModel.projects.drive(onNext: { (projects) in
-            self.viewModel.projectsFeed = projects
-            self.tableView.reloadSections(IndexSet(integersIn: 2...2), with: UITableViewRowAnimation.fade)
-        }).disposed(by: rx.disposeBag)
-        
-        viewModel.categories.drive(onNext: { (categories) in
-            self.viewModel.categoriesFeed = categories
-            self.tableView.reloadSections(IndexSet(integersIn: 1...1), with: UITableViewRowAnimation.fade)
-        }).disposed(by: rx.disposeBag)
+//        viewModel.projects.drive(onNext: { (projects) in
+//            self.viewModel.projectsFeed = projects
+//            self.tableView.reloadSections(IndexSet(integersIn: 2...2), with: UITableViewRowAnimation.fade)
+//        }).disposed(by: rx.disposeBag)
+//        
+//        viewModel.categories.drive(onNext: { (categories) in
+//            self.viewModel.categoriesFeed = categories
+//            self.tableView.reloadSections(IndexSet(integersIn: 1...1), with: UITableViewRowAnimation.fade)
+//        }).disposed(by: rx.disposeBag)
         
         self.headerButton.rx.tap.bind { [weak self] _ in
             self?.delegate?.openProfile()

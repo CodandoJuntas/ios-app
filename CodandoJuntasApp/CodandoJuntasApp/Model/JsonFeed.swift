@@ -13,7 +13,7 @@ import Foundation
 //   let feedAttachments = try? newJSONDecoder().decode(FeedAttachments.self, from: jsonData)
 
 
-struct Feed: Codable {
+struct JsonFeed: Codable {
     let title, header, headerContributing: String
     let iosAppLink: String
     let categories: [Category]

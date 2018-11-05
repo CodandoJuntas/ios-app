@@ -18,11 +18,11 @@ class FeedServiceImpl: FeedService {
         self.provider = provider
     }
     
-    func feed() -> Single<Response> {
+    func jsonFeed() -> Single<Response> {
         return self.provider.rx.request(.feed)
     }
     
-    func tutorials() -> Single<Response> {
+    func mdFeed() -> Single<Response> {
         return self.provider.rx.request(.tutorials)
     }
     
