@@ -17,5 +17,28 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
         super.init()
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderSectionView.reuseIdentifer) as? HeaderSectionView else {
+            return nil
+        }
+        
+        switch section {
+        case 0:
+            header.titleLabel.text = "Destaques"
+            header.descriptionLabel.isHidden = true
+        case 1:
+            header.titleLabel.text = "Destaques"
+            header.descriptionLabel.isHidden = true
+        default:
+            header.titleLabel.text = viewModel.mdFeed[section].title
+            header.descriptionLabel.text = viewModel.mdFeed[section].description
+        }
+        
+        return header
+    }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50.0
+    }
+
 }

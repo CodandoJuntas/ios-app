@@ -34,7 +34,7 @@ class FeedRepositoryImpl: FeedRepository {
             .map(JsonFeed.self)
     }
     
-    func getMdFeed() -> Observable<[Field]> {
+    func getMdFeed() -> Observable<[MdFeed]> {
         
         return self.service.mdFeed()
             .map{String(data: $0.data, encoding: .utf8)}
@@ -63,13 +63,13 @@ class FeedRepositoryImpl: FeedRepository {
         }
     }
     
-    func parseCategoriesList(list: [String]) -> [Field] {
+    func parseCategoriesList(list: [String]) -> [MdFeed] {
         
-        var fields: [Field] = []
+        var fields: [MdFeed] = []
         
         for item in list {
             
-            var field = Field()
+            var field = MdFeed()
             
             field.description = self.matches(for: regexTags.categoryDescription.rawValue, in: item).first ?? ""
             field.title = self.matches(for: regexTags.categoryTitle.rawValue, in: item).first ?? ""

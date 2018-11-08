@@ -77,15 +77,11 @@ extension FeedView {
     
     func setupBindings() {
         
-//        viewModel.projects.drive(onNext: { (projects) in
-//            self.viewModel.projectsFeed = projects
-//            self.tableView.reloadSections(IndexSet(integersIn: 2...2), with: UITableViewRowAnimation.fade)
-//        }).disposed(by: rx.disposeBag)
-//        
-//        viewModel.categories.drive(onNext: { (categories) in
-//            self.viewModel.categoriesFeed = categories
-//            self.tableView.reloadSections(IndexSet(integersIn: 1...1), with: UITableViewRowAnimation.fade)
-//        }).disposed(by: rx.disposeBag)
+        viewModel.feed.subscribe(onNext: { [weak self] (feed) in
+            guard let self = self else {return}
+            self.viewModel.mdFeed = feed
+            self.tableView.reloadData()
+        }).disposed(by: rx.disposeBag)
         
         self.headerButton.rx.tap.bind { [weak self] _ in
             self?.delegate?.openProfile()
@@ -101,6 +97,7 @@ extension FeedView {
         tableView.register(R.nib.feedTableViewCell)
         tableView.register(R.nib.highlightedTableViewCell)
         tableView.register(R.nib.mostReadTableViewCell)
+        self.tableView.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: HeaderSectionView.reuseIdentifer)
         
     }
 }

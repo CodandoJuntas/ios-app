@@ -19,7 +19,7 @@ struct Item {
     
 }
 
-struct Field {
+struct MdFeed {
     
     var title: String = ""
     var description: String = ""
