@@ -33,15 +33,32 @@ class HeaderSectionView: UITableViewHeaderFooterView {
         titleLabel.prepareForConstraints()
         descriptionLabel.prepareForConstraints()
         
+        titleLabel.font = UIFont(name: "GothamRounded-Medium", size: 12)
+        titleLabel.centerHorizontally()
         titleLabel.pinLeft(12.0)
         titleLabel.pinRight(12.0)
-        titleLabel.pinTop(6.0)
+        titleLabel.pinTop(3.0)
+        titleLabel.textAlignment = .center
+        
        
-        descriptionLabel.pinLeft(12.0)
-        descriptionLabel.pinRight(12.0)
+        descriptionLabel.font = UIFont(name: "GothamRounded-Light", size: 13)
+        descriptionLabel.textAlignment = .center
+        descriptionLabel.numberOfLines = 0
+        descriptionLabel.pinLeft(20.0)
+        descriptionLabel.pinRight(20.0)
         descriptionLabel.pinTop(3.0, target: titleLabel)
-        descriptionLabel.pinBottom()
-
+        descriptionLabel.pinBottom(8)
+    }
+    
+    func configHeader(section: MdFeed){
+        
+        self.titleLabel.text = section.title
+        
+        if section.description != ""{
+            self.descriptionLabel.text = section.description
+        }
+        
+        descriptionLabel.isHidden = section.description == ""
     }
     
     required init?(coder aDecoder: NSCoder) {

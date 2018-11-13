@@ -28,10 +28,8 @@ class FeedView: UIViewController {
     var feedTableViewDataSource: FeedTableViewDataSource!
     weak var delegate: FeedDelegate?
     
-    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var headerButton: UIButton!
     
     let localStorage: LocalStorage
@@ -64,6 +62,8 @@ extension FeedView {
         self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
+        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedSectionHeaderHeight = 30;
     }
     
     func configureViews() {
@@ -72,7 +72,6 @@ extension FeedView {
         tableView.rowHeight = UITableViewAutomaticDimension
         registerCells()
        
-        
     }
     
     func setupBindings() {
@@ -89,7 +88,6 @@ extension FeedView {
     }
     
 }
-
 
 extension FeedView {
     

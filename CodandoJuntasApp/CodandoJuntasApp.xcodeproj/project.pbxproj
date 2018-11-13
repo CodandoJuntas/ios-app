@@ -25,7 +25,6 @@
 		AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */; };
 		AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5A21509FDD003B2BC3 /* Constants.swift */; };
 		AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */; };
-		AC475F622151E17F003B2BC3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F612151E17F003B2BC3 /* R.generated.swift */; };
 		AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F6721530CF7003B2BC3 /* OnboardingView.swift */; };
 		AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F6821530CF7003B2BC3 /* OnboardingViewModel.swift */; };
 		AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F6921530CF7003B2BC3 /* OnboardingView.xib */; };
@@ -54,7 +53,6 @@
 		AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9C215865FE003B2BC3 /* GothamRounded-BookItalic.otf */; };
 		AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9D215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf */; };
 		AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9E215865FE003B2BC3 /* GothamRoundedLight_21020.ttf */; };
-		AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
 		AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA0215865FE003B2BC3 /* GothamRoundedBold_21016.ttf */; };
 		AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA1215865FE003B2BC3 /* GothamRounded-LightItalic.otf */; };
 		AC475FAF215865FE003B2BC3 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA2215865FE003B2BC3 /* GothamRounded-Bold.otf */; };
@@ -80,6 +78,9 @@
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
+		ACA59A792194FE8400CF0B2E /* HeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */; };
+		ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
+		ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA59A7C2197067600CF0B2E /* R.generated.swift */; };
 		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
@@ -105,7 +106,6 @@
 		AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		AC475F5A21509FDD003B2BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Networking+Utils.swift"; sourceTree = "<group>"; };
-		AC475F612151E17F003B2BC3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AC475F6721530CF7003B2BC3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AC475F6821530CF7003B2BC3 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		AC475F6921530CF7003B2BC3 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
@@ -162,6 +162,8 @@
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC80D7652149D944001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSectionView.xib; sourceTree = "<group>"; };
+		ACA59A7C2197067600CF0B2E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -489,7 +491,7 @@
 				AC475F5C21509FE3003B2BC3 /* Utils */,
 				AC80D7672149D944001B00EF /* Info.plist */,
 				AC80D7642149D944001B00EF /* LaunchScreen.storyboard */,
-				AC475F612151E17F003B2BC3 /* R.generated.swift */,
+				ACA59A7C2197067600CF0B2E /* R.generated.swift */,
 				AC80D75B2149D943001B00EF /* AppDelegate.swift */,
 			);
 			path = CodandoJuntasApp;
@@ -499,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */,
+				ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */,
 			);
 			path = HeaderSection;
 			sourceTree = "<group>";
@@ -573,7 +576,6 @@
 				AC475FA8215865FE003B2BC3 /* GothamRounded-BoldItalic.otf in Resources */,
 				AC475FB0215865FE003B2BC3 /* GothamRounded-Book.otf in Resources */,
 				AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */,
-				AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */,
 				AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */,
 				AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */,
 				AC475FCA21589AE9003B2BC3 /* github-mark.png in Resources */,
@@ -583,10 +585,12 @@
 				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
 				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
+				ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
 				AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */,
 				AC475FAF215865FE003B2BC3 /* GothamRounded-Bold.otf in Resources */,
 				AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */,
+				ACA59A792194FE8400CF0B2E /* HeaderSectionView.xib in Resources */,
 				AC475F7221530D0E003B2BC3 /* LoginView.xib in Resources */,
 				AC475FA7215865FE003B2BC3 /* GothamRoundedBook_21018.ttf in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
@@ -677,6 +681,7 @@
 				AC475F9621547C72003B2BC3 /* UIView+Utils.swift in Sources */,
 				AC475F8421531699003B2BC3 /* SignInServiceImpl.swift in Sources */,
 				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
+				ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */,
 				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
 				AC475FB421586BE8003B2BC3 /* FeedTableViewDelegate.swift in Sources */,
 				AC475F3C2150736A003B2BC3 /* JsonFeed.swift in Sources */,
@@ -685,7 +690,6 @@
 				AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */,
 				AC475F5221507C6D003B2BC3 /* FeedServicempl.swift in Sources */,
 				AC475F86215318E0003B2BC3 /* User.swift in Sources */,
-				AC475F622151E17F003B2BC3 /* R.generated.swift in Sources */,
 				AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */,
 				AC475F7021530D0E003B2BC3 /* LoginView.swift in Sources */,
 				AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */,

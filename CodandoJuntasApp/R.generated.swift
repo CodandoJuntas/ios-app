@@ -246,12 +246,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 8 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 9 nibs.
   struct nib {
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
     /// Nib `FeedView`.
     static let feedView = _R.nib._FeedView()
+    /// Nib `HeaderSectionView`.
+    static let headerSectionView = _R.nib._HeaderSectionView()
     /// Nib `HighlightedTableViewCell`.
     static let highlightedTableViewCell = _R.nib._HighlightedTableViewCell()
     /// Nib `LoginView`.
@@ -273,6 +275,11 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "FeedView", in: bundle)`
     static func feedView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.feedView)
+    }
+    
+    /// `UINib(name: "HeaderSectionView", in: bundle)`
+    static func headerSectionView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.headerSectionView)
     }
     
     /// `UINib(name: "HighlightedTableViewCell", in: bundle)`
@@ -399,6 +406,17 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _HeaderSectionView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "HeaderSectionView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
       fileprivate init() {}

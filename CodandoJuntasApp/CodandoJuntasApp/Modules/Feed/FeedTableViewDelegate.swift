@@ -30,15 +30,14 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
             header.titleLabel.text = "Destaques"
             header.descriptionLabel.isHidden = true
         default:
-            header.titleLabel.text = viewModel.mdFeed[section].title
-            header.descriptionLabel.text = viewModel.mdFeed[section].description
+          
+            header.titleLabel.text = viewModel.mdFeed[section-2].title
+            header.descriptionLabel.text = viewModel.mdFeed[section-2].description
+              header.descriptionLabel.isHidden = false
         }
         
         return header
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50.0
-    }
 
 }
