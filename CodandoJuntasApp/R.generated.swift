@@ -373,12 +373,11 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _HighlightedTableViewCell.validate()
-      try _FeedTableViewCell.validate()
       try _FeedView.validate()
       try _ProfileView.validate()
     }
     
-    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = FeedTableViewCell
       
       let bundle = R.hostingBundle
@@ -387,10 +386,6 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FeedTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTableViewCell
-      }
-      
-      static func validate() throws {
-        if UIKit.UIImage(named: "gitHubLogo.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'gitHubLogo.jpg' is used in nib 'FeedTableViewCell', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
@@ -415,8 +410,8 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "HeaderSectionView"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HeaderSectionView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HeaderSectionView
       }
       
       fileprivate init() {}

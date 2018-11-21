@@ -18,24 +18,21 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderSectionView.reuseIdentifer) as? HeaderSectionView else {
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderSectionView") as? HeaderSectionView else {
             return nil
         }
-        
+
         switch section {
         case 0:
-            header.titleLabel.text = "Destaques"
-            header.descriptionLabel.isHidden = true
+            header.setTitle("Destaques")
+            
         case 1:
-            header.titleLabel.text = "Destaques"
-            header.descriptionLabel.isHidden = true
+            header.setTitle("Eventos")
+            
         default:
-          
-            header.titleLabel.text = viewModel.mdFeed[section-2].title
-            header.descriptionLabel.text = viewModel.mdFeed[section-2].description
-              header.descriptionLabel.isHidden = false
+            header.configHeader(section: viewModel.mdFeed[section-2])
         }
-        
+
         return header
     }
     

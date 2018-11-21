@@ -10,13 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/*
- Code for dependency injection:
-    self.register(MainView.self) { resolver in
-        MainView()
-    }
- */
-
 protocol FeedDelegate: class {
     func openProfile()
 }
@@ -62,14 +55,15 @@ extension FeedView {
         self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
-        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension;
-        self.tableView.estimatedSectionHeaderHeight = 30;
+       
     }
     
     func configureViews() {
         headerView.addShadow(offSetX: 0, offSetY: 3, radius: 3, opacity: 0.3)
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        tableView.estimatedSectionHeaderHeight = 100
         registerCells()
        
     }
@@ -95,7 +89,8 @@ extension FeedView {
         tableView.register(R.nib.feedTableViewCell)
         tableView.register(R.nib.highlightedTableViewCell)
         tableView.register(R.nib.mostReadTableViewCell)
-        self.tableView.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: HeaderSectionView.reuseIdentifer)
+        tableView.register(R.nib.headerSectionView(), forHeaderFooterViewReuseIdentifier: "HeaderSectionView")
+
         
     }
 }

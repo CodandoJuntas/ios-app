@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothamRounded-Medium.otf">
-            <string>GothamRounded-Medium</string>
-        </array>
         <array key="GothamRoundedBook_21018.ttf">
             <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRoundedMedium_21022.ttf">
+            <string>GothamRounded-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -23,112 +23,68 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="CodandoJuntasApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub? O que é isso?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-SR-38n">
-                        <rect key="frame" x="100" y="11.5" width="191" height="12"/>
-                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
-                        <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daiane Angolini e Cynthia Jorge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2km-td-RmM">
-                        <rect key="frame" x="100" y="25.5" width="191" height="11"/>
-                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
-                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-oo-QrE">
-                        <rect key="frame" x="26" y="11.5" width="66" height="52"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-z9-K0B" userLabel="cardView">
+                        <rect key="frame" x="20" y="6" width="280" height="67.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitHubLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-FQ-ikX">
-                                <rect key="frame" x="0.0" y="0.0" width="66" height="52"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-4Y-5V1" userLabel="Tag">
-                                <rect key="frame" x="5" y="5" width="27" height="12"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-fa-sbs">
-                                        <rect key="frame" x="6" y="1" width="15" height="10"/>
-                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
-                                        <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig9-dj-XlF">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="3"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.33333333329999998" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Qdu-fa-sbs" secondAttribute="trailing" constant="6" id="Cl1-sJ-jdT"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qdu-fa-sbs" secondAttribute="bottom" constant="1" id="Onp-IJ-c2z"/>
-                                    <constraint firstItem="Qdu-fa-sbs" firstAttribute="top" secondItem="qtB-4Y-5V1" secondAttribute="top" constant="1" id="cmk-s1-qtD"/>
-                                    <constraint firstItem="Qdu-fa-sbs" firstAttribute="leading" secondItem="qtB-4Y-5V1" secondAttribute="leading" constant="6" id="rYz-Ji-RRW"/>
+                                    <constraint firstAttribute="height" constant="3" id="3WE-sy-DAG"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub? O que é isso?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-SR-38n">
+                                <rect key="frame" x="4" y="9" width="266" height="12"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
+                                <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Entenda de uma vez por toda o que é e como usar a ferramenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2C-Ws-Izv">
+                                <rect key="frame" x="4" y="24" width="266" height="37.5"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93703609700000001" green="0.94117802380000004" blue="0.94519203900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="66" id="9dv-Ff-YnU"/>
-                            <constraint firstAttribute="bottom" secondItem="cdW-FQ-ikX" secondAttribute="bottom" id="Iyz-Wy-DI4"/>
-                            <constraint firstAttribute="trailing" secondItem="cdW-FQ-ikX" secondAttribute="trailing" id="LLc-zu-yM2"/>
-                            <constraint firstItem="qtB-4Y-5V1" firstAttribute="top" secondItem="oOb-oo-QrE" secondAttribute="top" constant="5" id="Rg7-P2-JAr"/>
-                            <constraint firstAttribute="height" constant="52" id="Xhy-Y8-juZ"/>
-                            <constraint firstItem="qtB-4Y-5V1" firstAttribute="leading" secondItem="oOb-oo-QrE" secondAttribute="leading" constant="5" id="i7F-td-u4d"/>
-                            <constraint firstItem="cdW-FQ-ikX" firstAttribute="top" secondItem="oOb-oo-QrE" secondAttribute="top" id="sjW-bT-4El"/>
-                            <constraint firstItem="cdW-FQ-ikX" firstAttribute="leading" secondItem="oOb-oo-QrE" secondAttribute="leading" id="zrv-ws-UTg"/>
+                            <constraint firstItem="3fP-SR-38n" firstAttribute="top" secondItem="ig9-dj-XlF" secondAttribute="bottom" constant="6" id="HuP-ua-e7T"/>
+                            <constraint firstAttribute="bottom" secondItem="B2C-Ws-Izv" secondAttribute="bottom" constant="6" id="JJg-dc-UG5"/>
+                            <constraint firstAttribute="trailing" secondItem="3fP-SR-38n" secondAttribute="trailing" constant="10" id="KoN-pu-CMV"/>
+                            <constraint firstItem="3fP-SR-38n" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="4" id="Qny-F2-Vvd"/>
+                            <constraint firstItem="ig9-dj-XlF" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" id="W2j-cR-u7I"/>
+                            <constraint firstAttribute="trailing" secondItem="B2C-Ws-Izv" secondAttribute="trailing" constant="10" id="mD5-HX-MNM"/>
+                            <constraint firstItem="ig9-dj-XlF" firstAttribute="top" secondItem="YLd-z9-K0B" secondAttribute="top" id="tiL-Yq-c4S"/>
+                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="top" secondItem="3fP-SR-38n" secondAttribute="bottom" constant="3" id="xYa-0c-kWi"/>
+                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="4" id="ySz-LC-uKE"/>
+                            <constraint firstAttribute="trailing" secondItem="ig9-dj-XlF" secondAttribute="trailing" id="z5C-Xr-MFF"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="3"/>
+                                <integer key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teK-C7-Iu9" userLabel="SeparatorView">
-                        <rect key="frame" x="32" y="80.5" width="257" height="1"/>
-                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="IYl-sz-u7D"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Entenda de uma vez por toda o que é e como usar a ferramenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2C-Ws-Izv">
-                        <rect key="frame" x="100" y="38.5" width="191" height="25"/>
-                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
-                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="B2C-Ws-Izv" secondAttribute="trailing" constant="29" id="B7r-za-DQ1"/>
-                    <constraint firstItem="2km-td-RmM" firstAttribute="leading" secondItem="oOb-oo-QrE" secondAttribute="trailing" constant="8" id="F1m-Al-axS"/>
-                    <constraint firstItem="3fP-SR-38n" firstAttribute="leading" secondItem="cdW-FQ-ikX" secondAttribute="trailing" constant="8" id="L6P-c6-kPW"/>
-                    <constraint firstAttribute="trailing" secondItem="teK-C7-Iu9" secondAttribute="trailing" constant="31" id="NXY-au-vBP"/>
-                    <constraint firstAttribute="bottom" secondItem="teK-C7-Iu9" secondAttribute="bottom" id="O9u-Pr-LY6"/>
-                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="bottom" secondItem="cdW-FQ-ikX" secondAttribute="bottom" id="OSv-b2-Lxq"/>
-                    <constraint firstAttribute="trailing" secondItem="3fP-SR-38n" secondAttribute="trailing" constant="29" id="ZkD-9h-SHf"/>
-                    <constraint firstItem="teK-C7-Iu9" firstAttribute="top" secondItem="oOb-oo-QrE" secondAttribute="bottom" constant="17" id="au4-1K-yjW"/>
-                    <constraint firstItem="3fP-SR-38n" firstAttribute="top" secondItem="cdW-FQ-ikX" secondAttribute="top" id="cJs-bq-eoH"/>
-                    <constraint firstAttribute="trailing" secondItem="2km-td-RmM" secondAttribute="trailing" constant="29" id="gzu-El-wLi"/>
-                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="top" secondItem="2km-td-RmM" secondAttribute="bottom" constant="2" id="kHP-wD-boq"/>
-                    <constraint firstItem="2km-td-RmM" firstAttribute="top" secondItem="3fP-SR-38n" secondAttribute="bottom" constant="2" id="lMe-0t-esB"/>
-                    <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="cdW-FQ-ikX" secondAttribute="trailing" constant="8" id="oK5-lc-KgC"/>
-                    <constraint firstItem="oOb-oo-QrE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="q9Q-WV-dPm"/>
-                    <constraint firstItem="oOb-oo-QrE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="rDC-6W-RGp"/>
-                    <constraint firstItem="teK-C7-Iu9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="wxD-kI-XIC"/>
+                    <constraint firstAttribute="bottom" secondItem="YLd-z9-K0B" secondAttribute="bottom" constant="6" id="6TP-FO-ET4"/>
+                    <constraint firstItem="YLd-z9-K0B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Zu2-uC-eDF"/>
+                    <constraint firstItem="YLd-z9-K0B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="f6e-35-Z8O"/>
+                    <constraint firstAttribute="trailing" secondItem="YLd-z9-K0B" secondAttribute="trailing" constant="20" id="tVD-hf-tCe"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="subtitleLabel" destination="2km-td-RmM" id="HYw-zZ-MP3"/>
-                <outlet property="tagLabel" destination="Qdu-fa-sbs" id="3Ot-nu-oSE"/>
+                <outlet property="subtitleLabel" destination="B2C-Ws-Izv" id="Hz2-Nt-Jh7"/>
                 <outlet property="titleLabel" destination="3fP-SR-38n" id="7MV-pn-jHP"/>
             </connections>
-            <point key="canvasLocation" x="137.59999999999999" y="139.43028485757122"/>
+            <point key="canvasLocation" x="22" y="140"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="gitHubLogo.jpg" width="400" height="400"/>
-    </resources>
 </document>

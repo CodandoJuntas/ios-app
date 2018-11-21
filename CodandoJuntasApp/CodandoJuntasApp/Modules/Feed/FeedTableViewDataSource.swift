@@ -44,7 +44,11 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
                 cell.viewModel = self.viewModel
             return cell
         default:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell
+            
+            cell.setupCell(viewModel.mdFeed[indexPath.section-2].items[indexPath.row])
+            
+            return cell
         }
         
     }

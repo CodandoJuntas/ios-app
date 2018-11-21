@@ -12,7 +12,6 @@ class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var tagLabel: UILabel!
     
     
     
@@ -28,11 +27,10 @@ class FeedTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(_ project: Project){
+    func setupCell(_ item: Item){
         
-        titleLabel.text = project.title
-        subtitleLabel.text = project.subTitle
-        tagLabel.text = project.tags?.first ?? ""
+        titleLabel.text = item.title
+        subtitleLabel.text = item.description
         
     }
     
