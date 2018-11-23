@@ -74,6 +74,9 @@
 		AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */; };
 		AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */; };
 		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
+		AC50E8C021A786B6002AE473 /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BA21A76AE0002AE473 /* EventsRouter.swift */; };
+		AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */; };
+		AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BC21A76AF8002AE473 /* EventsService.swift */; };
 		AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77BFAA218A776400085ACA /* MdFeed.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
@@ -156,6 +159,9 @@
 		AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
+		AC50E8BA21A76AE0002AE473 /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
+		AC50E8BC21A76AF8002AE473 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceImpl.swift; sourceTree = "<group>"; };
 		AC77BFAA218A776400085ACA /* MdFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFeed.swift; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +219,7 @@
 		AC475F32215072DE003B2BC3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AC50E8B921A76AA1002AE473 /* EventService */,
 				AC475F8021531559003B2BC3 /* SignIn */,
 				AC475F7F2153154A003B2BC3 /* Feed */,
 			);
@@ -458,6 +465,16 @@
 			path = PlaceholderImages;
 			sourceTree = "<group>";
 		};
+		AC50E8B921A76AA1002AE473 /* EventService */ = {
+			isa = PBXGroup;
+			children = (
+				AC50E8BA21A76AE0002AE473 /* EventsRouter.swift */,
+				AC50E8BC21A76AF8002AE473 /* EventsService.swift */,
+				AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */,
+			);
+			path = EventService;
+			sourceTree = "<group>";
+		};
 		AC80D74F2149D943001B00EF = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +698,7 @@
 				AC475F9621547C72003B2BC3 /* UIView+Utils.swift in Sources */,
 				AC475F8421531699003B2BC3 /* SignInServiceImpl.swift in Sources */,
 				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
+				AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */,
 				ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */,
 				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
 				AC475FB421586BE8003B2BC3 /* FeedTableViewDelegate.swift in Sources */,
@@ -702,6 +720,7 @@
 				AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
+				AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
 				ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */,
 				AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */,
@@ -720,6 +739,7 @@
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
 				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
 				AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */,
+				AC50E8C021A786B6002AE473 /* EventsRouter.swift in Sources */,
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 				AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */,

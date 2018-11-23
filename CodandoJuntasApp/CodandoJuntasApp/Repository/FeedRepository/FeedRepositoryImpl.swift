@@ -42,15 +42,9 @@ class FeedRepositoryImpl: FeedRepository {
             .unwrap()
             .map{self.matches(for: regexTags.categories.rawValue, in: $0)}
             .map{self.parseCategoriesList(list: $0)}
-        
     }
     
-    
-    
-    
-    
     func matches(for regex: String, in text: String) -> [String] {
-        
         do {
             let regex = try NSRegularExpression(pattern: regex, options: .caseInsensitive)
             let results = regex.matches(in: text, options: [], range: NSRange(location: 0, length: text.utf16.count))
@@ -64,24 +58,18 @@ class FeedRepositoryImpl: FeedRepository {
     }
     
     func parseCategoriesList(list: [String]) -> [MdFeed] {
-        
+
         var fields: [MdFeed] = []
         
         for item in list {
-            
             var field = MdFeed()
-            
             field.description = self.matches(for: regexTags.categoryDescription.rawValue, in: item).first ?? ""
             field.title = self.matches(for: regexTags.categoryTitle.rawValue, in: item).first ?? ""
             let itemList = matches(for: regexTags.items.rawValue, in: item)
             field.items = self.parseItemList(itemList: itemList)
-            
             fields.append(field)
         }
-       
-        
         return fields
-        
     }
     
     func parseItemList(itemList: [String]) -> [Item] {
@@ -103,39 +91,3 @@ class FeedRepositoryImpl: FeedRepository {
     }
     
 }
-
-
-
-
-//
-//        return Single<[Field]>.create{ single in
-//
-//            _ = self.service.mdFeed().subscribe{ event in
-//                switch event {
-//                case let .success(response):
-//
-//                    if let data = String(data: response.data, encoding: .utf8) {
-//                        let result = self.matches(for: regexTags.categories.rawValue, in: data)
-//
-//                        let fields : [Field] = result
-//                            .compactMap({ (block) -> Field? in
-//                                var field = Field()
-//                                field.description = self.matches(for: regexTags.categoryDescription.rawValue, in: block).first ?? ""
-//                                field.title = self.matches(for: regexTags.categoryTitle.rawValue, in: block).first ?? ""
-//                                //field.items = self.matches(for: regexTags.categoryDescription.rawValue, in: block).first ?? ""
-//                                return field
-//                            })
-//
-//                        single(.success(fields))
-//                    }
-//                    else {
-//                        single(.error("Fail to parse Data" as! Error))
-//                    }
-//
-//                case let .error(error):
-//                    single(.error(error))
-//                }
-//            }
-//             return Disposables.create() {}
-//
-//        }
