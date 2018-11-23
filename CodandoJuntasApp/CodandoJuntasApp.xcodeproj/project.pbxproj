@@ -76,6 +76,7 @@
 		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
 		AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */; };
 		AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BC21A76AF8002AE473 /* EventsService.swift */; };
+		AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8C521A787F4002AE473 /* EventsRouter.swift */; };
 		AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77BFAA218A776400085ACA /* MdFeed.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
@@ -160,6 +161,7 @@
 		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
 		AC50E8BC21A76AF8002AE473 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
 		AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceImpl.swift; sourceTree = "<group>"; };
+		AC50E8C521A787F4002AE473 /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		AC77BFAA218A776400085ACA /* MdFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFeed.swift; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 			children = (
 				AC50E8BC21A76AF8002AE473 /* EventsService.swift */,
 				AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */,
+				AC50E8C521A787F4002AE473 /* EventsRouter.swift */,
 			);
 			path = EventService;
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
 				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
 				AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */,
+				AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */,
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 				AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */,
