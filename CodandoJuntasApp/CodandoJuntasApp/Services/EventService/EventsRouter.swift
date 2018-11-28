@@ -12,6 +12,7 @@ import Moya
 
 enum EventsRouter {
     case events
+    //case createEvent(event: Event)
 }
 
 extension EventsRouter: TargetType {

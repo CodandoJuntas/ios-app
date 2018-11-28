@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var defaultContainer: DefaultContainer!
     var appCoordinator: AppCoordinator!
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
+        
         
         // Start AppCoordinator
         self.defaultContainer = DefaultContainer()
@@ -28,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    
 
 }
 

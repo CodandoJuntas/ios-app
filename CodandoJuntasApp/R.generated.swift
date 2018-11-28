@@ -22,8 +22,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 17 files.
+  /// This `R.file` struct is generated, and contains static references to 18 files.
   struct file {
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
     /// Resource file `GothamRounded-Bold.otf`.
     static let gothamRoundedBoldOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Bold", pathExtension: "otf")
     /// Resource file `GothamRounded-BoldItalic.otf`.
@@ -58,6 +60,12 @@ struct R: Rswift.Validatable {
     static let githubMarkPng = Rswift.FileResource(bundle: R.hostingBundle, name: "github-mark", pathExtension: "png")
     /// Resource file `swift-og.png`.
     static let swiftOgPng = Rswift.FileResource(bundle: R.hostingBundle, name: "swift-og", pathExtension: "png")
+    
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "GothamRounded-Bold", withExtension: "otf")`
     static func gothamRoundedBoldOtf(_: Void = ()) -> Foundation.URL? {
@@ -246,12 +254,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 9 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 10 nibs.
   struct nib {
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
     /// Nib `FeedView`.
     static let feedView = _R.nib._FeedView()
+    /// Nib `GitHubLoginView`.
+    static let gitHubLoginView = _R.nib._GitHubLoginView()
     /// Nib `HeaderSectionView`.
     static let headerSectionView = _R.nib._HeaderSectionView()
     /// Nib `HighlightedTableViewCell`.
@@ -275,6 +285,11 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "FeedView", in: bundle)`
     static func feedView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.feedView)
+    }
+    
+    /// `UINib(name: "GitHubLoginView", in: bundle)`
+    static func gitHubLoginView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.gitHubLoginView)
     }
     
     /// `UINib(name: "HeaderSectionView", in: bundle)`
@@ -401,6 +416,17 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _GitHubLoginView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "GitHubLoginView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
       fileprivate init() {}
