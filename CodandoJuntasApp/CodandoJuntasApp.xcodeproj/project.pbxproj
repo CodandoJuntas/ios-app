@@ -91,6 +91,7 @@
 		ACA59A792194FE8400CF0B2E /* HeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */; };
 		ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
 		ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA59A7C2197067600CF0B2E /* R.generated.swift */; };
+		ACAA665021B468C100EB9CD9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA664F21B468C100EB9CD9 /* Event.swift */; };
 		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
@@ -184,6 +185,7 @@
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSectionView.xib; sourceTree = "<group>"; };
 		ACA59A7C2197067600CF0B2E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		ACAA664F21B468C100EB9CD9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -267,6 +269,7 @@
 				AC475F3B2150736A003B2BC3 /* JsonFeed.swift */,
 				AC475F85215318E0003B2BC3 /* User.swift */,
 				AC77BFAA218A776400085ACA /* MdFeed.swift */,
+				ACAA664F21B468C100EB9CD9 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */,
 				AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */,
 				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
+				ACAA665021B468C100EB9CD9 /* Event.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
 				AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */,
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,

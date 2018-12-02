@@ -17,5 +17,5 @@ import Firebase
 //}
 
 protocol EventsRepository: class {
-    
+    func getEvents() -> Single<Events>
 }

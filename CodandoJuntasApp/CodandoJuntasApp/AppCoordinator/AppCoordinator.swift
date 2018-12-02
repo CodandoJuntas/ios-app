@@ -36,12 +36,9 @@ class AppCoordinator: Coordinator {
     
     func start() {
         
-        showGitHubLoginView()
-//        if storage.firstAccess {
-//            showOnBoarding()
-//        } else {
-//            showMainView()
-//        }
+        //showGitHubLoginView()
+        showMainView()
+
     }
     
     fileprivate func showMainView() {
