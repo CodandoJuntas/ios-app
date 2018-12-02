@@ -28,7 +28,6 @@ extension DefaultContainer {
     
     func registerViews() {
         
-  
         self.container.register(FeedView.self) { resolver in
             FeedView(
                 repository: resolver.resolve(FeedRepository.self)!,
@@ -52,6 +51,10 @@ extension DefaultContainer {
                 storage: resolver.resolve(LocalStorage.self)!
             )
         }
+        
+        self.container.register(GitHubLoginView.self) { resolver in
+            GitHubLoginView(repository: resolver.resolve(SignInRepository.self)!)
+        }
     }
     
 }
@@ -66,7 +69,13 @@ extension DefaultContainer {
         }
         
         self.container.register(SignInService.self) { _ in
-            return SignInServiceImpl()
+            let provider = MoyaProvider<SignInRouter>(plugins: self.getDefaultPlugins())
+            return SignInServiceImpl(provider: provider)
+        }
+        
+        self.container.register(EventsService.self) { _ in
+            let provider = MoyaProvider<EventsRouter>(plugins: self.getDefaultPlugins())
+            return EventsServiceImpl(provider: provider)
         }
         
         self.container.register(FeedRepository.self) { resolver in
@@ -78,6 +87,12 @@ extension DefaultContainer {
         self.container.register(SignInRepository.self) { resolver in
             SignInRepositoryImpl(
                 service: resolver.resolve(SignInService.self)!
+            )
+        }
+        
+        self.container.register(EventsRepository.self){ resolver in
+            EventsRepositoryImpl(
+                service: resolver.resolve(EventsService.self)!
             )
         }
     }

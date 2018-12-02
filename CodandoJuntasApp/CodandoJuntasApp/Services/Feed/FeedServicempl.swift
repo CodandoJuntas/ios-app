@@ -11,15 +11,19 @@ import RxSwift
 import Moya
 
 class FeedServiceImpl: FeedService {
-    
+   
     let provider: MoyaProvider<FeedRouter>
     
     init(provider: MoyaProvider<FeedRouter>) {
         self.provider = provider
     }
     
-    func feed() -> Single<Response> {
+    func jsonFeed() -> Single<Response> {
         return self.provider.rx.request(.feed)
+    }
+    
+    func mdFeed() -> Single<Response> {
+        return self.provider.rx.request(.tutorials)
     }
     
 }

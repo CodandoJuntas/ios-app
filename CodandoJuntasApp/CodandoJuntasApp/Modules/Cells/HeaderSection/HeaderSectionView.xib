@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Light.otf">
+            <string>GothamRounded-Light</string>
+        </array>
+        <array key="GothamRoundedMedium_21022.ttf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderSectionView" customModule="CodandoJuntasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-Ta-5HJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.33333333329999998" blue="0.43921568630000002" alpha="0.19701399539877301" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h1-RH-1wT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0VA-NH-lH5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xy4-Eo-3KL">
+                    <rect key="frame" x="40" y="6" width="295" height="74"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-VF-V7l">
+                            <rect key="frame" x="10" y="12" width="275" height="15"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-b8-PXL">
+                            <rect key="frame" x="12" y="33" width="271" height="13"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="13"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fxB-VF-V7l" secondAttribute="trailing" constant="10" id="2ON-L8-msE"/>
+                        <constraint firstItem="fxB-VF-V7l" firstAttribute="top" secondItem="xy4-Eo-3KL" secondAttribute="top" constant="12" id="52e-2B-rAa"/>
+                        <constraint firstItem="fxB-VF-V7l" firstAttribute="leading" secondItem="xy4-Eo-3KL" secondAttribute="leading" constant="10" id="9yC-WV-SPF"/>
+                        <constraint firstAttribute="trailing" secondItem="TYq-b8-PXL" secondAttribute="trailing" constant="12" id="KZQ-Fd-YLb"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TYq-b8-PXL" secondAttribute="bottom" constant="8" id="RqL-nH-TUl"/>
+                        <constraint firstItem="TYq-b8-PXL" firstAttribute="top" secondItem="fxB-VF-V7l" secondAttribute="bottom" constant="6" id="k5c-4E-L4T"/>
+                        <constraint firstItem="TYq-b8-PXL" firstAttribute="leading" secondItem="xy4-Eo-3KL" secondAttribute="leading" constant="12" id="s68-de-VE1"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fxB-VF-V7l" secondAttribute="bottom" constant="6" id="ted-SG-QrL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xy4-Eo-3KL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="15R-hC-ra1"/>
+                <constraint firstAttribute="bottom" secondItem="7h1-RH-1wT" secondAttribute="bottom" id="16Q-vC-Xl8"/>
+                <constraint firstItem="7h1-RH-1wT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5G4-gk-ES9"/>
+                <constraint firstItem="xy4-Eo-3KL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="A2w-j7-Jpp"/>
+                <constraint firstAttribute="trailing" secondItem="7h1-RH-1wT" secondAttribute="trailing" id="H1L-7o-VtX"/>
+                <constraint firstItem="9pW-Ta-5HJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JbL-PR-wxm"/>
+                <constraint firstAttribute="bottom" secondItem="xy4-Eo-3KL" secondAttribute="bottom" constant="6" id="Lf3-VI-hOx"/>
+                <constraint firstAttribute="trailing" secondItem="9pW-Ta-5HJ" secondAttribute="trailing" id="W8Y-IS-Gvc"/>
+                <constraint firstItem="9pW-Ta-5HJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kXy-nB-33p"/>
+                <constraint firstAttribute="trailing" secondItem="xy4-Eo-3KL" secondAttribute="trailing" constant="40" id="swU-vf-SRJ"/>
+                <constraint firstAttribute="bottom" secondItem="9pW-Ta-5HJ" secondAttribute="bottom" id="uaZ-rP-P9Y"/>
+                <constraint firstItem="7h1-RH-1wT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vkZ-FD-r52"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="TYq-b8-PXL" id="aef-d2-Hsz"/>
+                <outlet property="titleLabel" destination="fxB-VF-V7l" id="wGW-f6-MNc"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="-213.19340329835083"/>
+        </view>
+    </objects>
+</document>

@@ -18,7 +18,7 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-    return 3
+        return viewModel.mdFeed.count + 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,24 +28,9 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
         case 1:
             return 1
         default:
-            return 10 // viewlModel.sizeOfFeed
+            return viewModel.mdFeed[section-2].items.count
         }
     }
-
-     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-
-        switch section {
-        case 1:
-            return "Introdução"
-        case 2:
-            return "Fundamentos de Programação"
-        default:
-            return nil
-        }
-
-    }
-    
-   
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,15 +41,17 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mostReadTableViewCell, for: indexPath) as! MostReadTableViewCell
+                cell.viewModel = self.viewModel
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell
+            
+            cell.setupCell(viewModel.mdFeed[indexPath.section-2].items[indexPath.row])
+            
             return cell
         }
         
     }
-    
-    
     
     
 }

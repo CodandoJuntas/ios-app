@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import Moya
 
 enum LoginError: Error {
     case message(message: String)
@@ -17,13 +19,19 @@ enum LoginError: Error {
 
 class SignInServiceImpl: SignInService {
     
-    func facebookLogin(_ onComplete: @escaping (String?, LoginError?) -> ()) {
-        
+    let provider: MoyaProvider<SignInRouter>
+    
+    init(provider: MoyaProvider<SignInRouter>) {
+        self.provider = provider
     }
     
-    func githubLogin(_ onComplete: @escaping (String?, LoginError?) -> ()) {
-        
+    func githubLogin(_ code: String) -> Single<Response> {
+        return provider.rx.request(.login(code))
     }
     
-
+    func getUser(_ token: String) -> Single<Response> {
+        return provider.rx.request(.getUser(token))
+    }
+    
 }
+

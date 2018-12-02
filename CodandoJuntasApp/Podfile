@@ -22,6 +22,8 @@ target 'CodandoJuntasApp' do
   #Clean Code
   pod 'SwiftLint'
   pod 'R.swift'
- 
-
+  
+  #Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end

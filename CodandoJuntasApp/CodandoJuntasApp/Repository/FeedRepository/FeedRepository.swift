@@ -16,5 +16,6 @@ import Moya
 //}
 
 protocol FeedRepository: class {
-    func getFeed() -> Single<Feed>
+    func getJsonFeed() -> Single<JsonFeed>
+    func getMdFeed() -> Observable<[MdFeed]>
 }

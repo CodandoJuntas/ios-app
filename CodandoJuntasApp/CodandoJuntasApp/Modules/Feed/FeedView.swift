@@ -10,13 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/*
- Code for dependency injection:
-    self.register(MainView.self) { resolver in
-        MainView()
-    }
- */
-
 protocol FeedDelegate: class {
     func openProfile()
 }
@@ -28,10 +21,8 @@ class FeedView: UIViewController {
     var feedTableViewDataSource: FeedTableViewDataSource!
     weak var delegate: FeedDelegate?
     
-    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var headerButton: UIButton!
     
     let localStorage: LocalStorage
@@ -64,20 +55,24 @@ extension FeedView {
         self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
+       
     }
     
     func configureViews() {
         headerView.addShadow(offSetX: 0, offSetY: 3, radius: 3, opacity: 0.3)
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        tableView.estimatedSectionHeaderHeight = 100
         registerCells()
        
-        
     }
     
     func setupBindings() {
-        viewModel.feed.drive(onNext: { (feed) in
-            
+        
+        viewModel.feed.subscribe(onNext: { [weak self] (feed) in
+            guard let self = self else {return}
+            self.viewModel.mdFeed = feed
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
         
@@ -88,13 +83,14 @@ extension FeedView {
     
 }
 
-
 extension FeedView {
     
     func registerCells(){
         tableView.register(R.nib.feedTableViewCell)
         tableView.register(R.nib.highlightedTableViewCell)
         tableView.register(R.nib.mostReadTableViewCell)
+        tableView.register(R.nib.headerSectionView(), forHeaderFooterViewReuseIdentifier: "HeaderSectionView")
+
         
     }
 }

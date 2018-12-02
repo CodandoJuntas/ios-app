@@ -10,7 +10,7 @@
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
-		AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3B2150736A003B2BC3 /* Feed.swift */; };
+		AC475F3C2150736A003B2BC3 /* JsonFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3B2150736A003B2BC3 /* JsonFeed.swift */; };
 		AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */; };
 		AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3F215073A7003B2BC3 /* FeedRepository.swift */; };
 		AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F44215079F9003B2BC3 /* Coordinator.swift */; };
@@ -25,7 +25,6 @@
 		AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */; };
 		AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5A21509FDD003B2BC3 /* Constants.swift */; };
 		AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */; };
-		AC475F622151E17F003B2BC3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F612151E17F003B2BC3 /* R.generated.swift */; };
 		AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F6721530CF7003B2BC3 /* OnboardingView.swift */; };
 		AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F6821530CF7003B2BC3 /* OnboardingViewModel.swift */; };
 		AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F6921530CF7003B2BC3 /* OnboardingView.xib */; };
@@ -54,7 +53,6 @@
 		AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9C215865FE003B2BC3 /* GothamRounded-BookItalic.otf */; };
 		AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9D215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf */; };
 		AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9E215865FE003B2BC3 /* GothamRoundedLight_21020.ttf */; };
-		AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
 		AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA0215865FE003B2BC3 /* GothamRoundedBold_21016.ttf */; };
 		AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA1215865FE003B2BC3 /* GothamRounded-LightItalic.otf */; };
 		AC475FAF215865FE003B2BC3 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475FA2215865FE003B2BC3 /* GothamRounded-Bold.otf */; };
@@ -76,11 +74,25 @@
 		AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */; };
 		AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */; };
 		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
+		AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */; };
+		AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BC21A76AF8002AE473 /* EventsService.swift */; };
+		AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8C521A787F4002AE473 /* EventsRouter.swift */; };
+		AC50E8C821ACAF85002AE473 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC50E8C721ACAF85002AE473 /* GoogleService-Info.plist */; };
+		AC50E8CD21ACBDFB002AE473 /* GitHubLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8CA21ACBDFB002AE473 /* GitHubLoginView.swift */; };
+		AC50E8CE21ACBDFB002AE473 /* GitHubLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8CB21ACBDFB002AE473 /* GitHubLoginViewModel.swift */; };
+		AC50E8CF21ACBDFB002AE473 /* GitHubLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC50E8CC21ACBDFB002AE473 /* GitHubLoginView.xib */; };
+		AC50E8D121ADE8C7002AE473 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8D021ADE8C7002AE473 /* SignInRouter.swift */; };
+		AC50E8D621ADF529002AE473 /* EventsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8D421ADF529002AE473 /* EventsRepositoryImpl.swift */; };
+		AC50E8D721ADF529002AE473 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8D521ADF529002AE473 /* EventsRepository.swift */; };
+		AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77BFAA218A776400085ACA /* MdFeed.swift */; };
 		AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80D75B2149D943001B00EF /* AppDelegate.swift */; };
 		AC80D7632149D944001B00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7622149D944001B00EF /* Assets.xcassets */; };
 		AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80D7642149D944001B00EF /* LaunchScreen.storyboard */; };
-		AC82E1FA2159942300244374 /* FeedSectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */; };
-		AC82E1FB2159942300244374 /* FeedSectionHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */; };
+		ACA59A792194FE8400CF0B2E /* HeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */; };
+		ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
+		ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA59A7C2197067600CF0B2E /* R.generated.swift */; };
+		ACAA665021B468C100EB9CD9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA664F21B468C100EB9CD9 /* Event.swift */; };
+		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +102,7 @@
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
-		AC475F3B2150736A003B2BC3 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		AC475F3B2150736A003B2BC3 /* JsonFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFeed.swift; sourceTree = "<group>"; };
 		AC475F3E215073A7003B2BC3 /* FeedRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepositoryImpl.swift; sourceTree = "<group>"; };
 		AC475F3F215073A7003B2BC3 /* FeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
 		AC475F44215079F9003B2BC3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -105,7 +117,6 @@
 		AC475F5621509EA4003B2BC3 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		AC475F5A21509FDD003B2BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Networking+Utils.swift"; sourceTree = "<group>"; };
-		AC475F612151E17F003B2BC3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AC475F6721530CF7003B2BC3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AC475F6821530CF7003B2BC3 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		AC475F6921530CF7003B2BC3 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
@@ -156,13 +167,26 @@
 		AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
+		AC50E8BC21A76AF8002AE473 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceImpl.swift; sourceTree = "<group>"; };
+		AC50E8C521A787F4002AE473 /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
+		AC50E8C721ACAF85002AE473 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC50E8CA21ACBDFB002AE473 /* GitHubLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLoginView.swift; sourceTree = "<group>"; };
+		AC50E8CB21ACBDFB002AE473 /* GitHubLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLoginViewModel.swift; sourceTree = "<group>"; };
+		AC50E8CC21ACBDFB002AE473 /* GitHubLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitHubLoginView.xib; sourceTree = "<group>"; };
+		AC50E8D021ADE8C7002AE473 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		AC50E8D421ADF529002AE473 /* EventsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepositoryImpl.swift; sourceTree = "<group>"; };
+		AC50E8D521ADF529002AE473 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
+		AC77BFAA218A776400085ACA /* MdFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFeed.swift; sourceTree = "<group>"; };
 		AC80D7582149D943001B00EF /* CodandoJuntasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodandoJuntasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80D75B2149D943001B00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC80D7622149D944001B00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC80D7652149D944001B00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC80D7672149D944001B00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionHeaderViewController.swift; sourceTree = "<group>"; };
-		AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedSectionHeaderViewController.xib; sourceTree = "<group>"; };
+		ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSectionView.xib; sourceTree = "<group>"; };
+		ACA59A7C2197067600CF0B2E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		ACAA664F21B468C100EB9CD9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -198,6 +222,7 @@
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC50E8C921ACBDD5002AE473 /* GithubLogin */,
 				AC475F8921547B22003B2BC3 /* Components */,
 				AC475F66215305A9003B2BC3 /* Cells */,
 				AC475F652153059C003B2BC3 /* Profile */,
@@ -211,6 +236,7 @@
 		AC475F32215072DE003B2BC3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AC50E8B921A76AA1002AE473 /* EventService */,
 				AC475F8021531559003B2BC3 /* SignIn */,
 				AC475F7F2153154A003B2BC3 /* Feed */,
 			);
@@ -230,6 +256,7 @@
 		AC475F3A2150731A003B2BC3 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				AC50E8D221ADF2BC002AE473 /* EventsRepository */,
 				AC475F7A2153140B003B2BC3 /* SignInRepository */,
 				AC475F79215313FC003B2BC3 /* FeedRepository */,
 			);
@@ -239,8 +266,10 @@
 		AC475F3D21507383003B2BC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC475F3B2150736A003B2BC3 /* Feed.swift */,
+				AC475F3B2150736A003B2BC3 /* JsonFeed.swift */,
 				AC475F85215318E0003B2BC3 /* User.swift */,
+				AC77BFAA218A776400085ACA /* MdFeed.swift */,
+				ACAA664F21B468C100EB9CD9 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +371,7 @@
 		AC475F66215305A9003B2BC3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				ACD5E34121926AC7006A9B05 /* HeaderSection */,
 				AC475FC1215883F3003B2BC3 /* FeedCell */,
 				AC475FC0215883E1003B2BC3 /* MostReadCell */,
 				AC475FBF215883CA003B2BC3 /* HighlightedCell */,
@@ -382,6 +412,7 @@
 			children = (
 				AC475F812153168C003B2BC3 /* SignInService.swift */,
 				AC475F8321531699003B2BC3 /* SignInServiceImpl.swift */,
+				AC50E8D021ADE8C7002AE473 /* SignInRouter.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -438,8 +469,6 @@
 			children = (
 				AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */,
 				AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */,
-				AC82E1F82159942300244374 /* FeedSectionHeaderViewController.swift */,
-				AC82E1F92159942300244374 /* FeedSectionHeaderViewController.xib */,
 			);
 			path = FeedCell;
 			sourceTree = "<group>";
@@ -454,6 +483,35 @@
 				AC475FC921589AE9003B2BC3 /* github-mark.png */,
 			);
 			path = PlaceholderImages;
+			sourceTree = "<group>";
+		};
+		AC50E8B921A76AA1002AE473 /* EventService */ = {
+			isa = PBXGroup;
+			children = (
+				AC50E8BC21A76AF8002AE473 /* EventsService.swift */,
+				AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */,
+				AC50E8C521A787F4002AE473 /* EventsRouter.swift */,
+			);
+			path = EventService;
+			sourceTree = "<group>";
+		};
+		AC50E8C921ACBDD5002AE473 /* GithubLogin */ = {
+			isa = PBXGroup;
+			children = (
+				AC50E8CA21ACBDFB002AE473 /* GitHubLoginView.swift */,
+				AC50E8CB21ACBDFB002AE473 /* GitHubLoginViewModel.swift */,
+				AC50E8CC21ACBDFB002AE473 /* GitHubLoginView.xib */,
+			);
+			path = GithubLogin;
+			sourceTree = "<group>";
+		};
+		AC50E8D221ADF2BC002AE473 /* EventsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				AC50E8D421ADF529002AE473 /* EventsRepositoryImpl.swift */,
+				AC50E8D521ADF529002AE473 /* EventsRepository.swift */,
+			);
+			path = EventsRepository;
 			sourceTree = "<group>";
 		};
 		AC80D74F2149D943001B00EF = {
@@ -481,18 +539,28 @@
 				AC475F4A21507A84003B2BC3 /* Storage */,
 				AC475F3D21507383003B2BC3 /* Model */,
 				AC475F32215072DE003B2BC3 /* Services */,
+				AC475F3A2150731A003B2BC3 /* Repository */,
 				AC475F31215072D7003B2BC3 /* Modules */,
 				AC475F33215072EA003B2BC3 /* Resources */,
-				AC475F3A2150731A003B2BC3 /* Repository */,
-				AC475F4321507410003B2BC3 /* Container */,
 				AC475F5921509EAC003B2BC3 /* Rx Utilities */,
 				AC475F5C21509FE3003B2BC3 /* Utils */,
+				AC475F4321507410003B2BC3 /* Container */,
 				AC80D7672149D944001B00EF /* Info.plist */,
 				AC80D7642149D944001B00EF /* LaunchScreen.storyboard */,
-				AC475F612151E17F003B2BC3 /* R.generated.swift */,
+				ACA59A7C2197067600CF0B2E /* R.generated.swift */,
 				AC80D75B2149D943001B00EF /* AppDelegate.swift */,
+				AC50E8C721ACAF85002AE473 /* GoogleService-Info.plist */,
 			);
 			path = CodandoJuntasApp;
+			sourceTree = "<group>";
+		};
+		ACD5E34121926AC7006A9B05 /* HeaderSection */ = {
+			isa = PBXGroup;
+			children = (
+				ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */,
+				ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */,
+			);
+			path = HeaderSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,26 +628,28 @@
 				AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */,
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
+				AC50E8C821ACAF85002AE473 /* GoogleService-Info.plist in Resources */,
 				AC475FD021589D66003B2BC3 /* dog.jpg in Resources */,
 				AC475F7821530D51003B2BC3 /* ProfileView.xib in Resources */,
 				AC475FA8215865FE003B2BC3 /* GothamRounded-BoldItalic.otf in Resources */,
 				AC475FB0215865FE003B2BC3 /* GothamRounded-Book.otf in Resources */,
 				AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */,
-				AC475FAC215865FE003B2BC3 /* GothamRounded-Medium.otf in Resources */,
 				AC80D7662149D944001B00EF /* LaunchScreen.storyboard in Resources */,
 				AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */,
 				AC475FCA21589AE9003B2BC3 /* github-mark.png in Resources */,
+				AC50E8CF21ACBDFB002AE473 /* GitHubLoginView.xib in Resources */,
 				AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */,
 				AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */,
 				AC475FA6215865FE003B2BC3 /* GothamRounded-MediumItalic.otf in Resources */,
 				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
-				AC82E1FB2159942300244374 /* FeedSectionHeaderViewController.xib in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
 				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
+				ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
 				AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */,
 				AC475FAF215865FE003B2BC3 /* GothamRounded-Bold.otf in Resources */,
 				AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */,
+				ACA59A792194FE8400CF0B2E /* HeaderSectionView.xib in Resources */,
 				AC475F7221530D0E003B2BC3 /* LoginView.xib in Resources */,
 				AC475FA7215865FE003B2BC3 /* GothamRoundedBook_21018.ttf in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
@@ -616,6 +686,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -625,10 +696,12 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -638,6 +711,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -667,18 +741,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC475F7121530D0E003B2BC3 /* LoginViewModel.swift in Sources */,
+				AC50E8CD21ACBDFB002AE473 /* GitHubLoginView.swift in Sources */,
 				AC475F9621547C72003B2BC3 /* UIView+Utils.swift in Sources */,
 				AC475F8421531699003B2BC3 /* SignInServiceImpl.swift in Sources */,
+				AC50E8D621ADF529002AE473 /* EventsRepositoryImpl.swift in Sources */,
 				AC475F45215079F9003B2BC3 /* Coordinator.swift in Sources */,
+				AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */,
+				ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */,
 				AC475F5B21509FDD003B2BC3 /* Constants.swift in Sources */,
 				AC475FB421586BE8003B2BC3 /* FeedTableViewDelegate.swift in Sources */,
-				AC475F3C2150736A003B2BC3 /* Feed.swift in Sources */,
+				AC50E8D721ADF529002AE473 /* EventsRepository.swift in Sources */,
+				AC475F3C2150736A003B2BC3 /* JsonFeed.swift in Sources */,
 				AC475F3721507312003B2BC3 /* FeedView.swift in Sources */,
 				AC475F9221547C72003B2BC3 /* UIColor+Utils.swift in Sources */,
 				AC475F40215073A7003B2BC3 /* FeedRepositoryImpl.swift in Sources */,
 				AC475F5221507C6D003B2BC3 /* FeedServicempl.swift in Sources */,
 				AC475F86215318E0003B2BC3 /* User.swift in Sources */,
-				AC475F622151E17F003B2BC3 /* R.generated.swift in Sources */,
 				AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */,
 				AC475F7021530D0E003B2BC3 /* LoginView.swift in Sources */,
 				AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */,
@@ -686,12 +764,14 @@
 				AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */,
 				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
 				AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */,
+				AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */,
 				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
 				AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
+				AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
-				AC82E1FA2159942300244374 /* FeedSectionHeaderViewController.swift in Sources */,
+				ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */,
 				AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,
@@ -700,6 +780,7 @@
 				AC475F4C21507AE3003B2BC3 /* LocalStorageImpl.swift in Sources */,
 				AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */,
 				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
+				ACAA665021B468C100EB9CD9 /* Event.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
 				AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */,
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,
@@ -707,7 +788,10 @@
 				AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */,
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
 				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
+				AC50E8CE21ACBDFB002AE473 /* GitHubLoginViewModel.swift in Sources */,
+				AC50E8D121ADE8C7002AE473 /* SignInRouter.swift in Sources */,
 				AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */,
+				AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */,
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 				AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */,

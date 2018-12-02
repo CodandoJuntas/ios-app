@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothamRounded-Book.otf">
+        <array key="GothamRoundedBook_21018.ttf">
             <string>GothamRounded-Book</string>
         </array>
         <array key="GothamRoundedMedium_21022.ttf">
@@ -84,6 +84,10 @@ iniciantes?</string>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="180" height="144"/>
+            <connections>
+                <outlet property="tagLabel" destination="ivY-l9-t8M" id="1vf-9y-SA7"/>
+                <outlet property="titleLabel" destination="Ekh-OL-qKT" id="fk5-G5-hVh"/>
+            </connections>
             <point key="canvasLocation" x="241.59999999999999" y="181.70914542728636"/>
         </collectionViewCell>
     </objects>
