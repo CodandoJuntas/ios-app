@@ -1,3 +1,7 @@
+---
+name: "[UF - Cidade] -  Nome do evento "
+---
+
 ## Endereço
 * Endereço do evento
 
