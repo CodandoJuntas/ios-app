@@ -17,4 +17,7 @@ import Moya
 
 protocol SignInRepository: class {
     
+    func login(code: String) -> Single<String>
+    
+    func getUser(token: String) -> Single<User>
 }

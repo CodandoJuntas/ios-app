@@ -22,8 +22,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 17 files.
+  /// This `R.file` struct is generated, and contains static references to 18 files.
   struct file {
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
     /// Resource file `GothamRounded-Bold.otf`.
     static let gothamRoundedBoldOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRounded-Bold", pathExtension: "otf")
     /// Resource file `GothamRounded-BoldItalic.otf`.
@@ -58,6 +60,12 @@ struct R: Rswift.Validatable {
     static let githubMarkPng = Rswift.FileResource(bundle: R.hostingBundle, name: "github-mark", pathExtension: "png")
     /// Resource file `swift-og.png`.
     static let swiftOgPng = Rswift.FileResource(bundle: R.hostingBundle, name: "swift-og", pathExtension: "png")
+    
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "GothamRounded-Bold", withExtension: "otf")`
     static func gothamRoundedBoldOtf(_: Void = ()) -> Foundation.URL? {
@@ -246,14 +254,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 9 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 10 nibs.
   struct nib {
-    /// Nib `FeedSectionHeaderViewController`.
-    static let feedSectionHeaderViewController = _R.nib._FeedSectionHeaderViewController()
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
     /// Nib `FeedView`.
     static let feedView = _R.nib._FeedView()
+    /// Nib `GitHubLoginView`.
+    static let gitHubLoginView = _R.nib._GitHubLoginView()
+    /// Nib `HeaderSectionView`.
+    static let headerSectionView = _R.nib._HeaderSectionView()
     /// Nib `HighlightedTableViewCell`.
     static let highlightedTableViewCell = _R.nib._HighlightedTableViewCell()
     /// Nib `LoginView`.
@@ -267,11 +277,6 @@ struct R: Rswift.Validatable {
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
     
-    /// `UINib(name: "FeedSectionHeaderViewController", in: bundle)`
-    static func feedSectionHeaderViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.feedSectionHeaderViewController)
-    }
-    
     /// `UINib(name: "FeedTableViewCell", in: bundle)`
     static func feedTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.feedTableViewCell)
@@ -280,6 +285,16 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "FeedView", in: bundle)`
     static func feedView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.feedView)
+    }
+    
+    /// `UINib(name: "GitHubLoginView", in: bundle)`
+    static func gitHubLoginView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.gitHubLoginView)
+    }
+    
+    /// `UINib(name: "HeaderSectionView", in: bundle)`
+    static func headerSectionView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.headerSectionView)
     }
     
     /// `UINib(name: "HighlightedTableViewCell", in: bundle)`
@@ -373,23 +388,11 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _HighlightedTableViewCell.validate()
-      try _FeedTableViewCell.validate()
       try _FeedView.validate()
       try _ProfileView.validate()
     }
     
-    struct _FeedSectionHeaderViewController: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "FeedSectionHeaderViewController"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+    struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = FeedTableViewCell
       
       let bundle = R.hostingBundle
@@ -398,10 +401,6 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FeedTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTableViewCell
-      }
-      
-      static func validate() throws {
-        if UIKit.UIImage(named: "gitHubLogo.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'gitHubLogo.jpg' is used in nib 'FeedTableViewCell', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
@@ -417,6 +416,28 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _GitHubLoginView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "GitHubLoginView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _HeaderSectionView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "HeaderSectionView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> HeaderSectionView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HeaderSectionView
       }
       
       fileprivate init() {}

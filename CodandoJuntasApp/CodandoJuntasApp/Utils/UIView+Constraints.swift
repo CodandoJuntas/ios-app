@@ -109,6 +109,17 @@ extension UIView {
         return constraint
     }
     
+    @discardableResult
+    func pinBottom(greaterThanOrEqualTo offset: CGFloat) -> NSLayoutConstraint? {
+        guard let superview = self.superview else {
+            return nil
+        }
+        let constraint = self.bottomAnchor.constraint(greaterThanOrEqualTo: superview.bottomAnchor, constant: -offset)
+        constraint.isActive = true
+        
+        return constraint
+    }
+    
     //pin to safe area on bottom of screen
     @discardableResult
     func pinSafeBottom(_ offset: CGFloat = 0.0) -> NSLayoutConstraint? {

@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+import Moya
 
 protocol SignInService {
     
-    func facebookLogin(_ onComplete: @escaping (String?, LoginError?) -> ())
-    func githubLogin(_ onComplete: @escaping (String?, LoginError?) -> ()) 
+    func githubLogin(_ code: String) -> Single<Response>
+    
+    func getUser(_ token: String) -> Single<Response>
     
 }

@@ -1,36 +1,32 @@
 //
-//  FeedRouter.swift
+//  EventsRouter.swift
 //  CodandoJuntasApp
 //
-//  Created by Alexandre  Vassinievski on 17/09/2018.
+//  Created by Alexandre  Vassinievski on 22/11/18.
 //  Copyright © 2018 Codando Juntas. All rights reserved.
 //
+
 
 import Foundation
 import Moya
 
-enum FeedRouter {
-    case feed
-    case tutorials
+enum EventsRouter {
+    case events
+    //case createEvent(event: Event)
 }
 
-extension FeedRouter: TargetType {
+extension EventsRouter: TargetType {
     var baseURL: URL {
         switch self {
-        case .feed:
-            return URL(string: NetworkingConstants.baseURL)!
-
-        case .tutorials:
-            return URL(string: "https://raw.githubusercontent.com/CodandoJuntas/ios-app")!
+        case .events:
+            return URL(string: "https://api.github.com/repos/CodandoJuntas")!
         }
     }
     
     var path: String {
         switch self {
-        case .feed:
-            return "/contents.json"
-        case .tutorials:
-            return "/development/testFile.md" //"/master/testFile.md"
+        case .events:
+            return "/ios-app/issues"
         }
     }
     
@@ -39,16 +35,14 @@ extension FeedRouter: TargetType {
     }
     
     var sampleData: Data {
-            let data = [""]
-            return arrayJsonSerializedUTF8(json: data)
+        let data = [""]
+        return arrayJsonSerializedUTF8(json: data)
         
     }
     
     var parameters: [String: Any]? {
         switch self {
-        case .feed:
-            return nil
-        case .tutorials:
+        case .events:
             return nil
         }
     }
@@ -65,3 +59,4 @@ extension FeedRouter: TargetType {
         return nil
     }
 }
+
