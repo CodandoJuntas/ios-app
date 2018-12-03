@@ -31,12 +31,12 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-VF-V7l">
                             <rect key="frame" x="10" y="12" width="275" height="16"/>
                             <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-b8-PXL">
                             <rect key="frame" x="12" y="34" width="271" height="13"/>
                             <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="13"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -49,7 +49,7 @@
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TYq-b8-PXL" secondAttribute="bottom" constant="8" id="RqL-nH-TUl"/>
                         <constraint firstItem="TYq-b8-PXL" firstAttribute="top" secondItem="fxB-VF-V7l" secondAttribute="bottom" constant="6" id="k5c-4E-L4T"/>
                         <constraint firstItem="TYq-b8-PXL" firstAttribute="leading" secondItem="xy4-Eo-3KL" secondAttribute="leading" constant="12" id="s68-de-VE1"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fxB-VF-V7l" secondAttribute="bottom" constant="6" id="ted-SG-QrL"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fxB-VF-V7l" secondAttribute="bottom" constant="12" id="ted-SG-QrL"/>
                     </constraints>
                 </view>
             </subviews>

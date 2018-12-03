@@ -30,8 +30,8 @@ class MostReadCollectionViewCell: UICollectionViewCell {
     
     func setupCell(_ event: Event) {
         let parsedEvent = parseEventBody(event.body)
-        
-        
+        self.tagLabel.text = event.labels.last?.name
+        self.titleLabel.text = event.title
     }
     
     func parseEventBody( _ eventBody: String) -> EventBody {
