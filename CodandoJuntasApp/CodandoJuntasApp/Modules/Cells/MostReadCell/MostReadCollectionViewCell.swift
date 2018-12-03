@@ -9,6 +9,16 @@
 import UIKit
 
 class MostReadCollectionViewCell: UICollectionViewCell {
+    
+    private enum regexTags: String {
+        
+        case address = "##[^#]+"
+        case data = "###[^#]+"
+        case price = "####[^#]+"
+        case link = "#####[^#]+"
+        case description = "######[^#]+"
+        case content = "(?<=\\*).+?(?=$|\\r\\n)"
+    }
 
     @IBOutlet weak var tagLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -18,9 +28,34 @@ class MostReadCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setupCell(_ category: Category) {
-        self.tagLabel.text = category.title
-        self.titleLabel.text = category.subTitle
-        
+    func setupCell(_ event: Event) {
+        let parsedEvent = parseEventBody(event.body)
     }
+    
+    func parseEventBody( _ eventBody: String) -> EventBody {
+        
+        var event = EventBody()
+        
+        let addressBlock = eventBody.match(for: regexTags.address.rawValue) ?? ""
+        let address = addressBlock.match(for: regexTags.content.rawValue)
+        event.address = addressBlock.match(for: regexTags.content.rawValue) ?? ""
+       
+        let dataBlock = eventBody.match(for: regexTags.data.rawValue) ?? ""
+        event.date = dataBlock.match(for: regexTags.content.rawValue) ?? ""
+        
+        let priceBlock = eventBody.match(for: regexTags.price.rawValue)
+        event.price = priceBlock?.match(for: regexTags.content.rawValue) ?? ""
+        
+        let linkBlock = eventBody.match(for: regexTags.link.rawValue)
+        event.link = linkBlock?.match(for: regexTags.content.rawValue) ?? ""
+        
+        let descriptionBlock = eventBody.match(for: regexTags.description.rawValue)
+        event.description = descriptionBlock?.match(for: regexTags.content.rawValue) ?? ""
+        
+        
+        return event
+    }
+    
+  
+    
 }

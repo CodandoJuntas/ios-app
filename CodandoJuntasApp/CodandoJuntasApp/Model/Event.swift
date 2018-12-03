@@ -61,15 +61,18 @@ struct Label: Codable {
     }
 }
 
-struct EventBody {
+class EventBody {
     
-    let eventTitle: String
-    let labels: [Label]
-    let address: String
-    let date: String
-    let price: String
-    let description: String
-    let city: String
+    var eventTitle: String = ""
+    var labels: [Label] = []
+    var address: String = ""
+    var date: String = ""
+    var price: String = ""
+    var description: String = ""
+    var city: String = ""
+    var link: String = ""
+    
+    init() {}
 
 }
 

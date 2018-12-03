@@ -35,4 +35,17 @@ extension String {
         return emailTest.evaluate(with: self)
     }
     
+    func match(for regex: String) -> String? {
+        do {
+            let regex = try NSRegularExpression(pattern: regex, options: .caseInsensitive)
+            let results = regex.matches(in: self, options: [], range: NSRange(location: 0, length: self.utf16.count))
+            return results.map {
+                String(self[Range($0.range, in: self)!])
+                }.first
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return ""
+        }
+    }
+    
 }

@@ -1,5 +1,5 @@
 
-
+descriptionBlock	String?	"###### Descrição \r\n\r\n* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet aliquet mi id ornare. Etiam ultrices vulputate ligula. Nam auctor nisi a arcu venenatis consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce tempor turpis eu mattis dapibus. Nunc tortor ipsum, consequat eu porta nec, consequat nec nunc. Pellentesque in fringilla ante. Fusce posuere in sapien quis dictum. Phasellus at rutrum ligula. In finibus tortor eget nisl vehicula pharetra eu sit amet quam. Pellentesque sem dui, mollis ut tincidunt id, tincidunt venenatis tellus. Donec maximus, diam eget ullamcorper molestie, est risus malesuada odio, in rhoncus enim metus a ero"	some
 
 
 ^###[^#]+ 		-> separa categorias 
@@ -19,7 +19,7 @@
 \-.*$			-> descriçao do link
 
 
-// Alternativa Polenta
+
 
 (?<=## ).+?(?=$)			-> Separa Titulo sem as hashtags
 

@@ -12,7 +12,11 @@ class MostReadTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var viewModel: FeedViewModel!
+    var viewModel: FeedViewModel! {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,12 +37,12 @@ class MostReadTableViewCell: UITableViewCell {
 extension MostReadTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0 //viewModel.categoriesFeed.count
+        return viewModel.events.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.mostReadCollectionViewCell, for: indexPath) as! MostReadCollectionViewCell
-        //cell.setupCell(viewModel.categoriesFeed[indexPath.row])
+        cell.setupCell(viewModel.events[indexPath.row])
         return cell
     }
     
