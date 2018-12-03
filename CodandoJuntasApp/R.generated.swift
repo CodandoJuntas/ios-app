@@ -22,8 +22,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 18 files.
+  /// This `R.file` struct is generated, and contains static references to 21 files.
   struct file {
+    /// Resource file `DfaihBBXUAACdWy.jpg-large.jpeg`.
+    static let dfaihBBXUAACdWyJpgLargeJpeg = Rswift.FileResource(bundle: R.hostingBundle, name: "DfaihBBXUAACdWy.jpg-large", pathExtension: "jpeg")
     /// Resource file `GoogleService-Info.plist`.
     static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
     /// Resource file `GothamRounded-Bold.otf`.
@@ -52,6 +54,8 @@ struct R: Rswift.Validatable {
     static let gothamRoundedMedium_21022Ttf = Rswift.FileResource(bundle: R.hostingBundle, name: "GothamRoundedMedium_21022", pathExtension: "ttf")
     /// Resource file `ada-lovelace.jpg`.
     static let adaLovelaceJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "ada-lovelace", pathExtension: "jpg")
+    /// Resource file `banner.png`.
+    static let bannerPng = Rswift.FileResource(bundle: R.hostingBundle, name: "banner", pathExtension: "png")
     /// Resource file `dog.jpg`.
     static let dogJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "dog", pathExtension: "jpg")
     /// Resource file `gitHubLogo.jpg`.
@@ -60,6 +64,14 @@ struct R: Rswift.Validatable {
     static let githubMarkPng = Rswift.FileResource(bundle: R.hostingBundle, name: "github-mark", pathExtension: "png")
     /// Resource file `swift-og.png`.
     static let swiftOgPng = Rswift.FileResource(bundle: R.hostingBundle, name: "swift-og", pathExtension: "png")
+    /// Resource file `zorza-polarna-norwegia_330978.jpg`.
+    static let zorzaPolarnaNorwegia_330978Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "zorza-polarna-norwegia_330978", pathExtension: "jpg")
+    
+    /// `bundle.url(forResource: "DfaihBBXUAACdWy.jpg-large", withExtension: "jpeg")`
+    static func dfaihBBXUAACdWyJpgLargeJpeg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dfaihBBXUAACdWyJpgLargeJpeg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
     static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
@@ -145,6 +157,12 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
+    /// `bundle.url(forResource: "banner", withExtension: "png")`
+    static func bannerPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.bannerPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     /// `bundle.url(forResource: "dog", withExtension: "jpg")`
     static func dogJpg(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.dogJpg
@@ -166,6 +184,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "swift-og", withExtension: "png")`
     static func swiftOgPng(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.swiftOgPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "zorza-polarna-norwegia_330978", withExtension: "jpg")`
+    static func zorzaPolarnaNorwegia_330978Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.zorzaPolarnaNorwegia_330978Jpg
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -213,10 +237,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 8 images.
   struct image {
+    /// Image `DfaihBBXUAACdWy.jpg-large.jpeg`.
+    static let dfaihBBXUAACdWyJpgLargeJpeg = Rswift.ImageResource(bundle: R.hostingBundle, name: "DfaihBBXUAACdWy.jpg-large.jpeg")
     /// Image `ada-lovelace.jpg`.
     static let adaLovelaceJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "ada-lovelace.jpg")
+    /// Image `banner`.
+    static let banner = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner")
     /// Image `dog.jpg`.
     static let dogJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "dog.jpg")
     /// Image `gitHubLogo.jpg`.
@@ -225,10 +253,22 @@ struct R: Rswift.Validatable {
     static let githubMark = Rswift.ImageResource(bundle: R.hostingBundle, name: "github-mark")
     /// Image `swift-og`.
     static let swiftOg = Rswift.ImageResource(bundle: R.hostingBundle, name: "swift-og")
+    /// Image `zorza-polarna-norwegia_330978.jpg`.
+    static let zorzaPolarnaNorwegia_330978Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "zorza-polarna-norwegia_330978.jpg")
+    
+    /// `UIImage(named: "DfaihBBXUAACdWy.jpg-large.jpeg", bundle: ..., traitCollection: ...)`
+    static func dfaihBBXUAACdWyJpgLargeJpeg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dfaihBBXUAACdWyJpgLargeJpeg, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "ada-lovelace.jpg", bundle: ..., traitCollection: ...)`
     static func adaLovelaceJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.adaLovelaceJpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "banner", bundle: ..., traitCollection: ...)`
+    static func banner(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.banner, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "dog.jpg", bundle: ..., traitCollection: ...)`
@@ -249,6 +289,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "swift-og", bundle: ..., traitCollection: ...)`
     static func swiftOg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.swiftOg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "zorza-polarna-norwegia_330978.jpg", bundle: ..., traitCollection: ...)`
+    static func zorzaPolarnaNorwegia_330978Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.zorzaPolarnaNorwegia_330978Jpg, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
@@ -415,6 +460,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "zorza-polarna-norwegia_330978.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'zorza-polarna-norwegia_330978.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
       }
       

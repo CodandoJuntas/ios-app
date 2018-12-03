@@ -30,14 +30,15 @@ class MostReadCollectionViewCell: UICollectionViewCell {
     
     func setupCell(_ event: Event) {
         let parsedEvent = parseEventBody(event.body)
+        
+        
     }
     
     func parseEventBody( _ eventBody: String) -> EventBody {
         
-        var event = EventBody()
+        let event = EventBody()
         
         let addressBlock = eventBody.match(for: regexTags.address.rawValue) ?? ""
-        let address = addressBlock.match(for: regexTags.content.rawValue)
         event.address = addressBlock.match(for: regexTags.content.rawValue) ?? ""
        
         let dataBlock = eventBody.match(for: regexTags.data.rawValue) ?? ""
@@ -51,7 +52,6 @@ class MostReadCollectionViewCell: UICollectionViewCell {
         
         let descriptionBlock = eventBody.match(for: regexTags.description.rawValue)
         event.description = descriptionBlock?.match(for: regexTags.content.rawValue) ?? ""
-        
         
         return event
     }

@@ -28,10 +28,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="19" sectionFooterHeight="19" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-vn-Ucu">
-                    <rect key="frame" x="0.0" y="68" width="375" height="496"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" red="0.91764705879999997" green="0.33333333329999998" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zorza-polarna-norwegia_330978.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1FL-ZH-OqW">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQW-GE-Fi5">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="suR-ct-4Z3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="19" sectionFooterHeight="19" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-vn-Ucu">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-sC-Wp2" userLabel="headerView">
                     <rect key="frame" x="0.0" y="20" width="375" height="48"/>
@@ -75,8 +88,16 @@
             </subviews>
             <color key="backgroundColor" red="0.93703609700000001" green="0.94117802380000004" blue="0.94519203900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1FL-ZH-OqW" secondAttribute="bottom" id="0d2-Dp-1cV"/>
+                <constraint firstItem="EQW-GE-Fi5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1iU-7d-Qzr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1FL-ZH-OqW" secondAttribute="trailing" id="9Rd-xG-ykF"/>
+                <constraint firstItem="1FL-ZH-OqW" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="AxI-zG-ro0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aYE-vn-Ucu" secondAttribute="bottom" id="C7T-7I-2bs"/>
+                <constraint firstItem="1FL-ZH-OqW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HeD-dl-VKV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EQW-GE-Fi5" secondAttribute="trailing" id="OvB-yd-HjF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aYE-vn-Ucu" secondAttribute="trailing" id="PIy-SC-1El"/>
+                <constraint firstItem="EQW-GE-Fi5" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="RGP-ao-I1h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EQW-GE-Fi5" secondAttribute="bottom" id="bDb-Yh-LXy"/>
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kg6-4e-YB4"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ntU-Wb-YFM"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="y7X-9b-d12"/>
@@ -84,10 +105,11 @@
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="zA9-t9-dTe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+            <point key="canvasLocation" x="53.600000000000001" y="1.3493253373313345"/>
         </view>
     </objects>
     <resources>
         <image name="ada-lovelace.jpg" width="760" height="428"/>
+        <image name="zorza-polarna-norwegia_330978.jpg" width="700" height="466"/>
     </resources>
 </document>

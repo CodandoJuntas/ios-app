@@ -38,13 +38,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub? O que é isso?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-SR-38n">
-                                <rect key="frame" x="4" y="9" width="266" height="12"/>
+                                <rect key="frame" x="8" y="13" width="262" height="12"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
                                 <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Entenda de uma vez por toda o que é e como usar a ferramenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2C-Ws-Izv">
-                                <rect key="frame" x="4" y="24" width="266" height="37.5"/>
+                                <rect key="frame" x="12" y="31" width="258" height="26.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
                                 <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,15 +52,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93703609700000001" green="0.94117802380000004" blue="0.94519203900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3fP-SR-38n" firstAttribute="top" secondItem="ig9-dj-XlF" secondAttribute="bottom" constant="6" id="HuP-ua-e7T"/>
-                            <constraint firstAttribute="bottom" secondItem="B2C-Ws-Izv" secondAttribute="bottom" constant="6" id="JJg-dc-UG5"/>
+                            <constraint firstItem="3fP-SR-38n" firstAttribute="top" secondItem="ig9-dj-XlF" secondAttribute="bottom" constant="10" id="HuP-ua-e7T"/>
+                            <constraint firstAttribute="bottom" secondItem="B2C-Ws-Izv" secondAttribute="bottom" constant="10" id="JJg-dc-UG5"/>
                             <constraint firstAttribute="trailing" secondItem="3fP-SR-38n" secondAttribute="trailing" constant="10" id="KoN-pu-CMV"/>
-                            <constraint firstItem="3fP-SR-38n" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="4" id="Qny-F2-Vvd"/>
+                            <constraint firstItem="3fP-SR-38n" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="8" id="Qny-F2-Vvd"/>
                             <constraint firstItem="ig9-dj-XlF" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" id="W2j-cR-u7I"/>
                             <constraint firstAttribute="trailing" secondItem="B2C-Ws-Izv" secondAttribute="trailing" constant="10" id="mD5-HX-MNM"/>
                             <constraint firstItem="ig9-dj-XlF" firstAttribute="top" secondItem="YLd-z9-K0B" secondAttribute="top" id="tiL-Yq-c4S"/>
-                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="top" secondItem="3fP-SR-38n" secondAttribute="bottom" constant="3" id="xYa-0c-kWi"/>
-                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="4" id="ySz-LC-uKE"/>
+                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="top" secondItem="3fP-SR-38n" secondAttribute="bottom" constant="6" id="xYa-0c-kWi"/>
+                            <constraint firstItem="B2C-Ws-Izv" firstAttribute="leading" secondItem="YLd-z9-K0B" secondAttribute="leading" constant="12" id="ySz-LC-uKE"/>
                             <constraint firstAttribute="trailing" secondItem="ig9-dj-XlF" secondAttribute="trailing" id="z5C-Xr-MFF"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

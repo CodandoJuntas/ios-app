@@ -92,6 +92,9 @@
 		ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC475F9F215865FE003B2BC3 /* GothamRounded-Medium.otf */; };
 		ACA59A7D2197067700CF0B2E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA59A7C2197067600CF0B2E /* R.generated.swift */; };
 		ACAA665021B468C100EB9CD9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA664F21B468C100EB9CD9 /* Event.swift */; };
+		ACAA665421B4DB8E00EB9CD9 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665321B4DB8E00EB9CD9 /* banner.png */; };
+		ACAA665721B4E40500EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */; };
+		ACAA665821B4E40500EB9CD9 /* zorza-polarna-norwegia_330978.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */; };
 		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
@@ -186,6 +189,9 @@
 		ACA59A782194FE8400CF0B2E /* HeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSectionView.xib; sourceTree = "<group>"; };
 		ACA59A7C2197067600CF0B2E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACAA664F21B468C100EB9CD9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ACAA665321B4DB8E00EB9CD9 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DfaihBBXUAACdWy.jpg-large.jpeg"; sourceTree = "<group>"; };
+		ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zorza-polarna-norwegia_330978.jpg"; sourceTree = "<group>"; };
 		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -476,6 +482,9 @@
 		AC475FC621589964003B2BC3 /* PlaceholderImages */ = {
 			isa = PBXGroup;
 			children = (
+				ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */,
+				ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */,
+				ACAA665321B4DB8E00EB9CD9 /* banner.png */,
 				AC475FCF21589D66003B2BC3 /* dog.jpg */,
 				AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */,
 				AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */,
@@ -631,6 +640,7 @@
 				AC50E8C821ACAF85002AE473 /* GoogleService-Info.plist in Resources */,
 				AC475FD021589D66003B2BC3 /* dog.jpg in Resources */,
 				AC475F7821530D51003B2BC3 /* ProfileView.xib in Resources */,
+				ACAA665821B4E40500EB9CD9 /* zorza-polarna-norwegia_330978.jpg in Resources */,
 				AC475FA8215865FE003B2BC3 /* GothamRounded-BoldItalic.otf in Resources */,
 				AC475FB0215865FE003B2BC3 /* GothamRounded-Book.otf in Resources */,
 				AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */,
@@ -644,6 +654,7 @@
 				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
 				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
+				ACAA665421B4DB8E00EB9CD9 /* banner.png in Resources */,
 				ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
 				AC475FA9215865FE003B2BC3 /* GothamRounded-BookItalic.otf in Resources */,
@@ -654,6 +665,7 @@
 				AC475FA7215865FE003B2BC3 /* GothamRoundedBook_21018.ttf in Resources */,
 				AC80D7632149D944001B00EF /* Assets.xcassets in Resources */,
 				AC475FCC21589AF2003B2BC3 /* swift-og.png in Resources */,
+				ACAA665721B4E40500EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

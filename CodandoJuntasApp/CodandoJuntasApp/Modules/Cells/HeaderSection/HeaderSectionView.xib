@@ -10,9 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothamRounded-Light.otf">
-            <string>GothamRounded-Light</string>
-        </array>
         <array key="GothamRoundedMedium_21022.ttf">
             <string>GothamRounded-Medium</string>
         </array>
@@ -24,31 +21,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-Ta-5HJ">
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pW-Ta-5HJ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
-                    <color key="backgroundColor" red="0.91764705879999997" green="0.33333333329999998" blue="0.43921568630000002" alpha="0.19701399539877301" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h1-RH-1wT">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0VA-NH-lH5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <blurEffect style="light"/>
-                </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xy4-Eo-3KL">
                     <rect key="frame" x="40" y="6" width="295" height="74"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-VF-V7l">
-                            <rect key="frame" x="10" y="12" width="275" height="15"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="10" y="12" width="275" height="16"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-b8-PXL">
-                            <rect key="frame" x="12" y="33" width="271" height="13"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="13"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="12" y="34" width="271" height="13"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -68,17 +56,13 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="xy4-Eo-3KL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="15R-hC-ra1"/>
-                <constraint firstAttribute="bottom" secondItem="7h1-RH-1wT" secondAttribute="bottom" id="16Q-vC-Xl8"/>
-                <constraint firstItem="7h1-RH-1wT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5G4-gk-ES9"/>
                 <constraint firstItem="xy4-Eo-3KL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="A2w-j7-Jpp"/>
-                <constraint firstAttribute="trailing" secondItem="7h1-RH-1wT" secondAttribute="trailing" id="H1L-7o-VtX"/>
                 <constraint firstItem="9pW-Ta-5HJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JbL-PR-wxm"/>
                 <constraint firstAttribute="bottom" secondItem="xy4-Eo-3KL" secondAttribute="bottom" constant="6" id="Lf3-VI-hOx"/>
                 <constraint firstAttribute="trailing" secondItem="9pW-Ta-5HJ" secondAttribute="trailing" id="W8Y-IS-Gvc"/>
                 <constraint firstItem="9pW-Ta-5HJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kXy-nB-33p"/>
                 <constraint firstAttribute="trailing" secondItem="xy4-Eo-3KL" secondAttribute="trailing" constant="40" id="swU-vf-SRJ"/>
                 <constraint firstAttribute="bottom" secondItem="9pW-Ta-5HJ" secondAttribute="bottom" id="uaZ-rP-P9Y"/>
-                <constraint firstItem="7h1-RH-1wT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vkZ-FD-r52"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

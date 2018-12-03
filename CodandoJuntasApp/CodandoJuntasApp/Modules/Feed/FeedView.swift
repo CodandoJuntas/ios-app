@@ -81,7 +81,6 @@ extension FeedView {
         viewModel.eventList.drive(onNext: { [weak self] (events) in
             guard let self = self else {return}
             self.viewModel.events = events
-            print("EVENTS ARRAY SIZE: \(events.count) ")
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
         
