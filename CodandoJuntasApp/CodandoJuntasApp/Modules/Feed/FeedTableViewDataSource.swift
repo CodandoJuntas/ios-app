@@ -12,7 +12,7 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
     
     let viewModel: FeedViewModel!
     
-    init(viewModel: FeedViewModel) {
+    init(viewModel: FeedViewModel, repository: EventsRepository) {
         self.viewModel = viewModel
         super.init()
     }

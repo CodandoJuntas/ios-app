@@ -11,17 +11,16 @@ import RxCocoa
 
 class FeedViewModel {
     
-    let repository: FeedRepository
-    let storage: LocalStorage
+   
     let feed: Observable<[MdFeed]>
+    let eventList: Driver<[Event]>
     var mdFeed:[MdFeed] = []
-
+    var events: Events = []
     
-    init(feedRepository: FeedRepository, storage: LocalStorage) {
-        self.repository = feedRepository
-        self.storage = storage
+    init(feedRepository: FeedRepository, eventsRepository: EventsRepository) {
         
-        self.feed = repository.getMdFeed()
+        self.feed = feedRepository.getMdFeed()
+        self.eventList = eventsRepository.getEvents().asDriver(onErrorJustReturn: [])
         
     }
 }

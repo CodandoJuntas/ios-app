@@ -12,11 +12,14 @@ import Firebase
 import RxSwift
 
 class EventsRepositoryImpl: EventsRepository {
-    
+
     let service: EventsService
     
     init(service: EventsService) {
         self.service = service
     }
     
+    func getEvents() -> Single<Events> {
+        return self.service.getEvents().map(Events.self)
+    }
 }

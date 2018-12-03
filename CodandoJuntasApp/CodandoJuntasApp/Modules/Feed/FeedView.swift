@@ -26,10 +26,12 @@ class FeedView: UIViewController {
     @IBOutlet weak var headerButton: UIButton!
     
     let localStorage: LocalStorage
-    let repository: FeedRepository
+    let feedRepository: FeedRepository
+    let eventsRepository: EventsRepository
     
-    init(repository: FeedRepository, storage: LocalStorage) {
-        self.repository = repository
+    init(feedRepository: FeedRepository, eventsRepository: EventsRepository, storage: LocalStorage) {
+        self.feedRepository = feedRepository
+        self.eventsRepository = eventsRepository
         self.localStorage = storage
         super.init(nibName: String(describing: FeedView.self), bundle: nil)
     }
@@ -50,9 +52,9 @@ class FeedView: UIViewController {
 extension FeedView {
     
     func setupViewModel() {
-        self.viewModel = FeedViewModel(feedRepository: self.repository, storage: self.localStorage)
+        self.viewModel = FeedViewModel(feedRepository: self.feedRepository, eventsRepository: self.eventsRepository)
         self.feedTableViewDelegate = FeedTableViewDelegate(viewModel: self.viewModel)
-        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
+        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel, repository: self.eventsRepository)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
        
@@ -76,6 +78,12 @@ extension FeedView {
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
         
+        viewModel.eventList.drive(onNext: { [weak self] (events) in
+            guard let self = self else {return}
+            self.viewModel.events = events
+            self.tableView.reloadData()
+        }).disposed(by: rx.disposeBag)
+        
         self.headerButton.rx.tap.bind { [weak self] _ in
             self?.delegate?.openProfile()
             }.disposed(by: rx.disposeBag)
@@ -91,7 +99,6 @@ extension FeedView {
         tableView.register(R.nib.mostReadTableViewCell)
         tableView.register(R.nib.headerSectionView(), forHeaderFooterViewReuseIdentifier: "HeaderSectionView")
 
-        
     }
 }
 

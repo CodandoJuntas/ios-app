@@ -30,7 +30,8 @@ extension DefaultContainer {
         
         self.container.register(FeedView.self) { resolver in
             FeedView(
-                repository: resolver.resolve(FeedRepository.self)!,
+                feedRepository: resolver.resolve(FeedRepository.self)!,
+                eventsRepository: resolver.resolve(EventsRepository.self)!,
                 storage: resolver.resolve(LocalStorage.self)!
             )
         }
