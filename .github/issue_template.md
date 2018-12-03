@@ -1,3 +1,8 @@
+---
+name: "[UF - Cidade] -  Nome do evento "
+about: Template para criar um novo evento.
+---
+
 ## Endereço
 * Endereço do evento
 
@@ -11,5 +16,4 @@
 * link com a pagina do evento
 
 ###### Descrição 
-
 * Fale sobre o evento, sobre as palestras, workshops.. conte uma piada... 
