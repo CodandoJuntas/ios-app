@@ -26,4 +26,8 @@ target 'CodandoJuntasApp' do
   #Firebase
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  
+  #UI Utils
+  pod 'SnapKit'
+  
 end

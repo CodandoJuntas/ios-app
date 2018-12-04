@@ -95,6 +95,10 @@
 		ACAA665421B4DB8E00EB9CD9 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665321B4DB8E00EB9CD9 /* banner.png */; };
 		ACAA665721B4E40500EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */; };
 		ACAA665821B4E40500EB9CD9 /* zorza-polarna-norwegia_330978.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */; };
+		ACAA665D21B4EA1400EB9CD9 /* webContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */; };
+		ACAA665E21B4EA1400EB9CD9 /* webContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */; };
+		ACAA665F21B4EA1400EB9CD9 /* webContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */; };
+		ACAA666121B605E500EB9CD9 /* webviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA666021B605E500EB9CD9 /* webviewController.swift */; };
 		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
 /* End PBXBuildFile section */
@@ -192,6 +196,10 @@
 		ACAA665321B4DB8E00EB9CD9 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DfaihBBXUAACdWy.jpg-large.jpeg"; sourceTree = "<group>"; };
 		ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zorza-polarna-norwegia_330978.jpg"; sourceTree = "<group>"; };
+		ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webContainerView.swift; sourceTree = "<group>"; };
+		ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webContainerViewModel.swift; sourceTree = "<group>"; };
+		ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = webContainerView.xib; sourceTree = "<group>"; };
+		ACAA666021B605E500EB9CD9 /* webviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webviewController.swift; sourceTree = "<group>"; };
 		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -228,6 +236,7 @@
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				ACAA665921B4E9CB00EB9CD9 /* WebView */,
 				AC50E8C921ACBDD5002AE473 /* GithubLogin */,
 				AC475F8921547B22003B2BC3 /* Components */,
 				AC475F66215305A9003B2BC3 /* Cells */,
@@ -563,6 +572,17 @@
 			path = CodandoJuntasApp;
 			sourceTree = "<group>";
 		};
+		ACAA665921B4E9CB00EB9CD9 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */,
+				ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */,
+				ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */,
+				ACAA666021B605E500EB9CD9 /* webviewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		ACD5E34121926AC7006A9B05 /* HeaderSection */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */,
+				ACAA665F21B4EA1400EB9CD9 /* webContainerView.xib in Resources */,
 				AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */,
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
@@ -698,6 +719,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
@@ -707,12 +729,14 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
@@ -722,6 +746,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -793,11 +818,13 @@
 				AC475F5421507D5B003B2BC3 /* FeedRouter.swift in Sources */,
 				AC475F41215073A7003B2BC3 /* FeedRepository.swift in Sources */,
 				ACAA665021B468C100EB9CD9 /* Event.swift in Sources */,
+				ACAA665E21B4EA1400EB9CD9 /* webContainerViewModel.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
 				AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */,
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,
 				AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */,
 				AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */,
+				ACAA665D21B4EA1400EB9CD9 /* webContainerView.swift in Sources */,
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
 				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
 				AC50E8CE21ACBDFB002AE473 /* GitHubLoginViewModel.swift in Sources */,
@@ -807,6 +834,7 @@
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
 				AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */,
+				ACAA666121B605E500EB9CD9 /* webviewController.swift in Sources */,
 				AC475F822153168C003B2BC3 /* SignInService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

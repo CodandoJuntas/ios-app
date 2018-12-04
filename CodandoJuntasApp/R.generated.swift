@@ -299,7 +299,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 10 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 11 nibs.
   struct nib {
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
@@ -321,6 +321,8 @@ struct R: Rswift.Validatable {
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
+    /// Nib `webContainerView`.
+    static let webContainerView = _R.nib._webContainerView()
     
     /// `UINib(name: "FeedTableViewCell", in: bundle)`
     static func feedTableViewCell(_: Void = ()) -> UIKit.UINib {
@@ -370,6 +372,11 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "ProfileView", in: bundle)`
     static func profileView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.profileView)
+    }
+    
+    /// `UINib(name: "webContainerView", in: bundle)`
+    static func webContainerView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.webContainerView)
     }
     
     fileprivate init() {}
@@ -567,6 +574,17 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'ProfileView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _webContainerView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "webContainerView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
       fileprivate init() {}
