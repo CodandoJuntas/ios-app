@@ -301,6 +301,8 @@ struct R: Rswift.Validatable {
   
   /// This `R.nib` struct is generated, and contains static references to 11 nibs.
   struct nib {
+    /// Nib `EventCollectionViewCell`.
+    static let eventCollectionViewCell = _R.nib._EventCollectionViewCell()
     /// Nib `FeedHeaderView`.
     static let feedHeaderView = _R.nib._FeedHeaderView()
     /// Nib `FeedTableViewCell`.
@@ -315,14 +317,17 @@ struct R: Rswift.Validatable {
     static let highlightedTableViewCell = _R.nib._HighlightedTableViewCell()
     /// Nib `LoginView`.
     static let loginView = _R.nib._LoginView()
-    /// Nib `MostReadCollectionViewCell`.
-    static let mostReadCollectionViewCell = _R.nib._MostReadCollectionViewCell()
     /// Nib `OnboardingView`.
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
     /// Nib `WebContainerView`.
     static let webContainerView = _R.nib._WebContainerView()
+    
+    /// `UINib(name: "EventCollectionViewCell", in: bundle)`
+    static func eventCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.eventCollectionViewCell)
+    }
     
     /// `UINib(name: "FeedHeaderView", in: bundle)`
     static func feedHeaderView(_: Void = ()) -> UIKit.UINib {
@@ -359,11 +364,6 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.loginView)
     }
     
-    /// `UINib(name: "MostReadCollectionViewCell", in: bundle)`
-    static func mostReadCollectionViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.mostReadCollectionViewCell)
-    }
-    
     /// `UINib(name: "OnboardingView", in: bundle)`
     static func onboardingView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.onboardingView)
@@ -384,12 +384,12 @@ struct R: Rswift.Validatable {
   
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `EventCollectionViewCell`.
+    static let eventCollectionViewCell: Rswift.ReuseIdentifier<EventCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "EventCollectionViewCell")
     /// Reuse identifier `FeedTableViewCell`.
     static let feedTableViewCell: Rswift.ReuseIdentifier<FeedTableViewCell> = Rswift.ReuseIdentifier(identifier: "FeedTableViewCell")
     /// Reuse identifier `HighlightedTableViewCell`.
     static let highlightedTableViewCell: Rswift.ReuseIdentifier<HighlightedTableViewCell> = Rswift.ReuseIdentifier(identifier: "HighlightedTableViewCell")
-    /// Reuse identifier `MostReadCollectionViewCell`.
-    static let mostReadCollectionViewCell: Rswift.ReuseIdentifier<EventCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadCollectionViewCell")
     
     fileprivate init() {}
   }
@@ -438,8 +438,21 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _HighlightedTableViewCell.validate()
-      try _FeedView.validate()
       try _ProfileView.validate()
+    }
+    
+    struct _EventCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = EventCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "EventCollectionViewCell"
+      let name = "EventCollectionViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventCollectionViewCell
+      }
+      
+      fileprivate init() {}
     }
     
     struct _FeedHeaderView: Rswift.NibResourceType {
@@ -467,16 +480,12 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct _FeedView: Rswift.NibResourceType, Rswift.Validatable {
+    struct _FeedView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "FeedView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-      
-      static func validate() throws {
-        if UIKit.UIImage(named: "ada-lovelace.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ada-lovelace.jpg' is used in nib 'FeedView', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
@@ -528,20 +537,6 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct _MostReadCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = EventCollectionViewCell
-      
-      let bundle = R.hostingBundle
-      let identifier = "MostReadCollectionViewCell"
-      let name = "MostReadCollectionViewCell"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventCollectionViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventCollectionViewCell
       }
       
       fileprivate init() {}

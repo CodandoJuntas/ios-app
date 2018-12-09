@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedHeaderView" customModule="CodandoJuntasApp" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Kbi-Nk-Rdn" id="L0p-u7-JsM"/>
+                <outlet property="titleHeaderAtributedText" destination="M0w-9Q-6xn" id="NpB-WC-yvq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,12 +27,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2c4-Tj-Kbz" userLabel="HighlightsTitleView">
-                    <rect key="frame" x="0.0" y="23" width="375" height="37"/>
+                    <rect key="frame" x="0.0" y="80" width="375" height="37"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ Destaques }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-cS-YWi">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-cS-YWi">
                             <rect key="frame" x="25" y="3" width="325" height="31"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="31"/>
-                            <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <attributedString key="attributedText">
+                                <fragment content="{">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Destaques">
+                                    <attributes>
+                                        <color key="NSColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="}">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -44,16 +63,34 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h5-uY-gcW" userLabel="HighlightsContentView">
-                    <rect key="frame" x="0.0" y="77" width="375" height="185"/>
+                    <rect key="frame" x="0.0" y="134" width="375" height="128"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mer-hI-79D" userLabel="EventsTitleView">
                     <rect key="frame" x="0.0" y="286" width="375" height="37"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ Eventos }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-Id-bsl">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-Id-bsl">
                             <rect key="frame" x="25" y="3" width="325" height="31"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="31"/>
-                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <attributedString key="attributedText">
+                                <fragment content="{">
+                                    <attributes>
+                                        <color key="NSColor" red="0.92302554849999996" green="0.32147663830000001" blue="0.43621534109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Eventos">
+                                    <attributes>
+                                        <color key="NSColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="}">
+                                    <attributes>
+                                        <color key="NSColor" red="0.92302554849999996" green="0.32147663830000001" blue="0.43621534109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -91,10 +128,28 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJA-0P-KC0" userLabel="EventsTitleView">
                     <rect key="frame" x="0.0" y="493" width="375" height="37"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ Conteúdo }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOY-An-RMP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOY-An-RMP">
                             <rect key="frame" x="25" y="3" width="325" height="31"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="31"/>
-                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <attributedString key="attributedText">
+                                <fragment content="{">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Conteúdo">
+                                    <attributes>
+                                        <color key="NSColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="}">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="31" name="GothamRounded-Light"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -106,6 +161,36 @@
                         <constraint firstAttribute="trailing" secondItem="hOY-An-RMP" secondAttribute="trailing" constant="25" id="iB0-z5-p8u"/>
                     </constraints>
                 </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0w-9Q-6xn">
+                    <rect key="frame" x="0.0" y="0.0" width="258.5" height="31"/>
+                    <attributedString key="attributedText">
+                        <fragment content="codando(">
+                            <attributes>
+                                <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="31" name="GothamRounded-Medium"/>
+                                <font key="NSOriginalFont" size="17" name="GothamRounded-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="juntas">
+                            <attributes>
+                                <color key="NSColor" red="0.92302554849999996" green="0.32147663830000001" blue="0.43621534109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="31" name="GothamRounded-Medium"/>
+                                <font key="NSOriginalFont" size="17" name="GothamRounded-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=")">
+                            <attributes>
+                                <color key="NSColor" red="0.13570511339999999" green="0.70487010480000001" blue="0.82257914539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="31" name="GothamRounded-Medium"/>
+                                <font key="NSOriginalFont" size="17" name="GothamRounded-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.11372549019607843" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -119,9 +204,11 @@
                 <constraint firstAttribute="trailing" secondItem="CJA-0P-KC0" secondAttribute="trailing" id="brt-82-4yU"/>
                 <constraint firstItem="2c4-Tj-Kbz" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="fZi-c8-Lgs"/>
                 <constraint firstItem="CJA-0P-KC0" firstAttribute="top" secondItem="Sfm-D2-qNX" secondAttribute="bottom" constant="33" id="hje-7r-3D1"/>
-                <constraint firstItem="2c4-Tj-Kbz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="iSW-3c-vms"/>
+                <constraint firstItem="2c4-Tj-Kbz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="iSW-3c-vms"/>
                 <constraint firstItem="6h5-uY-gcW" firstAttribute="top" secondItem="2c4-Tj-Kbz" secondAttribute="bottom" constant="17" id="kGa-v0-qtd"/>
+                <constraint firstItem="M0w-9Q-6xn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ktl-Pm-fZ9"/>
                 <constraint firstAttribute="trailing" secondItem="Sfm-D2-qNX" secondAttribute="trailing" id="pbr-3l-cFw"/>
+                <constraint firstItem="M0w-9Q-6xn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rau-x9-1sZ"/>
                 <constraint firstItem="mer-hI-79D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vBI-Wu-MR7"/>
                 <constraint firstItem="CJA-0P-KC0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wOB-If-23P"/>
                 <constraint firstItem="6h5-uY-gcW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xxd-Pf-7pe"/>

@@ -22,9 +22,8 @@ class FeedView: UIViewController {
     var feedTableViewDataSource: FeedTableViewDataSource!
     weak var delegate: FeedDelegate?
     
-    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var headerButton: UIButton!
     
     let localStorage: LocalStorage
     let feedRepository: FeedRepository
@@ -58,17 +57,17 @@ extension FeedView {
         self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
-       
+        self.tableView.contentInset.top = self.headerView.minHeight - 6
+        self.tableView.contentInsetAdjustmentBehavior = .never
     }
     
     func configureViews() {
-        headerView.addShadow(offSetX: 0, offSetY: 3, radius: 3, opacity: 0.3)
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedSectionHeaderHeight = 100
         tableView.tableHeaderView = self.feedHeaderView.view
-        
+        headerView.usernameLabel.attributedText = self.feedHeaderView.titleHeaderAtributedText.attributedText
         registerCells()
        
     }
@@ -81,15 +80,23 @@ extension FeedView {
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
         
-        self.headerButton.rx.tap.bind { [weak self] _ in
-            self?.delegate?.openProfile()
-            }.disposed(by: rx.disposeBag)
-        
         viewModel.onRequestLink = {[weak self] target in
             self?.delegate?.openContent(target)
         }
+        
+        self.tableView.rx.contentOffset
+            .map { $0.y }
+            .map(currentScrollPercentage)
+            .observeOn(MainScheduler.asyncInstance)
+            .bind(to: self.headerView.rx.fractionComplete)
+            .disposed(by: rx.disposeBag)
     }
     
+    func currentScrollPercentage(_ offset: CGFloat) -> CGFloat {
+        return (offset + self.headerView.maxHeight) /
+            (self.headerView.minHeight + self.headerView.maxHeight)
+    }
+   
 }
 
 extension FeedView {

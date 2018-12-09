@@ -11,6 +11,7 @@
 		AC1752D021BCBB2A0011CF98 /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */; };
 		AC1752D121BCBB2A0011CF98 /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */; };
 		AC1752D321BD58BD0011CF98 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D221BD58BD0011CF98 /* GradientView.swift */; };
+		AC1752D521BD6F870011CF98 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D421BD6F870011CF98 /* HeaderView.swift */; };
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
@@ -112,6 +113,7 @@
 		AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
 		AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
 		AC1752D221BD58BD0011CF98 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AC1752D421BD6F870011CF98 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				AC475F8A21547B4A003B2BC3 /* CloudTagView.swift */,
+				AC1752D421BD6F870011CF98 /* HeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				AC475F86215318E0003B2BC3 /* User.swift in Sources */,
 				AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */,
 				AC475F7021530D0E003B2BC3 /* LoginView.swift in Sources */,
+				AC1752D521BD6F870011CF98 /* HeaderView.swift in Sources */,
 				AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */,
 				AC1752D321BD58BD0011CF98 /* GradientView.swift in Sources */,
 				AC475F7E2153144F003B2BC3 /* SignInRepository.swift in Sources */,

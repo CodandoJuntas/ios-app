@@ -9,16 +9,10 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="GothamRoundedMedium_21022.ttf">
-            <string>GothamRounded-Medium</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedView" customModule="CodandoJuntasApp" customModuleProvider="target">
             <connections>
-                <outlet property="headerButton" destination="CT5-2Q-XOF" id="A2E-uy-opB"/>
-                <outlet property="headerView" destination="6LK-sC-Wp2" id="ZCw-lN-tRq"/>
+                <outlet property="headerView" destination="BYt-vj-X4j" id="6Ke-qE-biB"/>
                 <outlet property="tableView" destination="aYE-vn-Ucu" id="bed-qg-stS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,66 +23,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="19" sectionFooterHeight="19" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-vn-Ucu">
-                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-sC-Wp2" userLabel="headerView">
-                    <rect key="frame" x="0.0" y="20" width="375" height="48"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, ADA!" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOC-dy-yh8">
-                            <rect key="frame" x="27" y="15" width="259" height="18"/>
-                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                            <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ada-lovelace.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VtB-Cl-GZh">
-                            <rect key="frame" x="313" y="3" width="42" height="42"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="42" id="FFa-R1-9P8"/>
-                                <constraint firstAttribute="width" constant="42" id="FVB-gA-1a2"/>
-                            </constraints>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <integer key="value" value="21"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT5-2Q-XOF">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
-                        </button>
-                    </subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYt-vj-X4j" customClass="HeaderView" customModule="CodandoJuntasApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="CT5-2Q-XOF" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="top" id="DGh-eB-EpT"/>
-                        <constraint firstAttribute="trailing" secondItem="VtB-Cl-GZh" secondAttribute="trailing" constant="20" id="EPZ-Lg-PeK"/>
-                        <constraint firstAttribute="trailing" secondItem="CT5-2Q-XOF" secondAttribute="trailing" id="VY2-cZ-ZPg"/>
-                        <constraint firstItem="VtB-Cl-GZh" firstAttribute="centerY" secondItem="6LK-sC-Wp2" secondAttribute="centerY" id="YPL-TU-iq6"/>
-                        <constraint firstAttribute="height" constant="48" id="aVh-vk-Piu"/>
-                        <constraint firstItem="VtB-Cl-GZh" firstAttribute="leading" secondItem="AOC-dy-yh8" secondAttribute="trailing" constant="27" id="cbb-ew-sil"/>
-                        <constraint firstItem="CT5-2Q-XOF" firstAttribute="leading" secondItem="6LK-sC-Wp2" secondAttribute="leading" id="hP0-iQ-5yd"/>
-                        <constraint firstItem="AOC-dy-yh8" firstAttribute="centerY" secondItem="6LK-sC-Wp2" secondAttribute="centerY" id="q9B-ad-D2p"/>
-                        <constraint firstItem="AOC-dy-yh8" firstAttribute="leading" secondItem="6LK-sC-Wp2" secondAttribute="leading" constant="27" id="tyd-K1-sqC"/>
-                        <constraint firstAttribute="bottom" secondItem="CT5-2Q-XOF" secondAttribute="bottom" id="xFT-Kd-c1V"/>
+                        <constraint firstAttribute="height" constant="128" placeholder="YES" id="kdq-Fq-Ovz"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.11372549019607843" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aYE-vn-Ucu" secondAttribute="bottom" id="C7T-7I-2bs"/>
+                <constraint firstItem="BYt-vj-X4j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ke3-lB-XTA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aYE-vn-Ucu" secondAttribute="trailing" id="PIy-SC-1El"/>
+                <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="h7S-tl-Iej"/>
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kg6-4e-YB4"/>
-                <constraint firstItem="6LK-sC-Wp2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ntU-Wb-YFM"/>
-                <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="rOK-PJ-d0u"/>
-                <constraint firstItem="6LK-sC-Wp2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="y7X-9b-d12"/>
-                <constraint firstItem="6LK-sC-Wp2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ync-mN-V6l"/>
+                <constraint firstItem="BYt-vj-X4j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xMU-i3-cUi"/>
+                <constraint firstItem="BYt-vj-X4j" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yIN-gr-cTp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="1.3493253373313345"/>
         </view>
     </objects>
-    <resources>
-        <image name="ada-lovelace.jpg" width="760" height="428"/>
-    </resources>
 </document>

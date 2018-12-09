@@ -32,6 +32,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-O1-oe7">
                                 <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx4-vo-1hS" userLabel="Tag">
                                 <rect key="frame" x="5" y="5" width="51" height="12"/>
@@ -94,7 +95,7 @@ iniciantes?</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8Q1-U1-Yk5" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" id="0Ur-6U-jSk"/>
                             <constraint firstAttribute="trailing" secondItem="8Q1-U1-Yk5" secondAttribute="trailing" id="8gy-hF-c1a"/>
@@ -109,6 +110,7 @@ iniciantes?</string>
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.18431372549019609" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="c5F-oX-si4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7IL-mL-It1"/>
                 <constraint firstItem="c5F-oX-si4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7PC-Tt-mBA"/>

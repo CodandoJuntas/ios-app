@@ -1,8 +1,8 @@
 //
 //  UIView+Constraints.swift
-//  ebanx
 //
-//  Created by Aline Borges on 06/02/18.
+//  Created by Aline Borges on 07/09/2018.
+//  Copyright © 2018 Aline Borges. All rights reserved.
 //
 
 import Foundation
@@ -19,8 +19,8 @@ extension UIView {
             return
         }
         self.leftAnchor.constraint(equalTo: superview.leftAnchor, constant: offset).isActive = true
-        self.rightAnchor.constraint(equalTo: superview.rightAnchor, constant: offset).isActive = true
-        self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: offset).isActive = true
+        self.rightAnchor.constraint(equalTo: superview.rightAnchor, constant: -offset).isActive = true
+        self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -offset).isActive = true
         self.topAnchor.constraint(equalTo: superview.topAnchor, constant: offset).isActive = true
     }
     
@@ -36,10 +36,8 @@ extension UIView {
     }
     
     @discardableResult
-    func centerVertically(inRelationTo: UIView, _ offset: CGFloat = 0.0) -> NSLayoutConstraint? {
-        let superview = inRelationTo
-        
-        let constraint = self.centerYAnchor.constraint(equalTo: superview.centerYAnchor, constant: offset)
+    func centerVerticallyinRelationTo(_ anchor: NSLayoutYAxisAnchor, _ offset: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.centerYAnchor.constraint(equalTo: anchor, constant: offset)
         constraint.isActive = true
         return constraint
     }
@@ -56,6 +54,13 @@ extension UIView {
     }
     
     @discardableResult
+    func centerHorizontallyinRelationTo(_ anchor: NSLayoutXAxisAnchor, _ offset: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.centerXAnchor.constraint(equalTo: anchor, constant: offset)
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
     func pinLeft(_ offset: CGFloat = 0.0) -> NSLayoutConstraint? {
         guard let superview = self.superview else {
             return nil
@@ -66,8 +71,29 @@ extension UIView {
     }
     
     @discardableResult
-    func pinfLeftInRelationTo(heightAnchor: NSLayoutXAxisAnchor, constant: CGFloat) -> NSLayoutConstraint? {
-        let constraint = self.leftAnchor.constraint(equalTo: heightAnchor, constant: constant)
+    func pinfLeftInRelationTo(_ leftAnchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.leftAnchor.constraint(equalTo: leftAnchor, constant: constant)
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func pinfRightInRelationTo(_ rightAnchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.rightAnchor.constraint(equalTo: rightAnchor, constant: constant)
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func pinTopInRelationTo(_ topAnchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.topAnchor.constraint(equalTo: topAnchor, constant: constant)
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func pinBottomInRelationTo(_ secondAnchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> NSLayoutConstraint? {
+        let constraint = self.bottomAnchor.constraint(equalTo: secondAnchor, constant: constant)
         constraint.isActive = true
         return constraint
     }
@@ -109,24 +135,13 @@ extension UIView {
         return constraint
     }
     
-    @discardableResult
-    func pinBottom(greaterThanOrEqualTo offset: CGFloat) -> NSLayoutConstraint? {
-        guard let superview = self.superview else {
-            return nil
-        }
-        let constraint = self.bottomAnchor.constraint(greaterThanOrEqualTo: superview.bottomAnchor, constant: -offset)
-        constraint.isActive = true
-        
-        return constraint
-    }
-    
     //pin to safe area on bottom of screen
     @discardableResult
     func pinSafeBottom(_ offset: CGFloat = 0.0) -> NSLayoutConstraint? {
         guard let superview = self.superview else {
             return nil
         }
-        let constraint = self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: offset)
+        let constraint = self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -offset)
         constraint.isActive = true
         return constraint
     }

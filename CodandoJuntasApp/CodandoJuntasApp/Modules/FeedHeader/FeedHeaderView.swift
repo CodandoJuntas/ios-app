@@ -10,13 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/*
- Code for dependency injection:
-    self.register(FeedHeaderView.self) { resolver in
-        FeedHeaderView()
-    }
- */
-
 protocol FeedHeaderViewDelegate: class {
     
 }
@@ -24,6 +17,8 @@ protocol FeedHeaderViewDelegate: class {
 class FeedHeaderView: UIViewController {
    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var titleHeaderAtributedText: UILabel!
     
     var viewModel: FeedHeaderViewModel!
     let eventsRepository: EventsRepository
@@ -57,7 +52,7 @@ extension FeedHeaderView {
     }
     
     func configureViews() {
-        collectionView.register(R.nib.mostReadCollectionViewCell)
+        collectionView.register(R.nib.eventCollectionViewCell)
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -80,7 +75,7 @@ extension FeedHeaderView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.mostReadCollectionViewCell, for: indexPath) as! EventCollectionViewCell
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.eventCollectionViewCell, for: indexPath) as! EventCollectionViewCell
         cell.setupCell(viewModel.events[indexPath.row])
         return cell
     }
