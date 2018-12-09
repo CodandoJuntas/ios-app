@@ -97,7 +97,6 @@ extension FeedView {
     func registerCells(){
         tableView.register(R.nib.feedTableViewCell)
         tableView.register(R.nib.highlightedTableViewCell)
-        tableView.register(R.nib.mostReadTableViewCell)
         tableView.register(R.nib.headerSectionView(), forHeaderFooterViewReuseIdentifier: "HeaderSectionView")
 
     }

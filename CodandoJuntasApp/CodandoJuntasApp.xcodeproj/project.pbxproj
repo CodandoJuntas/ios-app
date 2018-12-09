@@ -10,6 +10,7 @@
 		AC1752CF21BCBB2A0011CF98 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752CC21BCBB2A0011CF98 /* FeedHeaderView.swift */; };
 		AC1752D021BCBB2A0011CF98 /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */; };
 		AC1752D121BCBB2A0011CF98 /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */; };
+		AC1752D321BD58BD0011CF98 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D221BD58BD0011CF98 /* GradientView.swift */; };
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
@@ -65,8 +66,6 @@
 		AC475FB621586E77003B2BC3 /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */; };
 		AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */; };
 		AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */; };
-		AC475FBD21587F18003B2BC3 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */; };
-		AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */; };
 		AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */; };
 		AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */; };
 		AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */; };
@@ -74,8 +73,8 @@
 		AC475FCC21589AF2003B2BC3 /* swift-og.png in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCB21589AF2003B2BC3 /* swift-og.png */; };
 		AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */; };
 		AC475FD021589D66003B2BC3 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC475FCF21589D66003B2BC3 /* dog.jpg */; };
-		AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */; };
-		AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */; };
+		AC475FD32158A10B003B2BC3 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD12158A10B003B2BC3 /* EventCollectionViewCell.swift */; };
+		AC475FD42158A10B003B2BC3 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FD22158A10B003B2BC3 /* EventCollectionViewCell.xib */; };
 		AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */; };
 		AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */; };
 		AC50E8C221A786C0002AE473 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50E8BC21A76AF8002AE473 /* EventsService.swift */; };
@@ -112,6 +111,7 @@
 		AC1752CC21BCBB2A0011CF98 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
 		AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
 		AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
+		AC1752D221BD58BD0011CF98 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
@@ -168,8 +168,6 @@
 		AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
 		AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighlightedTableViewCell.xib; sourceTree = "<group>"; };
-		AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
-		AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadTableViewCell.xib; sourceTree = "<group>"; };
 		AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		AC475FC72158998E003B2BC3 /* ada-lovelace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ada-lovelace.jpg"; sourceTree = "<group>"; };
@@ -177,8 +175,8 @@
 		AC475FCB21589AF2003B2BC3 /* swift-og.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift-og.png"; sourceTree = "<group>"; };
 		AC475FCD21589B89003B2BC3 /* gitHubLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gitHubLogo.jpg; sourceTree = "<group>"; };
 		AC475FCF21589D66003B2BC3 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
-		AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadCollectionViewCell.swift; sourceTree = "<group>"; };
-		AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC475FD12158A10B003B2BC3 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC475FD22158A10B003B2BC3 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Shadow.swift"; sourceTree = "<group>"; };
 		AC50E8BC21A76AF8002AE473 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
 		AC50E8BE21A76B0E002AE473 /* EventsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceImpl.swift; sourceTree = "<group>"; };
@@ -354,6 +352,7 @@
 				AC475F5D2150AA0C003B2BC3 /* Networking+Utils.swift */,
 				AC475F5A21509FDD003B2BC3 /* Constants.swift */,
 				AC475FD52158B582003B2BC3 /* UIView + Shadow.swift */,
+				AC1752D221BD58BD0011CF98 /* GradientView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -488,10 +487,8 @@
 		AC475FC0215883E1003B2BC3 /* MostReadCell */ = {
 			isa = PBXGroup;
 			children = (
-				AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */,
-				AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */,
-				AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */,
-				AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */,
+				AC475FD12158A10B003B2BC3 /* EventCollectionViewCell.swift */,
+				AC475FD22158A10B003B2BC3 /* EventCollectionViewCell.xib */,
 			);
 			path = MostReadCell;
 			sourceTree = "<group>";
@@ -687,12 +684,11 @@
 				AC475FAB215865FE003B2BC3 /* GothamRoundedLight_21020.ttf in Resources */,
 				AC475FCA21589AE9003B2BC3 /* github-mark.png in Resources */,
 				AC50E8CF21ACBDFB002AE473 /* GitHubLoginView.xib in Resources */,
-				AC475FD42158A10B003B2BC3 /* MostReadCollectionViewCell.xib in Resources */,
+				AC475FD42158A10B003B2BC3 /* EventCollectionViewCell.xib in Resources */,
 				AC475FAE215865FE003B2BC3 /* GothamRounded-LightItalic.otf in Resources */,
 				AC475FA6215865FE003B2BC3 /* GothamRounded-MediumItalic.otf in Resources */,
 				AC475FCE21589B89003B2BC3 /* gitHubLogo.jpg in Resources */,
 				AC475FB2215865FE003B2BC3 /* GothamRounded-Light.otf in Resources */,
-				AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */,
 				ACAA665421B4DB8E00EB9CD9 /* banner.png in Resources */,
 				ACA59A7B2197062200CF0B2E /* GothamRounded-Medium.otf in Resources */,
 				AC475FAA215865FE003B2BC3 /* GothamRoundedMedium_21022.ttf in Resources */,
@@ -815,6 +811,7 @@
 				AC80D75C2149D943001B00EF /* AppDelegate.swift in Sources */,
 				AC475F7021530D0E003B2BC3 /* LoginView.swift in Sources */,
 				AC475F5021507C53003B2BC3 /* FeedService.swift in Sources */,
+				AC1752D321BD58BD0011CF98 /* GradientView.swift in Sources */,
 				AC475F7E2153144F003B2BC3 /* SignInRepository.swift in Sources */,
 				AC475F5721509EA4003B2BC3 /* Rx+Utils.swift in Sources */,
 				AC475F4721507A0D003B2BC3 /* AppCoordinator.swift in Sources */,
@@ -827,7 +824,6 @@
 				AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
 				ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */,
-				AC475FBD21587F18003B2BC3 /* EventsTableViewCell.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,
 				AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */,
@@ -853,7 +849,7 @@
 				AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */,
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,
-				AC475FD32158A10B003B2BC3 /* MostReadCollectionViewCell.swift in Sources */,
+				AC475FD32158A10B003B2BC3 /* EventCollectionViewCell.swift in Sources */,
 				ACAA666121B605E500EB9CD9 /* webviewController.swift in Sources */,
 				AC475F822153168C003B2BC3 /* SignInService.swift in Sources */,
 			);

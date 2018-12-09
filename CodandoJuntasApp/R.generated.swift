@@ -299,7 +299,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 11 nibs.
   struct nib {
     /// Nib `FeedHeaderView`.
     static let feedHeaderView = _R.nib._FeedHeaderView()
@@ -317,8 +317,6 @@ struct R: Rswift.Validatable {
     static let loginView = _R.nib._LoginView()
     /// Nib `MostReadCollectionViewCell`.
     static let mostReadCollectionViewCell = _R.nib._MostReadCollectionViewCell()
-    /// Nib `MostReadTableViewCell`.
-    static let mostReadTableViewCell = _R.nib._MostReadTableViewCell()
     /// Nib `OnboardingView`.
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
@@ -366,11 +364,6 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.mostReadCollectionViewCell)
     }
     
-    /// `UINib(name: "MostReadTableViewCell", in: bundle)`
-    static func mostReadTableViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.mostReadTableViewCell)
-    }
-    
     /// `UINib(name: "OnboardingView", in: bundle)`
     static func onboardingView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.onboardingView)
@@ -389,16 +382,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `FeedTableViewCell`.
     static let feedTableViewCell: Rswift.ReuseIdentifier<FeedTableViewCell> = Rswift.ReuseIdentifier(identifier: "FeedTableViewCell")
     /// Reuse identifier `HighlightedTableViewCell`.
     static let highlightedTableViewCell: Rswift.ReuseIdentifier<HighlightedTableViewCell> = Rswift.ReuseIdentifier(identifier: "HighlightedTableViewCell")
     /// Reuse identifier `MostReadCollectionViewCell`.
-    static let mostReadCollectionViewCell: Rswift.ReuseIdentifier<MostReadCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadCollectionViewCell")
-    /// Reuse identifier `MostReadTableViewCell`.
-    static let mostReadTableViewCell: Rswift.ReuseIdentifier<EventsTableViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadTableViewCell")
+    static let mostReadCollectionViewCell: Rswift.ReuseIdentifier<EventCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadCollectionViewCell")
     
     fileprivate init() {}
   }
@@ -543,28 +534,14 @@ struct _R: Rswift.Validatable {
     }
     
     struct _MostReadCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = MostReadCollectionViewCell
+      typealias ReusableType = EventCollectionViewCell
       
       let bundle = R.hostingBundle
       let identifier = "MostReadCollectionViewCell"
       let name = "MostReadCollectionViewCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> MostReadCollectionViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostReadCollectionViewCell
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct _MostReadTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = EventsTableViewCell
-      
-      let bundle = R.hostingBundle
-      let identifier = "MostReadTableViewCell"
-      let name = "MostReadTableViewCell"
-      
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventsTableViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventsTableViewCell
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventCollectionViewCell
       }
       
       fileprivate init() {}

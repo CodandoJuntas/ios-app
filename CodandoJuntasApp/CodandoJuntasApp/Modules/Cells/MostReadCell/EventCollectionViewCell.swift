@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MostReadCollectionViewCell: UICollectionViewCell {
+class EventCollectionViewCell: UICollectionViewCell {
     
     private enum regexTags: String {
         
@@ -22,10 +22,18 @@ class MostReadCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var tagLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let borderColor = UIColor(hexString: "#404142")
+        
+        cardView.layer.borderWidth = 1.0
+        cardView.layer.cornerRadius = 4
+        cardView.layer.borderColor = borderColor.cgColor
+        cardView.addShadow(offSetX: 0, offSetY: 2, radius: 4, opacity: 0.5)
+        
     }
     
     func setupCell(_ event: Event) {

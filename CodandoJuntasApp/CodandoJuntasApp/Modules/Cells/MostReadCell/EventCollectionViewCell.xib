@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Light.otf">
+            <string>GothamRounded-Light</string>
+        </array>
+        <array key="GothamRoundedBook_21018.ttf">
+            <string>GothamRounded-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCollectionViewCell" id="gTV-IL-0wX" customClass="EventCollectionViewCell" customModule="CodandoJuntasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-oX-si4">
+                        <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-O1-oe7">
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx4-vo-1hS" userLabel="Tag">
+                                <rect key="frame" x="5" y="5" width="51" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opinião" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-l9-t8M">
+                                        <rect key="frame" x="6" y="1" width="39" height="10"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ivY-l9-t8M" firstAttribute="leading" secondItem="Mx4-vo-1hS" secondAttribute="leading" constant="6" id="9ki-BT-HWK"/>
+                                    <constraint firstAttribute="bottom" secondItem="ivY-l9-t8M" secondAttribute="bottom" constant="1" id="Cqs-2V-bnu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ivY-l9-t8M" secondAttribute="trailing" constant="6" id="ll2-19-IoB"/>
+                                    <constraint firstItem="ivY-l9-t8M" firstAttribute="top" secondItem="Mx4-vo-1hS" secondAttribute="top" constant="1" id="pbw-He-vVW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Q1-U1-Yk5">
+                                <rect key="frame" x="0.0" y="54" width="207" height="66"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSf-YW-sUf" customClass="GradientView" customModule="CodandoJuntasApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="66"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.1803921568627451" green="0.18431372549019609" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.11372549019607843" green="0.11764705882352941" blue="0.12156862745098039" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekh-OL-qKT">
+                                        <rect key="frame" x="12" y="20" width="187" height="39"/>
+                                        <string key="text">Qual a melhor 
+linguagem para 
+iniciantes?</string>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="13"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ekh-OL-qKT" firstAttribute="leading" secondItem="8Q1-U1-Yk5" secondAttribute="leading" constant="12" id="4VK-9l-bbu"/>
+                                    <constraint firstAttribute="bottom" secondItem="lSf-YW-sUf" secondAttribute="bottom" id="D2q-Zc-xfg"/>
+                                    <constraint firstItem="lSf-YW-sUf" firstAttribute="top" secondItem="8Q1-U1-Yk5" secondAttribute="top" id="LQr-Ok-Dii"/>
+                                    <constraint firstItem="lSf-YW-sUf" firstAttribute="leading" secondItem="8Q1-U1-Yk5" secondAttribute="leading" id="Lk5-zM-cFV"/>
+                                    <constraint firstItem="Ekh-OL-qKT" firstAttribute="top" secondItem="8Q1-U1-Yk5" secondAttribute="top" constant="20" id="TFn-j8-bFV"/>
+                                    <constraint firstAttribute="trailing" secondItem="lSf-YW-sUf" secondAttribute="trailing" id="YIj-TF-GEd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ekh-OL-qKT" secondAttribute="bottom" constant="7" id="j3L-nm-rBN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ekh-OL-qKT" secondAttribute="trailing" constant="8" id="p07-dc-NKk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Q1-U1-Yk5" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" id="0Ur-6U-jSk"/>
+                            <constraint firstAttribute="trailing" secondItem="8Q1-U1-Yk5" secondAttribute="trailing" id="8gy-hF-c1a"/>
+                            <constraint firstItem="Mx4-vo-1hS" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" constant="5" id="Ckv-7p-ZST"/>
+                            <constraint firstItem="jBc-O1-oe7" firstAttribute="leading" secondItem="c5F-oX-si4" secondAttribute="leading" id="FV8-Uw-SZG"/>
+                            <constraint firstAttribute="bottom" secondItem="8Q1-U1-Yk5" secondAttribute="bottom" id="GXW-LW-C9M"/>
+                            <constraint firstItem="Mx4-vo-1hS" firstAttribute="top" secondItem="c5F-oX-si4" secondAttribute="top" constant="5" id="IlG-DZ-nGc"/>
+                            <constraint firstAttribute="bottom" secondItem="jBc-O1-oe7" secondAttribute="bottom" id="WSj-c2-UmR"/>
+                            <constraint firstAttribute="trailing" secondItem="jBc-O1-oe7" secondAttribute="trailing" id="dbl-Lo-Pew"/>
+                            <constraint firstItem="jBc-O1-oe7" firstAttribute="top" secondItem="c5F-oX-si4" secondAttribute="top" id="jY5-b9-yBn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="c5F-oX-si4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7IL-mL-It1"/>
+                <constraint firstItem="c5F-oX-si4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7PC-Tt-mBA"/>
+                <constraint firstAttribute="bottom" secondItem="c5F-oX-si4" secondAttribute="bottom" id="K2i-EM-dg2"/>
+                <constraint firstAttribute="trailing" secondItem="c5F-oX-si4" secondAttribute="trailing" id="LNK-OZ-WDa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="180" height="144"/>
+            <connections>
+                <outlet property="cardView" destination="c5F-oX-si4" id="Wgz-9q-p7N"/>
+                <outlet property="tagLabel" destination="ivY-l9-t8M" id="1vf-9y-SA7"/>
+                <outlet property="titleLabel" destination="Ekh-OL-qKT" id="fk5-G5-hVh"/>
+            </connections>
+            <point key="canvasLocation" x="240.80000000000001" y="181.70914542728636"/>
+        </collectionViewCell>
+    </objects>
+</document>
