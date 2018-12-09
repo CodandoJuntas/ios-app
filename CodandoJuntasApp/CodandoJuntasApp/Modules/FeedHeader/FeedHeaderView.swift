@@ -22,10 +22,12 @@ protocol FeedHeaderViewDelegate: class {
 }
 
 class FeedHeaderView: UIViewController {
+   
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel: FeedHeaderViewModel!
     let eventsRepository: EventsRepository
-
+    
     weak var delegate: FeedHeaderViewDelegate?
 
     init(eventsRepository: EventsRepository) {
@@ -55,7 +57,9 @@ extension FeedHeaderView {
     }
     
     func configureViews() {
-        
+        collectionView.register(R.nib.mostReadCollectionViewCell)
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     func setupBindings() {
@@ -63,8 +67,24 @@ extension FeedHeaderView {
         viewModel.eventList.drive(onNext: { [weak self] (events) in
             guard let self = self else {return}
             self.viewModel.events = events
-            //self.tableView.reloadData()
+            self.collectionView.reloadData()
         }).disposed(by: rx.disposeBag)
 
     }
+}
+
+extension FeedHeaderView: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.events.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.mostReadCollectionViewCell, for: indexPath) as! MostReadCollectionViewCell
+        cell.setupCell(viewModel.events[indexPath.row])
+        return cell
+    }
+    
+    
+    
 }
