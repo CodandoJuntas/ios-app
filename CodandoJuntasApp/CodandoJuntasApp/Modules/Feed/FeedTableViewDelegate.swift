@@ -21,18 +21,9 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderSectionView") as? HeaderSectionView else {
             return nil
         }
-
-        switch section {
-        case 0:
-            header.setTitle("Destaques")
-            
-        case 1:
-            header.setTitle("Eventos")
-            
-        default:
-            header.configHeader(section: viewModel.mdFeed[section-2])
-        }
-
+    
+        header.configHeader(section: viewModel.mdFeed[section])
+        
         return header
     }
     
@@ -40,6 +31,4 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
         viewModel.verifyAction(indexPath)
     }
     
-    
-
 }

@@ -28,18 +28,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zorza-polarna-norwegia_330978.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1FL-ZH-OqW">
-                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
-                </imageView>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQW-GE-Fi5">
-                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="suR-ct-4Z3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <blurEffect style="light"/>
-                </visualEffectView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="19" sectionFooterHeight="19" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-vn-Ucu">
                     <rect key="frame" x="0.0" y="68" width="375" height="599"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,18 +74,10 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.93703609700000001" green="0.94117802380000004" blue="0.94519203900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.11372549019607843" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1FL-ZH-OqW" secondAttribute="bottom" id="0d2-Dp-1cV"/>
-                <constraint firstItem="EQW-GE-Fi5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1iU-7d-Qzr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1FL-ZH-OqW" secondAttribute="trailing" id="9Rd-xG-ykF"/>
-                <constraint firstItem="1FL-ZH-OqW" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="AxI-zG-ro0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aYE-vn-Ucu" secondAttribute="bottom" id="C7T-7I-2bs"/>
-                <constraint firstItem="1FL-ZH-OqW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HeD-dl-VKV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EQW-GE-Fi5" secondAttribute="trailing" id="OvB-yd-HjF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aYE-vn-Ucu" secondAttribute="trailing" id="PIy-SC-1El"/>
-                <constraint firstItem="EQW-GE-Fi5" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="RGP-ao-I1h"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EQW-GE-Fi5" secondAttribute="bottom" id="bDb-Yh-LXy"/>
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kg6-4e-YB4"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ntU-Wb-YFM"/>
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="rOK-PJ-d0u"/>
@@ -110,6 +90,5 @@
     </objects>
     <resources>
         <image name="ada-lovelace.jpg" width="760" height="428"/>
-        <image name="zorza-polarna-norwegia_330978.jpg" width="700" height="466"/>
     </resources>
 </document>
