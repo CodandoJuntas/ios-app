@@ -11,10 +11,12 @@ import RxCocoa
 
 class FeedHeaderViewModel {
     
-    //let input: Driver<Void>
-    
+    let eventList: Driver<[Event]>
+    var events: Events = []
+
     init(
-        input: ()) {
-        
+        eventsRepository: EventsRepository) {
+       
+        self.eventList = eventsRepository.getEvents().asDriver(onErrorJustReturn: [])
     }
 }

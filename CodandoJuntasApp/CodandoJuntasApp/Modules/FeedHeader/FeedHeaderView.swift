@@ -24,10 +24,12 @@ protocol FeedHeaderViewDelegate: class {
 class FeedHeaderView: UIViewController {
     
     var viewModel: FeedHeaderViewModel!
-    
+    let eventsRepository: EventsRepository
+
     weak var delegate: FeedHeaderViewDelegate?
 
-    init() {
+    init(eventsRepository: EventsRepository) {
+        self.eventsRepository = eventsRepository
         super.init(nibName: String(describing: FeedHeaderView.self), bundle: nil)
     }
     
@@ -48,7 +50,7 @@ extension FeedHeaderView {
     
     func setupViewModel() {
         self.viewModel = FeedHeaderViewModel(
-            input: ()
+            eventsRepository: self.eventsRepository
         )
     }
     
@@ -57,6 +59,12 @@ extension FeedHeaderView {
     }
     
     func setupBindings() {
+        
+        viewModel.eventList.drive(onNext: { [weak self] (events) in
+            guard let self = self else {return}
+            self.viewModel.events = events
+            //self.tableView.reloadData()
+        }).disposed(by: rx.disposeBag)
 
     }
 }

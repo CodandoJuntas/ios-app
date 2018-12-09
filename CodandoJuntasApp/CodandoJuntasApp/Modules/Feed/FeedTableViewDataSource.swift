@@ -12,43 +12,26 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource {
     
     let viewModel: FeedViewModel!
     
-    init(viewModel: FeedViewModel, repository: EventsRepository) {
+    init(viewModel: FeedViewModel) {
         self.viewModel = viewModel
         super.init()
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.mdFeed.count + 2
+        return viewModel.mdFeed.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        case 1:
-            return 1
-        default:
-            return viewModel.mdFeed[section-2].items.count
-        }
+        return viewModel.mdFeed[section].items.count
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
-        switch indexPath.section {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.highlightedTableViewCell, for: indexPath) as! HighlightedTableViewCell
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mostReadTableViewCell, for: indexPath) as! MostReadTableViewCell
-                cell.viewModel = self.viewModel
-            return cell
-        default:
              let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedTableViewCell, for: indexPath) as! FeedTableViewCell
-            cell.setupCell(viewModel.mdFeed[indexPath.section-2].items[indexPath.row])
+            cell.setupCell(viewModel.mdFeed[indexPath.section].items[indexPath.row])
             
             return cell
-        }
         
     }
     

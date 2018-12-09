@@ -37,15 +37,7 @@ class FeedTableViewDelegate: NSObject, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 0:
-            print("highlight Selected")
-        case 2:
-            viewModel.verifyAction(indexPath)
-        default:
-            ()
-            
-        }
+        viewModel.verifyAction(indexPath)
     }
     
     

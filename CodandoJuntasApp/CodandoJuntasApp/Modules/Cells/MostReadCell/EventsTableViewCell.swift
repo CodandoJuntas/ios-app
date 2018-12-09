@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MostReadTableViewCell: UITableViewCell {
+class EventsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var viewModel: FeedViewModel! {
+    var viewModel: FeedHeaderViewModel! {
         didSet {
             collectionView.reloadData()
         }
@@ -34,7 +34,7 @@ class MostReadTableViewCell: UITableViewCell {
     
 }
 
-extension MostReadTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension EventsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.events.count

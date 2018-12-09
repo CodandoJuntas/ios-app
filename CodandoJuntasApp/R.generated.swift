@@ -398,7 +398,7 @@ struct R: Rswift.Validatable {
     /// Reuse identifier `MostReadCollectionViewCell`.
     static let mostReadCollectionViewCell: Rswift.ReuseIdentifier<MostReadCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadCollectionViewCell")
     /// Reuse identifier `MostReadTableViewCell`.
-    static let mostReadTableViewCell: Rswift.ReuseIdentifier<MostReadTableViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadTableViewCell")
+    static let mostReadTableViewCell: Rswift.ReuseIdentifier<EventsTableViewCell> = Rswift.ReuseIdentifier(identifier: "MostReadTableViewCell")
     
     fileprivate init() {}
   }
@@ -558,14 +558,14 @@ struct _R: Rswift.Validatable {
     }
     
     struct _MostReadTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = MostReadTableViewCell
+      typealias ReusableType = EventsTableViewCell
       
       let bundle = R.hostingBundle
       let identifier = "MostReadTableViewCell"
       let name = "MostReadTableViewCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> MostReadTableViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MostReadTableViewCell
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventsTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventsTableViewCell
       }
       
       fileprivate init() {}

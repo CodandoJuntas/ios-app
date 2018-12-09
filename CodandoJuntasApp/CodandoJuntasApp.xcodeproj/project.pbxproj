@@ -65,7 +65,7 @@
 		AC475FB621586E77003B2BC3 /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */; };
 		AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */; };
 		AC475FBA215878F4003B2BC3 /* HighlightedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */; };
-		AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */; };
+		AC475FBD21587F18003B2BC3 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */; };
 		AC475FBE21587F18003B2BC3 /* MostReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */; };
 		AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */; };
 		AC475FC521588478003B2BC3 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */; };
@@ -168,7 +168,7 @@
 		AC475FB521586E77003B2BC3 /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
 		AC475FB7215878F4003B2BC3 /* HighlightedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FB8215878F4003B2BC3 /* HighlightedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighlightedTableViewCell.xib; sourceTree = "<group>"; };
-		AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostReadTableViewCell.swift; sourceTree = "<group>"; };
+		AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostReadTableViewCell.xib; sourceTree = "<group>"; };
 		AC475FC221588478003B2BC3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		AC475FC321588478003B2BC3 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -488,7 +488,7 @@
 		AC475FC0215883E1003B2BC3 /* MostReadCell */ = {
 			isa = PBXGroup;
 			children = (
-				AC475FBB21587F18003B2BC3 /* MostReadTableViewCell.swift */,
+				AC475FBB21587F18003B2BC3 /* EventsTableViewCell.swift */,
 				AC475FBC21587F18003B2BC3 /* MostReadTableViewCell.xib */,
 				AC475FD12158A10B003B2BC3 /* MostReadCollectionViewCell.swift */,
 				AC475FD22158A10B003B2BC3 /* MostReadCollectionViewCell.xib */,
@@ -827,7 +827,7 @@
 				AC50E8C121A786BD002AE473 /* EventsServiceImpl.swift in Sources */,
 				AC475F8821547AC9003B2BC3 /* CloudTagView + rx.swift in Sources */,
 				ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */,
-				AC475FBD21587F18003B2BC3 /* MostReadTableViewCell.swift in Sources */,
+				AC475FBD21587F18003B2BC3 /* EventsTableViewCell.swift in Sources */,
 				AC475F6A21530CF7003B2BC3 /* OnboardingView.swift in Sources */,
 				AC475F7621530D51003B2BC3 /* ProfileView.swift in Sources */,
 				AC475FC421588478003B2BC3 /* FeedTableViewCell.swift in Sources */,

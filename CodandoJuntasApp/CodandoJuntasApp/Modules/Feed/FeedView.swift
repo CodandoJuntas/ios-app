@@ -28,12 +28,10 @@ class FeedView: UIViewController {
     
     let localStorage: LocalStorage
     let feedRepository: FeedRepository
-    let eventsRepository: EventsRepository
     let feedHeaderView: FeedHeaderView
     
-    init(feedRepository: FeedRepository, eventsRepository: EventsRepository, storage: LocalStorage, tableViewHeader: FeedHeaderView) {
+    init(feedRepository: FeedRepository, storage: LocalStorage, tableViewHeader: FeedHeaderView) {
         self.feedRepository = feedRepository
-        self.eventsRepository = eventsRepository
         self.localStorage = storage
         self.feedHeaderView = tableViewHeader
         super.init(nibName: String(describing: FeedView.self), bundle: nil)
@@ -55,9 +53,9 @@ class FeedView: UIViewController {
 extension FeedView {
     
     func setupViewModel() {
-        self.viewModel = FeedViewModel(feedRepository: self.feedRepository, eventsRepository: self.eventsRepository)
+        self.viewModel = FeedViewModel(feedRepository: self.feedRepository)
         self.feedTableViewDelegate = FeedTableViewDelegate(viewModel: self.viewModel)
-        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel, repository: self.eventsRepository)
+        self.feedTableViewDataSource = FeedTableViewDataSource(viewModel: self.viewModel)
         self.tableView.dataSource = self.feedTableViewDataSource
         self.tableView.delegate = self.feedTableViewDelegate
        
@@ -80,12 +78,6 @@ extension FeedView {
         viewModel.feed.subscribe(onNext: { [weak self] (feed) in
             guard let self = self else {return}
             self.viewModel.mdFeed = feed
-            self.tableView.reloadData()
-        }).disposed(by: rx.disposeBag)
-        
-        viewModel.eventList.drive(onNext: { [weak self] (events) in
-            guard let self = self else {return}
-            self.viewModel.events = events
             self.tableView.reloadData()
         }).disposed(by: rx.disposeBag)
         
