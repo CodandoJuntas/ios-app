@@ -12,6 +12,7 @@ import RxCocoa
 
 protocol FeedDelegate: class {
     func openProfile()
+    func openContent(_ url: String)
 }
 
 class FeedView: UIViewController {
@@ -87,6 +88,10 @@ extension FeedView {
         self.headerButton.rx.tap.bind { [weak self] _ in
             self?.delegate?.openProfile()
             }.disposed(by: rx.disposeBag)
+        
+        viewModel.onRequestLink = {[weak self] target in
+            self?.delegate?.openContent(target)
+        }
     }
     
 }

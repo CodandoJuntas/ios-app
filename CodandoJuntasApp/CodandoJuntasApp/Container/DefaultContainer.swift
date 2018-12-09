@@ -56,6 +56,10 @@ extension DefaultContainer {
         self.container.register(GitHubLoginView.self) { resolver in
             GitHubLoginView(repository: resolver.resolve(SignInRepository.self)!)
         }
+        
+        self.container.register(WebContainerView.self){ resolver in
+            WebContainerView()
+        }
     }
     
 }

@@ -56,7 +56,7 @@ class WebViewController: UIViewController, WKNavigationDelegate, WKScriptMessage
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
         if let urlString = navigationAction.request.url?.absoluteString, navigationAction.navigationType == .linkActivated {
-            self.webViewDelegate.verifyURl(urlString)
+           // self.webViewDelegate.verifyURl(urlString)
             decisionHandler(.cancel)
         } else {
             decisionHandler(.allow)

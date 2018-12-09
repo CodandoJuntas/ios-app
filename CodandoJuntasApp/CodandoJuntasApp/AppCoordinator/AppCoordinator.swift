@@ -69,6 +69,15 @@ class AppCoordinator: Coordinator {
         let view = container.resolve(GitHubLoginView.self)!
         self.currentView = view
     }
+    
+    fileprivate func openWebView(_ url: String){
+        let view = container.resolve(WebContainerView.self)!
+        view.delegate = self
+        view.url = url
+        view.modalPresentationStyle = .overCurrentContext
+        self.currentView?.present(view, animated: true, completion: nil)
+        
+    }
 
 }
 
@@ -79,6 +88,10 @@ extension AppCoordinator: FeedDelegate {
         self.showProfileView()
     }
     
+    func openContent(_ url: String)
+    {
+        openWebView(url)
+    }
     
 }
 
@@ -110,6 +123,13 @@ extension AppCoordinator: LoginViewDelegate {
 extension AppCoordinator: ProfileViewDelegate {
     func closeProfile() {
         self.showMainView()
+    }
+
+}
+
+extension AppCoordinator: WebContainerViewDelegate {
+    func closeWebView() {
+        currentView?.dismiss(animated: true, completion: nil)
     }
     
     
