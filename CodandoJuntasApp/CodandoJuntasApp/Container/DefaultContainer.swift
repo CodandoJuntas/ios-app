@@ -32,7 +32,8 @@ extension DefaultContainer {
             FeedView(
                 feedRepository: resolver.resolve(FeedRepository.self)!,
                 eventsRepository: resolver.resolve(EventsRepository.self)!,
-                storage: resolver.resolve(LocalStorage.self)!
+                storage: resolver.resolve(LocalStorage.self)!,
+                tableViewHeader: resolver.resolve(FeedHeaderView.self)!
             )
         }
         
@@ -59,6 +60,10 @@ extension DefaultContainer {
         
         self.container.register(WebContainerView.self){ resolver in
             WebContainerView()
+        }
+        
+        self.container.register(FeedHeaderView.self) { resolver in
+            FeedHeaderView()
         }
     }
     

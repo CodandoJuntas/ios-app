@@ -100,9 +100,9 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EQW-GE-Fi5" secondAttribute="bottom" id="bDb-Yh-LXy"/>
                 <constraint firstItem="aYE-vn-Ucu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kg6-4e-YB4"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ntU-Wb-YFM"/>
+                <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="rOK-PJ-d0u"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="y7X-9b-d12"/>
                 <constraint firstItem="6LK-sC-Wp2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ync-mN-V6l"/>
-                <constraint firstItem="aYE-vn-Ucu" firstAttribute="top" secondItem="6LK-sC-Wp2" secondAttribute="bottom" id="zA9-t9-dTe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="1.3493253373313345"/>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1752CF21BCBB2A0011CF98 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752CC21BCBB2A0011CF98 /* FeedHeaderView.swift */; };
+		AC1752D021BCBB2A0011CF98 /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */; };
+		AC1752D121BCBB2A0011CF98 /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */; };
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
@@ -106,6 +109,9 @@
 /* Begin PBXFileReference section */
 		0B52DEB84ED5423CAAD694DE /* Pods-CodandoJuntasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.release.xcconfig"; sourceTree = "<group>"; };
 		A779A47C6A170D47AC8692B5 /* Pods-CodandoJuntasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodandoJuntasApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodandoJuntasApp/Pods-CodandoJuntasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AC1752CC21BCBB2A0011CF98 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
+		AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
@@ -233,6 +239,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC1752CB21BCBADC0011CF98 /* FeedHeader */ = {
+			isa = PBXGroup;
+			children = (
+				AC1752CC21BCBB2A0011CF98 /* FeedHeaderView.swift */,
+				AC1752CD21BCBB2A0011CF98 /* FeedHeaderViewModel.swift */,
+				AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */,
+			);
+			path = FeedHeader;
+			sourceTree = "<group>";
+		};
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +260,7 @@
 				AC475F6421530589003B2BC3 /* Login */,
 				AC475F6321530579003B2BC3 /* Onboarding */,
 				AC475F5F2151D8CE003B2BC3 /* Feed */,
+				AC1752CB21BCBADC0011CF98 /* FeedHeader */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -659,6 +676,7 @@
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
 				AC50E8C821ACAF85002AE473 /* GoogleService-Info.plist in Resources */,
+				AC1752D121BCBB2A0011CF98 /* FeedHeaderView.xib in Resources */,
 				AC475FD021589D66003B2BC3 /* dog.jpg in Resources */,
 				AC475F7821530D51003B2BC3 /* ProfileView.xib in Resources */,
 				ACAA665821B4E40500EB9CD9 /* zorza-polarna-norwegia_330978.jpg in Resources */,
@@ -820,6 +838,7 @@
 				ACAA665021B468C100EB9CD9 /* Event.swift in Sources */,
 				ACAA665E21B4EA1400EB9CD9 /* webContainerViewModel.swift in Sources */,
 				AC475F5E2150AA0C003B2BC3 /* Networking+Utils.swift in Sources */,
+				AC1752CF21BCBB2A0011CF98 /* FeedHeaderView.swift in Sources */,
 				AC475FB9215878F4003B2BC3 /* HighlightedTableViewCell.swift in Sources */,
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,
 				AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */,
@@ -830,6 +849,7 @@
 				AC50E8CE21ACBDFB002AE473 /* GitHubLoginViewModel.swift in Sources */,
 				AC50E8D121ADE8C7002AE473 /* SignInRouter.swift in Sources */,
 				AC475F6B21530CF7003B2BC3 /* OnboardingViewModel.swift in Sources */,
+				AC1752D021BCBB2A0011CF98 /* FeedHeaderViewModel.swift in Sources */,
 				AC50E8C621A787F4002AE473 /* EventsRouter.swift in Sources */,
 				AC475F9721547C72003B2BC3 /* UITextFIeld+Utils.swift in Sources */,
 				AC475F4921507A80003B2BC3 /* LocalStorage.swift in Sources */,

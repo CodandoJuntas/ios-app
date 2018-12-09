@@ -29,11 +29,13 @@ class FeedView: UIViewController {
     let localStorage: LocalStorage
     let feedRepository: FeedRepository
     let eventsRepository: EventsRepository
+    let feedHeaderView: FeedHeaderView
     
-    init(feedRepository: FeedRepository, eventsRepository: EventsRepository, storage: LocalStorage) {
+    init(feedRepository: FeedRepository, eventsRepository: EventsRepository, storage: LocalStorage, tableViewHeader: FeedHeaderView) {
         self.feedRepository = feedRepository
         self.eventsRepository = eventsRepository
         self.localStorage = storage
+        self.feedHeaderView = tableViewHeader
         super.init(nibName: String(describing: FeedView.self), bundle: nil)
     }
     
@@ -67,6 +69,8 @@ extension FeedView {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedSectionHeaderHeight = 100
+        tableView.tableHeaderView = self.feedHeaderView.view
+        
         registerCells()
        
     }

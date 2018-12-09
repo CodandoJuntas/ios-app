@@ -299,8 +299,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 11 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
   struct nib {
+    /// Nib `FeedHeaderView`.
+    static let feedHeaderView = _R.nib._FeedHeaderView()
     /// Nib `FeedTableViewCell`.
     static let feedTableViewCell = _R.nib._FeedTableViewCell()
     /// Nib `FeedView`.
@@ -323,6 +325,11 @@ struct R: Rswift.Validatable {
     static let profileView = _R.nib._ProfileView()
     /// Nib `WebContainerView`.
     static let webContainerView = _R.nib._WebContainerView()
+    
+    /// `UINib(name: "FeedHeaderView", in: bundle)`
+    static func feedHeaderView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedHeaderView)
+    }
     
     /// `UINib(name: "FeedTableViewCell", in: bundle)`
     static func feedTableViewCell(_: Void = ()) -> UIKit.UINib {
@@ -442,6 +449,17 @@ struct _R: Rswift.Validatable {
       try _HighlightedTableViewCell.validate()
       try _FeedView.validate()
       try _ProfileView.validate()
+    }
+    
+    struct _FeedHeaderView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "FeedHeaderView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
     }
     
     struct _FeedTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
