@@ -95,9 +95,9 @@
 		ACAA665421B4DB8E00EB9CD9 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665321B4DB8E00EB9CD9 /* banner.png */; };
 		ACAA665721B4E40500EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */; };
 		ACAA665821B4E40500EB9CD9 /* zorza-polarna-norwegia_330978.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */; };
-		ACAA665D21B4EA1400EB9CD9 /* webContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */; };
+		ACAA665D21B4EA1400EB9CD9 /* WebContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA665A21B4EA1400EB9CD9 /* WebContainerView.swift */; };
 		ACAA665E21B4EA1400EB9CD9 /* webContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */; };
-		ACAA665F21B4EA1400EB9CD9 /* webContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */; };
+		ACAA665F21B4EA1400EB9CD9 /* WebContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAA665C21B4EA1400EB9CD9 /* WebContainerView.xib */; };
 		ACAA666121B605E500EB9CD9 /* webviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA666021B605E500EB9CD9 /* webviewController.swift */; };
 		ACD5E34321926B9C006A9B05 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */; };
 		D4406539EFDDE261A4C32877 /* Pods_CodandoJuntasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */; };
@@ -196,9 +196,9 @@
 		ACAA665321B4DB8E00EB9CD9 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		ACAA665521B4E40300EB9CD9 /* DfaihBBXUAACdWy.jpg-large.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DfaihBBXUAACdWy.jpg-large.jpeg"; sourceTree = "<group>"; };
 		ACAA665621B4E40400EB9CD9 /* zorza-polarna-norwegia_330978.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zorza-polarna-norwegia_330978.jpg"; sourceTree = "<group>"; };
-		ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webContainerView.swift; sourceTree = "<group>"; };
+		ACAA665A21B4EA1400EB9CD9 /* WebContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContainerView.swift; sourceTree = "<group>"; };
 		ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webContainerViewModel.swift; sourceTree = "<group>"; };
-		ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = webContainerView.xib; sourceTree = "<group>"; };
+		ACAA665C21B4EA1400EB9CD9 /* WebContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebContainerView.xib; sourceTree = "<group>"; };
 		ACAA666021B605E500EB9CD9 /* webviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webviewController.swift; sourceTree = "<group>"; };
 		ACD5E34221926B9C006A9B05 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		E793403F8665F91DA86F9ECA /* Pods_CodandoJuntasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodandoJuntasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -575,9 +575,9 @@
 		ACAA665921B4E9CB00EB9CD9 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				ACAA665A21B4EA1400EB9CD9 /* webContainerView.swift */,
+				ACAA665A21B4EA1400EB9CD9 /* WebContainerView.swift */,
 				ACAA665B21B4EA1400EB9CD9 /* webContainerViewModel.swift */,
-				ACAA665C21B4EA1400EB9CD9 /* webContainerView.xib */,
+				ACAA665C21B4EA1400EB9CD9 /* WebContainerView.xib */,
 				ACAA666021B605E500EB9CD9 /* webviewController.swift */,
 			);
 			path = WebView;
@@ -654,7 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */,
-				ACAA665F21B4EA1400EB9CD9 /* webContainerView.xib in Resources */,
+				ACAA665F21B4EA1400EB9CD9 /* WebContainerView.xib in Resources */,
 				AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */,
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
@@ -824,7 +824,7 @@
 				AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */,
 				AC475F8B21547B4A003B2BC3 /* CloudTagView.swift in Sources */,
 				AC475F9321547C72003B2BC3 /* URL+Utils.swift in Sources */,
-				ACAA665D21B4EA1400EB9CD9 /* webContainerView.swift in Sources */,
+				ACAA665D21B4EA1400EB9CD9 /* WebContainerView.swift in Sources */,
 				AC475F7D2153144F003B2BC3 /* SignInRepositoryImpl.swift in Sources */,
 				AC475F9521547C72003B2BC3 /* String+Utils.swift in Sources */,
 				AC50E8CE21ACBDFB002AE473 /* GitHubLoginViewModel.swift in Sources */,

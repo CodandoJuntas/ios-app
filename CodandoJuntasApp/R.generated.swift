@@ -321,8 +321,8 @@ struct R: Rswift.Validatable {
     static let onboardingView = _R.nib._OnboardingView()
     /// Nib `ProfileView`.
     static let profileView = _R.nib._ProfileView()
-    /// Nib `webContainerView`.
-    static let webContainerView = _R.nib._webContainerView()
+    /// Nib `WebContainerView`.
+    static let webContainerView = _R.nib._WebContainerView()
     
     /// `UINib(name: "FeedTableViewCell", in: bundle)`
     static func feedTableViewCell(_: Void = ()) -> UIKit.UINib {
@@ -374,7 +374,7 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.profileView)
     }
     
-    /// `UINib(name: "webContainerView", in: bundle)`
+    /// `UINib(name: "WebContainerView", in: bundle)`
     static func webContainerView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.webContainerView)
     }
@@ -579,9 +579,9 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct _webContainerView: Rswift.NibResourceType {
+    struct _WebContainerView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let name = "webContainerView"
+      let name = "WebContainerView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
