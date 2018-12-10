@@ -67,6 +67,7 @@ class EventBody {
     var labels: [Label] = []
     var address: String = ""
     var date: String = ""
+    var hour:String = ""
     var price: String = ""
     var description: String = ""
     var city: String = ""
