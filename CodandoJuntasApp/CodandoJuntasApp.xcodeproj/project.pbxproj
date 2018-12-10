@@ -12,6 +12,9 @@
 		AC1752D121BCBB2A0011CF98 /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */; };
 		AC1752D321BD58BD0011CF98 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D221BD58BD0011CF98 /* GradientView.swift */; };
 		AC1752D521BD6F870011CF98 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D421BD6F870011CF98 /* HeaderView.swift */; };
+		AC1752D921BE9C390011CF98 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D621BE9C390011CF98 /* EventView.swift */; };
+		AC1752DA21BE9C390011CF98 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1752D721BE9C390011CF98 /* EventViewModel.swift */; };
+		AC1752DB21BE9C390011CF98 /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1752D821BE9C390011CF98 /* EventView.xib */; };
 		AC475F3721507312003B2BC3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3421507312003B2BC3 /* FeedView.swift */; };
 		AC475F3821507312003B2BC3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC475F3521507312003B2BC3 /* FeedViewModel.swift */; };
 		AC475F3921507312003B2BC3 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC475F3621507312003B2BC3 /* FeedView.xib */; };
@@ -114,6 +117,9 @@
 		AC1752CE21BCBB2A0011CF98 /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
 		AC1752D221BD58BD0011CF98 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AC1752D421BD6F870011CF98 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AC1752D621BE9C390011CF98 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		AC1752D721BE9C390011CF98 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		AC1752D821BE9C390011CF98 /* EventView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
 		AC475F3421507312003B2BC3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AC475F3521507312003B2BC3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		AC475F3621507312003B2BC3 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
@@ -249,9 +255,20 @@
 			path = FeedHeader;
 			sourceTree = "<group>";
 		};
+		AC1752DC21BE9C430011CF98 /* EventView */ = {
+			isa = PBXGroup;
+			children = (
+				AC1752D621BE9C390011CF98 /* EventView.swift */,
+				AC1752D721BE9C390011CF98 /* EventViewModel.swift */,
+				AC1752D821BE9C390011CF98 /* EventView.xib */,
+			);
+			path = EventView;
+			sourceTree = "<group>";
+		};
 		AC475F31215072D7003B2BC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC1752DC21BE9C430011CF98 /* EventView */,
 				ACAA665921B4E9CB00EB9CD9 /* WebView */,
 				AC50E8C921ACBDD5002AE473 /* GithubLogin */,
 				AC475F8921547B22003B2BC3 /* Components */,
@@ -571,6 +588,7 @@
 			isa = PBXGroup;
 			children = (
 				AC475F42215073F7003B2BC3 /* AppCoordinator */,
+				AC475F4321507410003B2BC3 /* Container */,
 				AC475F4A21507A84003B2BC3 /* Storage */,
 				AC475F3D21507383003B2BC3 /* Model */,
 				AC475F32215072DE003B2BC3 /* Services */,
@@ -579,7 +597,6 @@
 				AC475F33215072EA003B2BC3 /* Resources */,
 				AC475F5921509EAC003B2BC3 /* Rx Utilities */,
 				AC475F5C21509FE3003B2BC3 /* Utils */,
-				AC475F4321507410003B2BC3 /* Container */,
 				AC80D7672149D944001B00EF /* Info.plist */,
 				AC80D7642149D944001B00EF /* LaunchScreen.storyboard */,
 				ACA59A7C2197067600CF0B2E /* R.generated.swift */,
@@ -672,6 +689,7 @@
 			files = (
 				AC475FAD215865FE003B2BC3 /* GothamRoundedBold_21016.ttf in Resources */,
 				ACAA665F21B4EA1400EB9CD9 /* WebContainerView.xib in Resources */,
+				AC1752DB21BE9C390011CF98 /* EventView.xib in Resources */,
 				AC475FC82158998E003B2BC3 /* ada-lovelace.jpg in Resources */,
 				AC475F3921507312003B2BC3 /* FeedView.xib in Resources */,
 				AC475F6C21530CF7003B2BC3 /* OnboardingView.xib in Resources */,
@@ -822,6 +840,7 @@
 				AC475F9421547C72003B2BC3 /* UIView+Constraints.swift in Sources */,
 				AC77BFAB218A776400085ACA /* MdFeed.swift in Sources */,
 				AC475F5821509EA4003B2BC3 /* NSObject+Rx.swift in Sources */,
+				AC1752DA21BE9C390011CF98 /* EventViewModel.swift in Sources */,
 				AC475FD62158B582003B2BC3 /* UIView + Shadow.swift in Sources */,
 				AC475F7721530D51003B2BC3 /* ProfileViewModel.swift in Sources */,
 				AC475F4E21507BC9003B2BC3 /* DefaultContainer.swift in Sources */,
@@ -856,6 +875,7 @@
 				AC475FD32158A10B003B2BC3 /* EventCollectionViewCell.swift in Sources */,
 				ACAA666121B605E500EB9CD9 /* webviewController.swift in Sources */,
 				AC475F822153168C003B2BC3 /* SignInService.swift in Sources */,
+				AC1752D921BE9C390011CF98 /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

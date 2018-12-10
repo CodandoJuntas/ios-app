@@ -13,6 +13,7 @@ import RxCocoa
 protocol FeedDelegate: class {
     func openProfile()
     func openContent(_ url: String)
+    func openEvent()
 }
 
 class FeedView: UIViewController {
@@ -67,6 +68,7 @@ extension FeedView {
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedSectionHeaderHeight = 100
         tableView.tableHeaderView = self.feedHeaderView.view
+        self.feedHeaderView.delegate = self
         headerView.usernameLabel.attributedText = self.feedHeaderView.titleHeaderAtributedText.attributedText
         registerCells()
        
@@ -107,5 +109,23 @@ extension FeedView {
         tableView.register(R.nib.headerSectionView(), forHeaderFooterViewReuseIdentifier: "HeaderSectionView")
 
     }
+}
+
+extension FeedView: FeedHeaderViewDelegate {
+    
+    
+    func openEventAtIndex(event: Event, index: IndexPath) {
+        let frame = selectedFrame(index: index)
+        let eventView = EventView(originFrame: frame, event: event)
+        eventView.modalPresentationStyle = .overCurrentContext
+        self.present(eventView, animated: false, completion: nil)
+    }
+    
+    func selectedFrame(index: IndexPath) -> CGRect {
+        let frame = self.feedHeaderView.collectionView.cellForItem(at: index)?.frame ?? CGRect.zero
+        return self.view.convert(frame, from: self.feedHeaderView.collectionView)
+    }
+   
+    
 }
 

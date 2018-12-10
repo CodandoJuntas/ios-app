@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 protocol FeedHeaderViewDelegate: class {
-    
+    func openEventAtIndex(event: Event, index: IndexPath)
 }
 
 class FeedHeaderView: UIViewController {
@@ -88,6 +88,9 @@ extension FeedHeaderView: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.openEventAtIndex(event: viewModel.events[indexPath.row] ,index: indexPath)
+    }
     
     
 }

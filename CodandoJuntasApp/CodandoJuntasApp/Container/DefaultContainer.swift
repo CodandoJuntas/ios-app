@@ -65,6 +65,7 @@ extension DefaultContainer {
             FeedHeaderView(
                 eventsRepository: resolver.resolve(EventsRepository.self)!)
         }
+        
     }
     
 }

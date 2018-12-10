@@ -299,10 +299,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 11 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
   struct nib {
     /// Nib `EventCollectionViewCell`.
     static let eventCollectionViewCell = _R.nib._EventCollectionViewCell()
+    /// Nib `EventView`.
+    static let eventView = _R.nib._EventView()
     /// Nib `FeedHeaderView`.
     static let feedHeaderView = _R.nib._FeedHeaderView()
     /// Nib `FeedTableViewCell`.
@@ -327,6 +329,11 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "EventCollectionViewCell", in: bundle)`
     static func eventCollectionViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.eventCollectionViewCell)
+    }
+    
+    /// `UINib(name: "EventView", in: bundle)`
+    static func eventView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.eventView)
     }
     
     /// `UINib(name: "FeedHeaderView", in: bundle)`
@@ -438,8 +445,8 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _HighlightedTableViewCell.validate()
-      try _FeedHeaderView.validate()
       try _ProfileView.validate()
+      try _FeedHeaderView.validate()
     }
     
     struct _EventCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
@@ -451,6 +458,17 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EventCollectionViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EventCollectionViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _EventView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "EventView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
       fileprivate init() {}

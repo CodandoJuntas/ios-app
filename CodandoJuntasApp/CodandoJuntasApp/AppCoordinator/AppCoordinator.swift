@@ -78,6 +78,12 @@ class AppCoordinator: Coordinator {
         self.currentView?.present(view, animated: true, completion: nil)
         
     }
+    
+    func showEventView() {
+        let eventView = container.resolve(EventView.self)!
+        eventView.modalPresentationStyle = .overCurrentContext
+        self.currentView?.present(eventView, animated: false, completion: nil)
+    }
 
 }
 
@@ -91,6 +97,10 @@ extension AppCoordinator: FeedDelegate {
     func openContent(_ url: String)
     {
         openWebView(url)
+    }
+    
+    func openEvent(){
+        self.showEventView()
     }
     
 }
