@@ -20,6 +20,7 @@ class FeedHeaderView: UIViewController {
     
     @IBOutlet weak var titleHeaderAtributedText: UILabel!
     
+    @IBOutlet weak var cardView: UIView!
     var viewModel: FeedHeaderViewModel!
     let eventsRepository: EventsRepository
     
@@ -55,6 +56,13 @@ extension FeedHeaderView {
         collectionView.register(R.nib.eventCollectionViewCell)
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let borderColor = UIColor(hexString: "#404142")
+        
+        cardView.layer.borderWidth = 1.0
+        cardView.layer.cornerRadius = 4
+        cardView.layer.borderColor = borderColor.cgColor
+        cardView.addShadow(offSetX: 0, offSetY: 2, radius: 4, opacity: 0.5)
     }
     
     func setupBindings() {

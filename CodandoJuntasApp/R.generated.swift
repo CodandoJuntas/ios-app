@@ -438,6 +438,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _HighlightedTableViewCell.validate()
+      try _FeedHeaderView.validate()
       try _ProfileView.validate()
     }
     
@@ -455,12 +456,16 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct _FeedHeaderView: Rswift.NibResourceType {
+    struct _FeedHeaderView: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "FeedHeaderView"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "dog.jpg", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'dog.jpg' is used in nib 'FeedHeaderView', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
