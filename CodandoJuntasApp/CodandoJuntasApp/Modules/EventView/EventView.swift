@@ -55,8 +55,8 @@ class EventView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureViews()
         self.setupViewModel()
+        self.configureViews()
         self.setupBindings()
     }
     
@@ -93,6 +93,7 @@ class EventView: UIViewController {
 extension EventView {
     
     func setupViewModel() {
+        
         self.viewModel = EventViewModel(
             
         )
@@ -105,7 +106,22 @@ extension EventView {
         cardView.layer.borderColor = borderColor.cgColor
         cardView.addShadow(offSetX: 0, offSetY: 2, radius: 4, opacity: 0.5)
         
+        let eventBody = viewModel.parseEventBody(self.event.body)
+        
+        eventNameLabel.text = event.title.match(for: eventRegexTags.eventName.rawValue)
+        var eventDateText = eventBody.date.match(for: eventRegexTags.eventDate.rawValue)
+        eventDateText?.append(" |  ")
+        eventDateText?.append(eventBody.date.match(for: eventRegexTags.eventHour.rawValue) ?? "")
         setupGestureRecognizer()
+        
+        eventDateLabel.text = eventDateText
+        
+        eventAddressLabel.text = eventBody.address
+        
+        eventDescriptionLabel.text = eventBody.description
+        
+        cityLabel.text = event.title.match(for: eventRegexTags.eventTitle.rawValue)
+        
     }
     
     func setupBindings() {
